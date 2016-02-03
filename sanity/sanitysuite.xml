@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Charter - Suite">
+	<listeners>
+		<listener class-name="com.cognizant.framework.listeners.WebTestListeners" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.cognizant.framework.listeners.AdvancedListener" />
+		<listener class-name="CharterReporter.TestNGReporter" />
+	</listeners>
+	<test name="Stage">
+<classes>
+
+<class name="com.charter.test.ForgotPassword">
+     <methods>
+        <include name="TA52_Validate_ForgotPassword_Non_Converted_MS_Login"/>
+        <include name="TA53_Validate_ForgotPassword_Non_Converted_CharterID"/>
+        <include name="TA54_Validate_ForgotPassword_Converted_CharterID"/>
+	    <include name="TA35_Validate_RetrievingPassword_HOHuser"/>
+	    <include name="TA37_Validate_RetrievingPassword_AdminUser"/>
+	    <include name="TA38_Validate_RetrievingPassword_StandardUser"/>
+     </methods>
+</class>
+
+<class name="com.charter.test.ForgotUsername">
+     <methods>
+        <include name="TA50_Validate_ForgotUsername_Non_Converted_MS_Login"/>
+        <include name="TA051_Validate_ForgotUsername_Non_Converted_CharterID"/>
+        <include name="TA20_Validate_RetrievingChaterID_HOHuser"/>
+        <include name="TA21_Validate_RetrievingChaterID_AdminUser"/>
+        <include name="TA22_Validate_RetrievingChaterID_StandardUser"/>
+     </methods>
+</class> 
+
+ <class name="com.charter.test.CharterDotCom">
+     <methods>
+	    <include name ="TE01_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_CreateIDbutton_inLoginpage"/>
+	    <include name ="TE02_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_ForgotUsername_Link_inLoginpage"/>
+		<include name ="TE03_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_ForgotPassword_Link_inLoginpage"/>
+		<include name ="TE05_Validate_CharterDotCom_LoginOption"/>
+	    <include name ="TE06_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_Business_Customers_Link_inLoginpage"/>
+	  </methods>
+</class>   
+
+<class name="com.charter.test.Home">
+   <methods>
+	    <include name="TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser"/> 
+        <include name="TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser"/>
+        <include name="TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser"/>
+        <include name="TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser"/>
+        <include name="TH07_Validate_WatchAnywhere_LiveTVTab_HOHuser"/>
+        <include name="TH08_Validate_WatchAnywhere_OnDemandTab_HOHuser"/>
+        <include name="TH09_Validate_WatchAnywhere_NetworkTab_HOHuser"/>  
+        <include name="TH12_Validate_HomePage_EmailIcon_HOHuser"/>
+        <include name="TH13_Validate_HomePage_VoicemailIcon_HOHuser"/>
+        <include name="TH17_Validate_WatchTV_NavigateTo_WatchTVOverviewPage_HOHUser"/>
+        <include name="TH18_Validate_MyAccount_NavigateTo_OverviewPage_HOHUser"/>
+        <include name="TH19_Validate_Support_NavigateTo_SupportPage_HOHUser"/>
+        <include name="TH20_Validate_HomePage_StaticBanner_HOHuser"/>
+        <include name="TH22_Validate_HomePage_Without_Login"/>
+	</methods>
+</class>
+
+<class name="com.charter.test.MyServices">
+    <methods>
+		<include name="TD03_Validate_MyServicesPage_TVNonSubscribedUser_AbleToView_BannerAndSupportVideo"/>
+        <include name="TD06_Validate_MyServices_TV_Page_UpdateNickname"/>
+        <include name="TD13_Validate_MyServicesPage_InternetNonSubscribedUser_AbleToView_BannerAndSupportVideo"/>
+        <include name="TD14_Validate_MyServicesPage_ChaterEmail_NavigateTo_EmailInbox"/>
+        <include name="TD16_Validate_MyservicesPage_SecuritySuite_NavigateTo_ChaterSecuritySuite"/>
+        <include name="TD22_Validate_MyServicesPage_VoiceNonSubscribedUser_AbleToView_BannerAndSupportVideo"/>
+        <include name="TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage"/>
+        <include name="TD25_Validate_MyServicesPage_LinksWithLogin"/>
+        <include name="TD26_Validate_MyServicesPage_LinksWithOutLogin"/>
+     </methods>
+</class>  
+
+<!--  <class name="com.charter.test.Billpay">
+      <methods>
+        <include name="TB01_Validate_OTPSchedule_ByDebitCard_HOHUser"/>
+	    <include name="TB02_Validate_OTPSchedule_ByCreditCard_HOHUser"/>
+        <include name="TB06_Validate_OTPayment_ByCreditCard_AdminUser"/>
+	    <include name="TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser"/>
+		<include name="TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser"/>
+		<include name="TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser"/>
+	    <include name="TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser"/> 
+	    <include name="TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage"/>
+		<include name="TB16_Validate_ModifyOTPayment_ByCreditCard_VerificationPage"/>
+	    <include name="TB19_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_HOHUser"/>
+        <include name="TB20_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_AdminUser"/>
+        <include name="TB24_Validate_ViewImportantBillMessagesLink_NavigateTo_BillMessagesPage_AdminUser"/>
+        <include name="TB26_Validate_UpcomingPaymentsLink_NavigateTo_UpcomingPaymentsPage_AdminUser"/>
+	    <include name="TB29_Validate_Duplicate_OTP_Message_ByDebitCard"/>
+	  </methods>
+</class>  -->
+
+<class name = "com.charter.test.MyAccount">
+    <methods>
+       	<include name="TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser"/>
+        <include name="TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser"/>
+        <include name="TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser"/>
+        <include name="TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser"/>
+        <include name="TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser"/>
+        <include name="TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks"/>
+        <include name="TC57_Validate_VoiceServicesPage_AskCharterWidget_HOHUser"/>
+        <include name="TC01_Validate_OverviewPageHeaders_HOHUser"/>
+        <include name="TC02_Validate_BillingandTransactionSection_HOHUser"/>
+        <include name="TC03_Validate_AskCharterWidget_HOHUser"/>
+        <include name="TC13_Validate_OverviewPage_AvatarImagesViewProfile_HOHUser"/>
+        <include name="TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices"/>
+        <include name="TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail"/>
+        <include name="TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser"/>  
+      </methods>
+</class> 
+
+<class name="com.charter.test.Login">
+     <methods>
+        <include name="TL01_Validate_ChaterValidLogin"/>
+	   	<include name="TL02_Validate_ChaterInvalidLogin"/>
+     </methods>
+</class>  
+
+</classes>
+</test>
+</suite>

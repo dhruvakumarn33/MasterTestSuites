@@ -1,0 +1,6 @@
+#surefire
+#Wed Sep 23 16:32:13 IST 2015
+org.uncommons.reportng.escape-output=false
+user.dir=D\:\\Sanity Suite\\sanity
+localRepository=C\:\\Users\\401508\\.m2\\repository
+basedir=D\:\\Sanity Suite\\sanity

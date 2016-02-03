@@ -1,0 +1,719 @@
+<html>
+<head>
+<title>TestNG:  Sanity_Test_Feb12</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sanity_Test_Feb12</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 31 14:56:53 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>2631 seconds (2631525 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.CreateCharter_ID.TA02_Validate_StandardUser_PromotTo_Admin_HOHUser()'><b>TA02_Validate_StandardUser_PromotTo_Admin_HOHUser</b><br>Test class: com.charter.test.CreateCharter_ID<br>Parameters: {LegacySiteURL=, SelectDate=, hohuser=tdr33001, mac_fID=, TestCaseId=TA02_Validate_StandardUser_PromotTo_Admin_HOHUser, charterID=tdr33001, Account_Type=Admin, password=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=4905 S Hulen St Sprnt101, zipcode_CID=67107, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=charter.net2014@gmail.com, ParentalControl_Unratedcontent=, NewRole=Admin, invalidLastname=, security_answer=green, Mobilephone=8888888888, CharterID_fp=, UserID=, lastname=, firstname_CID=Testing, ACnumber=, Zipcode=, security_question=Color or make of your first car?, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=4309, ParentalControl_Movie=, Zipcode_fp=, UserID1=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=123115}<br/>
+<a href="#Output-15344435" onClick='toggleBox("Output-15344435", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15344435" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15344435">
+<<<*** END: CreateCharter_ID.TA02_Validate_StandardUser_PromotTo_Admin_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.CreateCharter_ID.TA02_Validate_StandardUser_PromotTo_Admin_HOHUser, Took 284 seconds<br/><br/>
+<a href='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA02_Validate_StandardUser_PromotTo_Admin_HOHUser-1-31Jul15_030143.png'><img src='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA02_Validate_StandardUser_PromotTo_Admin_HOHUser-1-31Jul15_030143.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.id: lastname
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.createuser_STND(AuthenticationPage.java:431)
+	at com.charter.test.CreateCharter_ID.TA02_Validate_StandardUser_PromotTo_Admin_HOHUser(CreateCharter_ID.java:72)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15344435", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15344435'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.id: lastname
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.createuser_STND(AuthenticationPage.java:431)
+	at com.charter.test.CreateCharter_ID.TA02_Validate_StandardUser_PromotTo_Admin_HOHUser(CreateCharter_ID.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>284</td>
+<td>com.charter.test.CreateCharter_ID@cf2e49</td></tr>
+<tr>
+<td title='com.charter.test.CreateCharter_ID.TA03_Validate_StandardUser_CreateID()'><b>TA03_Validate_StandardUser_CreateID</b><br>Test class: com.charter.test.CreateCharter_ID<br>Parameters: {invalidLastname=, security_answer=blue, SelectDate=, LegacySiteURL=, hohuser=tdr33001, Mobilephone=8888888888, mac_fID=, CharterID_fp=, lastname=, UserID=, TestCaseId=TA03_Validate_StandardUser_CreateID, charterID=tdr33001, firstname_CID=Testing, password=, ACnumber=, security_question=Color or make of your first car?, ExpYear=, fLinked_CharterID=, address_CID=4905 S Hulen St Sprnt101, CardType=, UserPassword=Testing01, zipcode_CID=67107, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=4309, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, email=charter.net2014@gmail.com, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=123115}<br/>
+<a href="#Output-3222039" onClick='toggleBox("Output-3222039", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3222039" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3222039">
+<<<*** END: CreateCharter_ID.TA03_Validate_StandardUser_CreateID ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.CreateCharter_ID.TA03_Validate_StandardUser_CreateID, Took 262 seconds<br/><br/>
+<a href='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA03_Validate_StandardUser_CreateID-1-31Jul15_030614.png'><img src='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA03_Validate_StandardUser_CreateID-1-31Jul15_030614.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.id: lastname
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.createuser_STND(AuthenticationPage.java:431)
+	at com.charter.test.CreateCharter_ID.TA03_Validate_StandardUser_CreateID(CreateCharter_ID.java:111)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3222039", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3222039'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.id: lastname
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.createuser_STND(AuthenticationPage.java:431)
+	at com.charter.test.CreateCharter_ID.TA03_Validate_StandardUser_CreateID(CreateCharter_ID.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>262</td>
+<td>com.charter.test.CreateCharter_ID@cf2e49</td></tr>
+<tr>
+<td title='com.charter.test.ForgotUsername.TA20_Validate_RetrievingChaterID_HOHuser()'><b>TA20_Validate_RetrievingChaterID_HOHuser</b><br>Test class: com.charter.test.ForgotUsername<br>Parameters: {invalidLastname=, security_answer=red, SelectDate=, LegacySiteURL=, hohuser=, Mobilephone=, mac_fID=, CharterID_fp=, lastname=, UserID=, TestCaseId=TA20_Validate_RetrievingChaterID_HOHuser, charterID=, firstname_CID=, password=, ACnumber=8345780014518470, security_question=, ExpYear=, fLinked_CharterID=e2erel3012 , address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=Account Number, invalidZipcode=, address_fID=, email=, ExpDate=, invalidEmail=, zipcode_fID=63129, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-31402277" onClick='toggleBox("Output-31402277", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31402277" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31402277">
+<<<*** END: ForgotUsername.TA20_Validate_RetrievingChaterID_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.ForgotUsername.TA20_Validate_RetrievingChaterID_HOHuser, Took 259 seconds<br/><br/>
+<a href='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA20_Validate_RetrievingChaterID_HOHuser-1-31Jul15_031040.png'><img src='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA20_Validate_RetrievingChaterID_HOHuser-1-31Jul15_031040.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.xpath: //label[contains(text(),&apos;Enter Your ZIP Code&apos;)]/following-sibling::input
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.FID_RetrieveID_HOH(AuthenticationPage.java:527)
+	at com.charter.test.ForgotUsername.TA20_Validate_RetrievingChaterID_HOHuser(ForgotUsername.java:39)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31402277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31402277'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.xpath: //label[contains(text(),&apos;Enter Your ZIP Code&apos;)]/following-sibling::input
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.FID_RetrieveID_HOH(AuthenticationPage.java:527)
+	at com.charter.test.ForgotUsername.TA20_Validate_RetrievingChaterID_HOHuser(ForgotUsername.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>259</td>
+<td>com.charter.test.ForgotUsername@969ebb</td></tr>
+<tr>
+<td title='com.charter.test.ForgotUsername.TA21_Validate_RetrievingChaterID_AdminUser()'><b>TA21_Validate_RetrievingChaterID_AdminUser</b><br>Test class: com.charter.test.ForgotUsername<br>Parameters: {invalidLastname=, security_answer=red, SelectDate=, LegacySiteURL=, hohuser=, Mobilephone=, mac_fID=, CharterID_fp=, lastname=, UserID=, TestCaseId=TA21_Validate_RetrievingChaterID_AdminUser, charterID=, firstname_CID=, password=, ACnumber=8345780014518470, security_question=, ExpYear=, fLinked_CharterID=admin_e2erel3012, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=Account Number, invalidZipcode=, address_fID=, email=, ExpDate=, invalidEmail=, zipcode_fID=63129, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-13758211" onClick='toggleBox("Output-13758211", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13758211" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13758211">
+<<<*** END: ForgotUsername.TA21_Validate_RetrievingChaterID_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.ForgotUsername.TA21_Validate_RetrievingChaterID_AdminUser, Took 266 seconds<br/><br/>
+<a href='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA21_Validate_RetrievingChaterID_AdminUser-1-31Jul15_031513.png'><img src='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA21_Validate_RetrievingChaterID_AdminUser-1-31Jul15_031513.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.xpath: //label[contains(text(),&apos;Enter Your ZIP Code&apos;)]/following-sibling::input
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.FID_RetrieveID_Admin(AuthenticationPage.java:555)
+	at com.charter.test.ForgotUsername.TA21_Validate_RetrievingChaterID_AdminUser(ForgotUsername.java:64)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13758211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13758211'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.xpath: //label[contains(text(),&apos;Enter Your ZIP Code&apos;)]/following-sibling::input
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.FID_RetrieveID_Admin(AuthenticationPage.java:555)
+	at com.charter.test.ForgotUsername.TA21_Validate_RetrievingChaterID_AdminUser(ForgotUsername.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>266</td>
+<td>com.charter.test.ForgotUsername@969ebb</td></tr>
+<tr>
+<td title='com.charter.test.ForgotUsername.TA22_Validate_RetrievingChaterID_StandardUser()'><b>TA22_Validate_RetrievingChaterID_StandardUser</b><br>Test class: com.charter.test.ForgotUsername<br>Parameters: {invalidLastname=, security_answer=red, SelectDate=, LegacySiteURL=, hohuser=, Mobilephone=, mac_fID=, CharterID_fp=, lastname=, UserID=, TestCaseId=TA22_Validate_RetrievingChaterID_StandardUser, charterID=, firstname_CID=, password=, ACnumber=8345780014518470, security_question=, ExpYear=, fLinked_CharterID=standard_e2erel3012 , address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=Account Number, invalidZipcode=, address_fID=, email=, ExpDate=, invalidEmail=, zipcode_fID=63129, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-13884250" onClick='toggleBox("Output-13884250", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13884250" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13884250">
+<<<*** END: ForgotUsername.TA22_Validate_RetrievingChaterID_StandardUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.ForgotUsername.TA22_Validate_RetrievingChaterID_StandardUser, Took 260 seconds<br/><br/>
+<a href='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA22_Validate_RetrievingChaterID_StandardUser-1-31Jul15_031940.png'><img src='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA22_Validate_RetrievingChaterID_StandardUser-1-31Jul15_031940.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.xpath: //label[contains(text(),&apos;Enter Your ZIP Code&apos;)]/following-sibling::input
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.FID_RetrieveID_Standard(AuthenticationPage.java:580)
+	at com.charter.test.ForgotUsername.TA22_Validate_RetrievingChaterID_StandardUser(ForgotUsername.java:87)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13884250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13884250'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.xpath: //label[contains(text(),&apos;Enter Your ZIP Code&apos;)]/following-sibling::input
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.FID_RetrieveID_Standard(AuthenticationPage.java:580)
+	at com.charter.test.ForgotUsername.TA22_Validate_RetrievingChaterID_StandardUser(ForgotUsername.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>260</td>
+<td>com.charter.test.ForgotUsername@969ebb</td></tr>
+<tr>
+<td title='com.charter.test.ForgotPassword.TA35_Validate_RetrievingPassword_HOHuser()'><b>TA35_Validate_RetrievingPassword_HOHuser</b><br>Test class: com.charter.test.ForgotPassword<br>Parameters: {invalidLastname=, security_answer=red, SelectDate=, LegacySiteURL=, hohuser=, Mobilephone=, mac_fID=, CharterID_fp=e2erel3014 , lastname=, UserID=, TestCaseId=TA35_Validate_RetrievingPassword_HOHuser, charterID=, firstname_CID=, password=, ACnumber=, security_question=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=92307, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, email=, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-30684041" onClick='toggleBox("Output-30684041", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30684041" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30684041">
+<<<*** END: ForgotPassword.TA35_Validate_RetrievingPassword_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.ForgotPassword.TA35_Validate_RetrievingPassword_HOHuser, Took 267 seconds<br/><br/>
+<a href='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA35_Validate_RetrievingPassword_HOHuser-1-31Jul15_032414.png'><img src='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA35_Validate_RetrievingPassword_HOHuser-1-31Jul15_032414.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.id: username
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.fp_ValidE2E_HOH(AuthenticationPage.java:279)
+	at com.charter.test.ForgotPassword.TA35_Validate_RetrievingPassword_HOHuser(ForgotPassword.java:34)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace30684041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30684041'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.id: username
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.fp_ValidE2E_HOH(AuthenticationPage.java:279)
+	at com.charter.test.ForgotPassword.TA35_Validate_RetrievingPassword_HOHuser(ForgotPassword.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>267</td>
+<td>com.charter.test.ForgotPassword@ae997b</td></tr>
+<tr>
+<td title='com.charter.test.ForgotPassword.TA37_Validate_RetrievingPassword_AdminUser()'><b>TA37_Validate_RetrievingPassword_AdminUser</b><br>Test class: com.charter.test.ForgotPassword<br>Parameters: {invalidLastname=, security_answer=red, SelectDate=, LegacySiteURL=, hohuser=, Mobilephone=, mac_fID=, CharterID_fp=e2erel3014_child_01_10 , lastname=, UserID=, TestCaseId=TA37_Validate_RetrievingPassword_AdminUser, charterID=, firstname_CID=, password=, ACnumber=, security_question=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=92307, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, email=, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-13119520" onClick='toggleBox("Output-13119520", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13119520" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13119520">
+<<<*** END: ForgotPassword.TA37_Validate_RetrievingPassword_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.ForgotPassword.TA37_Validate_RetrievingPassword_AdminUser, Took 263 seconds<br/><br/>
+<a href='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA37_Validate_RetrievingPassword_AdminUser-1-31Jul15_032844.png'><img src='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA37_Validate_RetrievingPassword_AdminUser-1-31Jul15_032844.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.id: username
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.fp_ValidE2E_Admin(AuthenticationPage.java:304)
+	at com.charter.test.ForgotPassword.TA37_Validate_RetrievingPassword_AdminUser(ForgotPassword.java:52)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13119520", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13119520'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.id: username
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.fp_ValidE2E_Admin(AuthenticationPage.java:304)
+	at com.charter.test.ForgotPassword.TA37_Validate_RetrievingPassword_AdminUser(ForgotPassword.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>263</td>
+<td>com.charter.test.ForgotPassword@ae997b</td></tr>
+<tr>
+<td title='com.charter.test.ForgotPassword.TA38_Validate_RetrievingPassword_StandardUser()'><b>TA38_Validate_RetrievingPassword_StandardUser</b><br>Test class: com.charter.test.ForgotPassword<br>Parameters: {invalidLastname=, security_answer=red, SelectDate=, LegacySiteURL=, hohuser=, Mobilephone=, mac_fID=, CharterID_fp=e2erel3014_child_02_20 , lastname=, UserID=, TestCaseId=TA38_Validate_RetrievingPassword_StandardUser, charterID=, firstname_CID=, password=, ACnumber=, security_question=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=92307, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, email=, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-25329533" onClick='toggleBox("Output-25329533", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25329533" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25329533">
+<<<*** END: ForgotPassword.TA38_Validate_RetrievingPassword_StandardUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.ForgotPassword.TA38_Validate_RetrievingPassword_StandardUser, Took 260 seconds<br/><br/>
+<a href='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA38_Validate_RetrievingPassword_StandardUser-1-31Jul15_033312.png'><img src='D:\Sanity Suite\sanity\target\surefire-reports\html\screenshots\TA38_Validate_RetrievingPassword_StandardUser-1-31Jul15_033312.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.id: username
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.fp_ValidE2E_Standard(AuthenticationPage.java:325)
+	at com.charter.test.ForgotPassword.TA38_Validate_RetrievingPassword_StandardUser(ForgotPassword.java:69)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25329533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25329533'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.id: username
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.AuthenticationPage.fp_ValidE2E_Standard(AuthenticationPage.java:325)
+	at com.charter.test.ForgotPassword.TA38_Validate_RetrievingPassword_StandardUser(ForgotPassword.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>260</td>
+<td>com.charter.test.ForgotPassword@ae997b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.Login.TA48_Validate_ChaterValidLogin()'><b>TA48_Validate_ChaterValidLogin</b><br>Test class: com.charter.test.Login<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TA48_Validate_ChaterValidLogin, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, Statement=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=tdr33001, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-10971607" onClick='toggleBox("Output-10971607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10971607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10971607">
+<<<*** END: Login.TA48_Validate_ChaterValidLogin ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Login.TA48_Validate_ChaterValidLogin, Took 34 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.charter.test.Login@93370a</td></tr>
+<tr>
+<td title='com.charter.test.Login.TA49_Validate_ChaterInvalidLogin()'><b>TA49_Validate_ChaterInvalidLogin</b><br>Test class: com.charter.test.Login<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TA49_Validate_ChaterInvalidLogin, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, Statement=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=fef, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=feff, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-20302990" onClick='toggleBox("Output-20302990", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20302990" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20302990">
+<<<*** END: Login.TA49_Validate_ChaterInvalidLogin ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Login.TA49_Validate_ChaterInvalidLogin, Took 24 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.charter.test.Login@93370a</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser()'><b>TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e237, TestCaseId=TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-19160710" onClick='toggleBox("Output-19160710", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19160710" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19160710">
+<<<*** END: MyAccount.TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser, Took 56 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>56</td>
+<td>com.charter.test.MyAccount@ad80cf</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser()'><b>TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e5023, TestCaseId=TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-23982060" onClick='toggleBox("Output-23982060", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-23982060" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-23982060">
+<<<*** END: MyAccount.TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser, Took 38 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.charter.test.MyAccount@ad80cf</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage()'><b>TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage</b><br>Test class: com.charter.test.MyServices<br>Parameters: {SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, UserID=e2e5023, TestCaseId=TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage, firstname_CID=, ACnumber=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, ExpDate=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-3949693" onClick='toggleBox("Output-3949693", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3949693" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3949693">
+<<<*** END: MyServices.TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage, Took 44 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>com.charter.test.MyServices@19b3a92</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser()'><b>TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e224, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-28710917" onClick='toggleBox("Output-28710917", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28710917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28710917">
+<<<*** END: Home.TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser, Took 41 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.charter.test.Home@edd295</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser()'><b>TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e224, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-2125204" onClick='toggleBox("Output-2125204", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2125204" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2125204">
+<<<*** END: Home.TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser, Took 37 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.charter.test.Home@edd295</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser()'><b>TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5004, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-11008666" onClick='toggleBox("Output-11008666", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11008666" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11008666">
+<<<*** END: Home.TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser, Took 48 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>com.charter.test.Home@edd295</td></tr>
+</table><p>
+</body>
+</html>

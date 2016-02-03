@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Charter - Suite]">
+  <listeners>
+    <listener class-name="com.cognizant.framework.listeners.WebTestListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="com.cognizant.framework.listeners.AdvancedListener"/>
+    <listener class-name="CharterReporter.TestNGReporter"/>
+  </listeners>
+  <test name="Stage(failed)">
+    <classes>
+      <class name="com.charter.test.CharterDotCom">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testSetup"/>
+          <include name="afterMethod"/>
+          <include name="TE06_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_Business_Customers_Link_inLoginpage" invocation-numbers="0"/>
+          <include name="suiteConfig"/>
+          <include name="postTestCase"/>
+        </methods>
+      </class> <!-- com.charter.test.CharterDotCom -->
+    </classes>
+  </test> <!-- Stage(failed) -->
+</suite> <!-- Failed suite [Charter - Suite] -->

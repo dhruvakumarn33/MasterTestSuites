@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="55" failures="5" name="TestSuite" time="3,419.529" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_66\jre\bin"/>
+    <property name="java.vm.version" value="25.66-b17"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Sanity Suite\sanity"/>
+    <property name="java.runtime.version" value="1.8.0_66-b17"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\401508\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="D:\Jenkins_Charter\CharterNet\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3279625404233576116.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_66\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_71/bin/client;C:/Program Files/Java/jre1.8.0_71/bin;C:/Program Files/Java/jre1.8.0_71/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_66\bin;D:\d drive data\apache-maven-3.1.1\bin;C:\Program Files\Symantec\VIP Access Client\;D:\d drive data\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\401508"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="401508"/>
+    <property name="java.class.path" value="/D:/d drive data/eclipse/configuration/org.eclipse.osgi/bundles/535/1/.cp/jars/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_66\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s C:\Users\401508\.m2\settings.xml test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_66"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Sanity Suite\sanity\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="maven.bootclasspath" value="/D:/d drive data/eclipse/configuration/org.eclipse.osgi/bundles/535/1/.cp/jars/plexus-classworlds-2.4.jar"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase classname="com.charter.test.ForgotPassword" name="TA52_Validate_ForgotPassword_Non_Converted_MS_Login" time="58.647"/>
+  <testcase classname="com.charter.test.ForgotPassword" name="TA53_Validate_ForgotPassword_Non_Converted_CharterID" time="32.359"/>
+  <testcase classname="com.charter.test.ForgotPassword" name="TA54_Validate_ForgotPassword_Converted_CharterID" time="34.756"/>
+  <testcase classname="com.charter.test.ForgotPassword" name="TA35_Validate_RetrievingPassword_HOHuser" time="525.411">
+    <failure message="Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for visibility of element located by By.xpath: // button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown" type="com.cognizant.framework.exception.BrowserBotException">com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for visibility of element located by By.xpath: // button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:282)
+	at com.charter.page.AuthenticationPage.fp_ValidE2E_HOH(AuthenticationPage.java:297)
+	at com.charter.test.ForgotPassword.TA35_Validate_RetrievingPassword_HOHuser(ForgotPassword.java:35)
+</failure>
+    <system-out>2016-02-03 10:47:19 INFO : &lt;&lt;&lt;*** END: ForgotPassword.TA54_Validate_ForgotPassword_Converted_CharterID ***&gt;&gt;&gt; 
+2016-02-03 10:47:19 INFO : =====================================================================================
+2016-02-03 10:47:19 INFO : Test Passed :com.charter.test.ForgotPassword.TA54_Validate_ForgotPassword_Converted_CharterID, Took 34 seconds
+2016-02-03 10:47:28 INFO : 1
+2016-02-03 10:47:28 INFO : Stage
+2016-02-03 10:47:28 INFO : 
+2016-02-03 10:47:28 INFO : =====================================================================================
+2016-02-03 10:47:28 INFO : &lt;&lt;&lt;*** START: ForgotPassword.TA35_Validate_RetrievingPassword_HOHuser ***&gt;&gt;&gt; 
+print :*chrome
+2016-02-03 10:47:28 INFO : Loading the URL:http://www.charter.net/
+NEW: Wait initiated
+2016-02-03 10:47:37 INFO : Waiting until the element By.xpath: //a[contains(text(),&apos;Sign In&apos;)] is displayed
+2016-02-03 10:47:38 INFO : Clicked on element: By.xpath: //a[contains(text(),&apos;Sign In&apos;)]
+2016-02-03 10:47:38 INFO : Waiting until the element By.xpath: //a[contains(text(),&apos;Reset Your Password&apos;)] is displayed
+2016-02-03 10:47:45 INFO : Clicked on element: By.xpath: //a[contains(text(),&apos;Reset Your Password&apos;)]
+NEW: Wait initiated
+2016-02-03 10:47:46 INFO : Entering Text
+2016-02-03 10:47:46 INFO : Waiting until the element By.id: username becomes clickable
+2016-02-03 10:47:50 INFO : Entered e2erel3038 into the id;username text field
+2016-02-03 10:47:50 INFO : Entering Text
+2016-02-03 10:47:50 INFO : Waiting until the element By.id: zip becomes clickable
+2016-02-03 10:47:50 INFO : Entered 92307 into the id;zip text field
+2016-02-03 10:47:50 INFO : Clicked on element: By.xpath: //*[@title=&apos;Next&apos;]
+2016-02-03 10:47:50 INFO : Entering Text
+2016-02-03 10:47:50 INFO : Waiting until the element By.id: securityAnswer becomes clickable
+2016-02-03 10:47:52 INFO : Entered red into the id;securityAnswer text field
+2016-02-03 10:47:52 INFO : Clicked on element: By.xpath: //*[@title=&apos;Next&apos;]
+2016-02-03 10:47:52 INFO : Entering Text
+2016-02-03 10:47:52 INFO : Waiting until the element By.id: password becomes clickable
+2016-02-03 10:47:54 INFO : Entered Testing01 into the id;password text field
+2016-02-03 10:47:54 INFO : Entering Text
+2016-02-03 10:47:54 INFO : Waiting until the element By.id: confirmPass becomes clickable
+2016-02-03 10:47:54 INFO : Entered Testing01 into the id;confirmPass text field
+2016-02-03 10:47:55 INFO : Clicked on element: By.id: change-password-submit
+2016-02-03 10:48:07 INFO : Clicked on element: By.id: confirmation-finish-submit
+2016-02-03 10:48:07 INFO : Waiting until the element By.xpath: // button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)] is displayed
+com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for visibility of element located by By.xpath: // button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+2016-02-03 10:52:13 INFO : Waiting until the element By.xpath: // button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)] is displayed
+</system-out>
+    <system-err>Starting ChromeDriver 2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1) on port 36451
+Only local connections are allowed.
+</system-err>
+  </testcase>
+  <testcase classname="com.charter.test.ForgotPassword" name="TA37_Validate_RetrievingPassword_AdminUser" time="33.889"/>
+  <testcase classname="com.charter.test.ForgotPassword" name="TA38_Validate_RetrievingPassword_StandardUser" time="31.855"/>
+  <testcase classname="com.charter.test.ForgotUsername" name="TA50_Validate_ForgotUsername_Non_Converted_MS_Login" time="20.639"/>
+  <testcase classname="com.charter.test.ForgotUsername" name="TA051_Validate_ForgotUsername_Non_Converted_CharterID" time="22.075"/>
+  <testcase classname="com.charter.test.ForgotUsername" name="TA20_Validate_RetrievingChaterID_HOHuser" time="29.304"/>
+  <testcase classname="com.charter.test.ForgotUsername" name="TA21_Validate_RetrievingChaterID_AdminUser" time="27.557"/>
+  <testcase classname="com.charter.test.ForgotUsername" name="TA22_Validate_RetrievingChaterID_StandardUser" time="21.939"/>
+  <testcase classname="com.charter.test.CharterDotCom" name="TE01_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_CreateIDbutton_inLoginpage" time="27.09"/>
+  <testcase classname="com.charter.test.CharterDotCom" name="TE02_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_ForgotUsername_Link_inLoginpage" time="21.969"/>
+  <testcase classname="com.charter.test.CharterDotCom" name="TE03_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_ForgotPassword_Link_inLoginpage" time="21.912"/>
+  <testcase classname="com.charter.test.CharterDotCom" name="TE05_Validate_CharterDotCom_LoginOption" time="21.675"/>
+  <testcase classname="com.charter.test.CharterDotCom" name="TE06_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_Business_Customers_Link_inLoginpage" time="40.964">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/main/div/div/div[1]/div/div/div[2]/div/a&quot;}
+  (Session info: chrome=46.0.2490.71)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir11312_31923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19a435df21783e1fbd26814e224db7de
+*** Element info: {Using=xpath, value=/html/body/div[2]/main/div/div/div[1]/div/div/div[2]/div/a}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/main/div/div/div[1]/div/div/div[2]/div/a&quot;}
+  (Session info: chrome=46.0.2490.71)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir11312_31923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19a435df21783e1fbd26814e224db7de
+*** Element info: {Using=xpath, value=/html/body/div[2]/main/div/div/div[1]/div/div/div[2]/div/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.charter.page.BasicAuthenticaion.Business_Customers_Link(BasicAuthenticaion.java:181)
+	at com.charter.test.CharterDotCom.TE06_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_Business_Customers_Link_inLoginpage(CharterDotCom.java:65)
+</failure>
+    <system-out>2016-02-03 11:02:37 INFO : &lt;&lt;&lt;*** END: CharterDotCom.TE05_Validate_CharterDotCom_LoginOption ***&gt;&gt;&gt; 
+2016-02-03 11:02:37 INFO : =====================================================================================
+2016-02-03 11:02:37 INFO : Test Passed :com.charter.test.CharterDotCom.TE05_Validate_CharterDotCom_LoginOption, Took 21 seconds
+2016-02-03 11:02:45 INFO : 1
+2016-02-03 11:02:45 INFO : Stage
+2016-02-03 11:02:45 INFO : 
+2016-02-03 11:02:45 INFO : =====================================================================================
+2016-02-03 11:02:45 INFO : &lt;&lt;&lt;*** START: CharterDotCom.TE06_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_Business_Customers_Link_inLoginpage ***&gt;&gt;&gt; 
+2016-02-03 11:02:50 INFO : Waiting until the element By.xpath: //*[contains(text(),&apos;My Account&apos;)] becomes clickable
+2016-02-03 11:02:50 INFO : Clicking on the element By.xpath: //*[contains(text(),&apos;My Account&apos;)] using JavaScript
+https://www.charter.net/login/?referer=myaccount
+2016-02-03 11:02:56 INFO : Waiting until the element By.xpath: //a[contains(text(),&apos;Create Spectrum Business Username&apos;)] becomes clickable
+2016-02-03 11:02:56 INFO : Clicked on element: By.xpath: //a[contains(text(),&apos;Create Spectrum Business Username&apos;)]
+http://10.238.54.135:15871/cgi-bin/blockpage.cgi?ws-session=18446744071970799044
+</system-out>
+    <system-err>Starting ChromeDriver 2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1) on port 40445
+Only local connections are allowed.
+</system-err>
+  </testcase>
+  <testcase classname="com.charter.test.Home" name="TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser" time="27.335"/>
+  <testcase classname="com.charter.test.Home" name="TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser" time="30.896"/>
+  <testcase classname="com.charter.test.Home" name="TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser" time="41.99"/>
+  <testcase classname="com.charter.test.Home" name="TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser" time="260.988">
+    <failure message="Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.xpath: //a[contains(@class,&apos;text&apos;)]/h4[contains(text(),&apos;Charter Locations&apos;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown" type="com.cognizant.framework.exception.BrowserBotException">com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.xpath: //a[contains(@class,&apos;text&apos;)]/h4[contains(text(),&apos;Charter Locations&apos;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.charter.page.HomePage.FindCharterStore(HomePage.java:189)
+	at com.charter.test.Home.TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser(Home.java:117)
+</failure>
+    <system-out>2016-02-03 11:05:19 INFO : &lt;&lt;&lt;*** END: Home.TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser ***&gt;&gt;&gt; 
+2016-02-03 11:05:19 INFO : =====================================================================================
+2016-02-03 11:05:19 INFO : Test Passed :com.charter.test.Home.TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser, Took 41 seconds
+2016-02-03 11:05:23 INFO : 1
+2016-02-03 11:05:23 INFO : Stage
+2016-02-03 11:05:23 INFO : 
+2016-02-03 11:05:23 INFO : =====================================================================================
+2016-02-03 11:05:23 INFO : &lt;&lt;&lt;*** START: Home.TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser ***&gt;&gt;&gt; 
+print :*chrome
+2016-02-03 11:05:23 INFO : Loading the URL:http://www.charter.net/
+NEW: Wait initiated
+2016-02-03 11:05:26 INFO : Waiting until the element By.xpath: //a[contains(text(),&apos;Sign In&apos;)] is displayed
+2016-02-03 11:05:26 INFO : Clicked on element: By.xpath: //a[contains(text(),&apos;Sign In&apos;)]
+2016-02-03 11:05:26 INFO : Waiting until the element By.id: cc-username is displayed
+2016-02-03 11:05:33 INFO : Entering Text
+2016-02-03 11:05:33 INFO : Waiting until the element By.id: cc-username becomes clickable
+2016-02-03 11:05:33 INFO : Entered e2e5002 into the id;cc-username text field
+2016-02-03 11:05:33 INFO : Clicked on element: By.xpath: //input[@ng-model=&apos;form.password&apos;]
+2016-02-03 11:05:33 INFO : Entering Text
+2016-02-03 11:05:33 INFO : Waiting until the element By.id: cc-user-password becomes clickable
+2016-02-03 11:05:33 INFO : Entered Testing01 into the id;cc-user-password text field
+2016-02-03 11:05:33 INFO : Clicked on element: By.xpath: //input[@value=&apos;Sign In&apos;]
+NEW: Wait initiated
+2016-02-03 11:05:44 INFO : Waiting until the element By.xpath: //a[contains(@class,&apos;text&apos;)]/h4[contains(text(),&apos;Charter Locations&apos;)] becomes clickable
+</system-out>
+    <system-err>Starting ChromeDriver 2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1) on port 7557
+Only local connections are allowed.
+</system-err>
+  </testcase>
+  <testcase classname="com.charter.test.Home" name="TH07_Validate_WatchAnywhere_LiveTVTab_HOHuser" time="21.369"/>
+  <testcase classname="com.charter.test.Home" name="TH08_Validate_WatchAnywhere_OnDemandTab_HOHuser" time="21.255"/>
+  <testcase classname="com.charter.test.Home" name="TH09_Validate_WatchAnywhere_NetworkTab_HOHuser" time="20.543"/>
+  <testcase classname="com.charter.test.Home" name="TH12_Validate_HomePage_EmailIcon_HOHuser" time="32.312"/>
+  <testcase classname="com.charter.test.Home" name="TH13_Validate_HomePage_VoicemailIcon_HOHuser" time="20.464"/>
+  <testcase classname="com.charter.test.Home" name="TH17_Validate_WatchTV_NavigateTo_WatchTVOverviewPage_HOHUser" time="36.834"/>
+  <testcase classname="com.charter.test.Home" name="TH18_Validate_MyAccount_NavigateTo_OverviewPage_HOHUser" time="482.387">
+    <failure message="Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for visibility of element located by By.xpath: // button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown" type="com.cognizant.framework.exception.BrowserBotException">com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for visibility of element located by By.xpath: // button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:282)
+	at com.charter.test.Home.TH18_Validate_MyAccount_NavigateTo_OverviewPage_HOHUser(Home.java:316)
+</failure>
+    <system-out>2016-02-03 11:12:39 INFO : &lt;&lt;&lt;*** END: Home.TH17_Validate_WatchTV_NavigateTo_WatchTVOverviewPage_HOHUser ***&gt;&gt;&gt; 
+2016-02-03 11:12:39 INFO : =====================================================================================
+2016-02-03 11:12:39 INFO : Test Passed :com.charter.test.Home.TH17_Validate_WatchTV_NavigateTo_WatchTVOverviewPage_HOHUser, Took 36 seconds
+2016-02-03 11:12:43 INFO : 1
+2016-02-03 11:12:43 INFO : Stage
+2016-02-03 11:12:43 INFO : 
+2016-02-03 11:12:43 INFO : =====================================================================================
+2016-02-03 11:12:43 INFO : &lt;&lt;&lt;*** START: Home.TH18_Validate_MyAccount_NavigateTo_OverviewPage_HOHUser ***&gt;&gt;&gt; 
+print :*chrome
+2016-02-03 11:12:44 INFO : Loading the URL:http://www.charter.net/
+NEW: Wait initiated
+2016-02-03 11:12:46 INFO : Waiting until the element By.xpath: //a[contains(text(),&apos;Sign In&apos;)] is displayed
+2016-02-03 11:12:46 INFO : Clicked on element: By.xpath: //a[contains(text(),&apos;Sign In&apos;)]
+2016-02-03 11:12:46 INFO : Waiting until the element By.id: cc-username is displayed
+2016-02-03 11:12:54 INFO : Entering Text
+2016-02-03 11:12:54 INFO : Waiting until the element By.id: cc-username becomes clickable
+2016-02-03 11:12:54 INFO : Entered e2e5024 into the id;cc-username text field
+2016-02-03 11:12:54 INFO : Clicked on element: By.xpath: //input[@ng-model=&apos;form.password&apos;]
+2016-02-03 11:12:54 INFO : Entering Text
+2016-02-03 11:12:54 INFO : Waiting until the element By.id: cc-user-password becomes clickable
+2016-02-03 11:12:54 INFO : Entered Testing01 into the id;cc-user-password text field
+2016-02-03 11:12:54 INFO : Clicked on element: By.xpath: //input[@value=&apos;Sign In&apos;]
+NEW: Wait initiated
+2016-02-03 11:12:54 INFO : Waiting until the element By.xpath: (//a[contains(text(),&apos;Overview&apos;)])[7] becomes clickable
+2016-02-03 11:12:58 INFO : Clicked on element: By.xpath: (//a[contains(text(),&apos;Overview&apos;)])[7]
+User Navigated to the Overview page:https://www.charter.net/login/?targetUrl=https://www.charter.net/my-account/
+2016-02-03 11:12:58 INFO : Waiting until the element By.xpath: // button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)] is displayed
+com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for visibility of element located by By.xpath: // button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+2016-02-03 11:17:05 INFO : Waiting until the element By.xpath: // button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)] is displayed
+</system-out>
+    <system-err>Starting ChromeDriver 2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1) on port 39100
+Only local connections are allowed.
+</system-err>
+  </testcase>
+  <testcase classname="com.charter.test.Home" name="TH19_Validate_Support_NavigateTo_SupportPage_HOHUser" time="26.327"/>
+  <testcase classname="com.charter.test.Home" name="TH20_Validate_HomePage_StaticBanner_HOHuser" time="22.643"/>
+  <testcase classname="com.charter.test.Home" name="TH22_Validate_HomePage_Without_Login" time="3.518"/>
+  <testcase classname="com.charter.test.MyServices" name="TD03_Validate_MyServicesPage_TVNonSubscribedUser_AbleToView_BannerAndSupportVideo" time="46.975"/>
+  <testcase classname="com.charter.test.MyServices" name="TD06_Validate_MyServices_TV_Page_UpdateNickname" time="26.843"/>
+  <testcase classname="com.charter.test.MyServices" name="TD13_Validate_MyServicesPage_InternetNonSubscribedUser_AbleToView_BannerAndSupportVideo" time="52.022"/>
+  <testcase classname="com.charter.test.MyServices" name="TD14_Validate_MyServicesPage_ChaterEmail_NavigateTo_EmailInbox" time="31.42"/>
+  <testcase classname="com.charter.test.MyServices" name="TD16_Validate_MyservicesPage_SecuritySuite_NavigateTo_ChaterSecuritySuite" time="28.294"/>
+  <testcase classname="com.charter.test.MyServices" name="TD22_Validate_MyServicesPage_VoiceNonSubscribedUser_AbleToView_BannerAndSupportVideo" time="46.003"/>
+  <testcase classname="com.charter.test.MyServices" name="TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage" time="32.009"/>
+  <testcase classname="com.charter.test.MyServices" name="TD25_Validate_MyServicesPage_LinksWithLogin" time="35.656"/>
+  <testcase classname="com.charter.test.MyServices" name="TD26_Validate_MyServicesPage_LinksWithOutLogin" time="22.6"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser" time="36.38"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser" time="31.364"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser" time="29.98"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser" time="28.917"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser" time="25.575"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks" time="32.41"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC57_Validate_VoiceServicesPage_AskCharterWidget_HOHUser" time="31.726"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC01_Validate_OverviewPageHeaders_HOHUser" time="27.587"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC02_Validate_BillingandTransactionSection_HOHUser" time="39.028"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC03_Validate_AskCharterWidget_HOHUser" time="32.126"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC13_Validate_OverviewPage_AvatarImagesViewProfile_HOHUser" time="37.834"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices" time="42.079"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail" time="28.705"/>
+  <testcase classname="com.charter.test.MyAccount" name="TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser" time="31.438"/>
+  <testcase classname="com.charter.test.Login" name="TL01_Validate_ChaterValidLogin" time="85.486">
+    <failure message="stale element reference: element is not attached to the page document
+  (Session info: chrome=46.0.2490.71)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.72 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir11444_2709}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 03920f76df4f3b2531f124bf4c8c1a0f" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=46.0.2490.71)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.72 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir11444_2709}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 03920f76df4f3b2531f124bf4c8c1a0f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
+	at com.charter.page.AuthenticationPage.ValidLogin(AuthenticationPage.java:1338)
+	at com.charter.test.Login.TL01_Validate_ChaterValidLogin(Login.java:27)
+</failure>
+    <system-out>2016-02-03 11:37:11 INFO : &lt;&lt;&lt;*** END: MyAccount.TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser ***&gt;&gt;&gt; 
+2016-02-03 11:37:11 INFO : =====================================================================================
+2016-02-03 11:37:11 INFO : Test Passed :com.charter.test.MyAccount.TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser, Took 31 seconds
+2016-02-03 11:37:16 INFO : 1
+2016-02-03 11:37:16 INFO : Stage
+2016-02-03 11:37:16 INFO : 
+2016-02-03 11:37:16 INFO : =====================================================================================
+2016-02-03 11:37:16 INFO : &lt;&lt;&lt;*** START: Login.TL01_Validate_ChaterValidLogin ***&gt;&gt;&gt; 
+print :*chrome
+2016-02-03 11:37:17 INFO : Loading the URL:http://www.charter.net/
+NEW: Wait initiated
+2016-02-03 11:37:20 INFO : Waiting until the element By.xpath: //a[contains(text(),&apos;Sign In&apos;)] is displayed
+2016-02-03 11:37:24 INFO : Clicked on element: By.xpath: //a[contains(text(),&apos;Sign In&apos;)]
+2016-02-03 11:37:24 INFO : Entering Text
+2016-02-03 11:37:24 INFO : Waiting until the element By.id: cc-username becomes clickable
+2016-02-03 11:37:32 INFO : Entered tdr33001 into the id;cc-username text field
+2016-02-03 11:37:32 INFO : Entering Text
+2016-02-03 11:37:32 INFO : Waiting until the element By.xpath: //input[@ng-model=&apos;form.password&apos;] becomes clickable
+2016-02-03 11:37:32 INFO : Entered Testing01 into the xpath;//input[@ng-model=&apos;form.password&apos;] text field
+2016-02-03 11:37:32 INFO : Clicked on element: By.xpath: //input[@value=&apos;Sign In&apos;]
+</system-out>
+    <system-err>Starting ChromeDriver 2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1) on port 39674
+Only local connections are allowed.
+</system-err>
+  </testcase>
+  <testcase classname="com.charter.test.Login" name="TL02_Validate_ChaterInvalidLogin" time="33.031"/>
+</testsuite>

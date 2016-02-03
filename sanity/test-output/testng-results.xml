@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="290904" started-at="2016-02-03T06:35:35Z" finished-at="2016-02-03T06:40:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="290904" started-at="2016-02-03T06:35:35Z" finished-at="2016-02-03T06:40:26Z">
+      <class name="com.charter.test.Login">
+        <test-method status="PASS" signature="suiteConfig(java.lang.String)[pri:0, instance:com.charter.test.Login@70fda8]" name="suiteConfig" is-config="true" duration-ms="47" started-at="2016-02-03T12:05:35Z" finished-at="2016-02-03T12:05:35Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteConfig -->
+        <test-method status="PASS" signature="testSetup(java.lang.String)[pri:0, instance:com.charter.test.Login@70fda8]" name="testSetup" is-config="true" duration-ms="16861" started-at="2016-02-03T12:05:35Z" finished-at="2016-02-03T12:05:52Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="TL01_Validate_ChaterValidLogin(java.util.Map)[pri:0, instance:com.charter.test.Login@70fda8]" name="TL01_Validate_ChaterValidLogin" duration-ms="58679" started-at="2016-02-03T12:05:52Z" data-provider="TestDataCharter" finished-at="2016-02-03T12:06:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CardNumber=, mac_CID=, security_question=, Devicenickname=, zipcode_fID=, Account_Type=, invalidLastname=, invalidPassword=, SecurityQuestion=, lastname_fp=, password=, security_answer=, Account_pom=, invalidMAC=, Zipcode=, Relogin_UserID=, Operatingsystem=, invalidEmail=, SecurityAnswer=, couponNumber=, NewRole=, UserPassword=Testing01, City=, selectUser=, PC_Unratedcontent=, ACnumber=, Relogin_Password=, charterID=, lastname=, lastname_fID=, Zipcode_fp=, State=, firstname_CID=, zipcode_CID=, ParentalControl_TV=, mac_fID=, invalidSecurityAns=, address_CID=, ParentalControl_Unratedcontent=, Message=, ParentalControl_Movie=, TestCaseId=TL01_Validate_ChaterValidLogin, PC_TV=, Password1=, searchkey=, invalidZipcode=, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=tdr33001, CardType=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, email=, AccountNumberVerify=, LegacySiteURL=, accountnumber=, FutureDate=, Statement=, Address2=, Mobilephone=, PC_Movie=, Account_DVRcontrol=, Address1=, hohuser=, ConfirmPassword=, routingnumber=, ContactEmail=, SelectDate=, ExpYear=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TL01_Validate_ChaterValidLogin -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:com.charter.test.Login@70fda8]" name="postTestCase" is-config="true" duration-ms="1" started-at="2016-02-03T12:06:51Z" finished-at="2016-02-03T12:06:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TL01_Validate_ChaterValidLogin status=SUCCESS method=Login.TL01_Validate_ChaterValidLogin(java.util.Map)[pri:0, instance:com.charter.test.Login@70fda8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="testSetup(java.lang.String)[pri:0, instance:com.charter.test.Login@70fda8]" name="testSetup" is-config="true" duration-ms="2283" started-at="2016-02-03T12:06:51Z" finished-at="2016-02-03T12:06:53Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="TL02_Validate_ChaterInvalidLogin(java.util.Map)[pri:0, instance:com.charter.test.Login@70fda8]" name="TL02_Validate_ChaterInvalidLogin" duration-ms="211448" started-at="2016-02-03T12:06:53Z" data-provider="TestDataCharter" finished-at="2016-02-03T12:10:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CardNumber=, mac_CID=, security_question=, Devicenickname=, zipcode_fID=, Account_Type=, invalidLastname=, invalidPassword=, SecurityQuestion=, lastname_fp=, password=, security_answer=, Account_pom=, invalidMAC=, Zipcode=, Relogin_UserID=, Operatingsystem=, invalidEmail=, SecurityAnswer=, couponNumber=, NewRole=, UserPassword=feff, City=, selectUser=, PC_Unratedcontent=, ACnumber=, Relogin_Password=, charterID=, lastname=, lastname_fID=, Zipcode_fp=, State=, firstname_CID=, zipcode_CID=, ParentalControl_TV=, mac_fID=, invalidSecurityAns=, address_CID=, ParentalControl_Unratedcontent=, Message=, ParentalControl_Movie=, TestCaseId=TL02_Validate_ChaterInvalidLogin, PC_TV=, Password1=, searchkey=, invalidZipcode=, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=fef, CardType=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, email=, AccountNumberVerify=, LegacySiteURL=, accountnumber=, FutureDate=, Statement=, Address2=, Mobilephone=, PC_Movie=, Account_DVRcontrol=, Address1=, hohuser=, ConfirmPassword=, routingnumber=, ContactEmail=, SelectDate=, ExpYear=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TL02_Validate_ChaterInvalidLogin -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:com.charter.test.Login@70fda8]" name="postTestCase" is-config="true" duration-ms="1206" started-at="2016-02-03T12:10:24Z" finished-at="2016-02-03T12:10:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TL02_Validate_ChaterInvalidLogin status=SUCCESS method=Login.TL02_Validate_ChaterInvalidLogin(java.util.Map)[pri:0, instance:com.charter.test.Login@70fda8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.charter.test.Login@70fda8]" name="tearDown" is-config="true" duration-ms="585" started-at="2016-02-03T12:10:26Z" finished-at="2016-02-03T12:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.charter.test.Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

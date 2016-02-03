@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [CharterSuite]">
+  <listeners>
+    <listener class-name="com.cognizant.framework.listeners.WebTestListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="com.cognizant.framework.listeners.AdvancedListener"/>
+    <listener class-name="CharterReporter.TestNGReporter"/>
+  </listeners>
+  <test name="Prod_Test_July29th2015(failed)">
+    <classes>
+      <class name="com.charter.test.Support">
+        <methods>
+          <include name="TS27_Validate_InternetSupport_TVOnlineLink" invocation-numbers="0 0"/>
+          <include name="testSetup"/>
+          <include name="TS06_Validate_MyAccountSupport_ArticleLinks" invocation-numbers="0 0"/>
+          <include name="suiteConfig"/>
+          <include name="postTestCase"/>
+          <include name="tearDown"/>
+          <include name="afterMethod"/>
+          <include name="TS24_Validate_InternetSupport_NetworkingLink" invocation-numbers="0 0"/>
+        </methods>
+      </class> <!-- com.charter.test.Support -->
+    </classes>
+  </test> <!-- Prod_Test_July29th2015(failed) -->
+</suite> <!-- Failed suite [CharterSuite] -->

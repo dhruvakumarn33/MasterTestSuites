@@ -1,0 +1,1201 @@
+<html>
+<head>
+<title>TestNG:  Prod_Test_July29th2015</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Prod_Test_July29th2015</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>42/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 29 16:30:18 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>6862 seconds (6862029 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.Support.TS06_Validate_MyAccountSupport_ArticleLinks()'><b>TS06_Validate_MyAccountSupport_ArticleLinks</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS06_Validate_MyAccountSupport_ArticleLinks, UserPassword=Testing01}<br/>
+<a href="#Output-17890740" onClick='toggleBox("Output-17890740", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17890740" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17890740">
+<<<*** END: Support.TS06_Validate_MyAccountSupport_ArticleLinks ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Support.TS06_Validate_MyAccountSupport_ArticleLinks, Took 288 seconds<br/><br/>
+<a href='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS06_Validate_MyAccountSupport_ArticleLinks-1-29Jul15_044648.png'><img src='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS06_Validate_MyAccountSupport_ArticleLinks-1-29Jul15_044648.png' height='50' width='50'/><br></a><br/>
+Retrying test : com.charter.test.Support.TS06_Validate_MyAccountSupport_ArticleLinks, 1 time(s)<br/><br/>
+Retrying test : 'com.charter.test.Support.TS06_Validate_MyAccountSupport_ArticleLinks', 1 time(s)<br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.xpath: //a[contains(text(),&apos;Charter.net Username (Sign In)&apos;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.charter.page.SupportPage.MyAccountSupport_Article(SupportPage.java:126)
+	at com.charter.test.Support.TS06_Validate_MyAccountSupport_ArticleLinks(Support.java:134)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17890740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17890740'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.xpath: //a[contains(text(),&apos;Charter.net Username (Sign In)&apos;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.charter.page.SupportPage.MyAccountSupport_Article(SupportPage.java:126)
+	at com.charter.test.Support.TS06_Validate_MyAccountSupport_ArticleLinks(Support.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>288</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS06_Validate_MyAccountSupport_ArticleLinks()'><b>TS06_Validate_MyAccountSupport_ArticleLinks</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS06_Validate_MyAccountSupport_ArticleLinks, UserPassword=Testing01}<br/>
+<a href="#Output-26810135" onClick='toggleBox("Output-26810135", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26810135" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26810135">
+<<<*** END: Support.TS06_Validate_MyAccountSupport_ArticleLinks ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Support.TS06_Validate_MyAccountSupport_ArticleLinks, Took 284 seconds<br/><br/>
+<a href='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS06_Validate_MyAccountSupport_ArticleLinks-2-29Jul15_045142.png'><img src='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS06_Validate_MyAccountSupport_ArticleLinks-2-29Jul15_045142.png' height='50' width='50'/><br></a><br/>
+Test failed after max allowed retries  : com.charter.test.Support.TS06_Validate_MyAccountSupport_ArticleLinks<br/>
+<br><a href='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS06_Validate_MyAccountSupport_ArticleLinks-2-29Jul15_045142.png'><img src='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS06_Validate_MyAccountSupport_ArticleLinks-2-29Jul15_045142.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.xpath: //a[contains(text(),&apos;Charter.net Username (Sign In)&apos;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.charter.page.SupportPage.MyAccountSupport_Article(SupportPage.java:126)
+	at com.charter.test.Support.TS06_Validate_MyAccountSupport_ArticleLinks(Support.java:134)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26810135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26810135'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for element to be clickable: By.xpath: //a[contains(text(),&apos;Charter.net Username (Sign In)&apos;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.charter.page.SupportPage.MyAccountSupport_Article(SupportPage.java:126)
+	at com.charter.test.Support.TS06_Validate_MyAccountSupport_ArticleLinks(Support.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>284</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS12_Validate_TVSupport_TVOnlineLink()'><b>TS12_Validate_TVSupport_TVOnlineLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS12_Validate_TVSupport_TVOnlineLink, UserPassword=Testing01}<br/>
+<a href="#Output-5661791" onClick='toggleBox("Output-5661791", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5661791" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5661791">
+<<<*** END: Support.TS12_Validate_TVSupport_TVOnlineLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Support.TS12_Validate_TVSupport_TVOnlineLink, Took 283 seconds<br/><br/>
+<a href='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS12_Validate_TVSupport_TVOnlineLink-1-29Jul15_050913.png'><img src='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS12_Validate_TVSupport_TVOnlineLink-1-29Jul15_050913.png' height='50' width='50'/><br></a><br/>
+Retrying test : com.charter.test.Support.TS12_Validate_TVSupport_TVOnlineLink, 1 time(s)<br/><br/>
+Retrying test : 'com.charter.test.Support.TS12_Validate_TVSupport_TVOnlineLink', 1 time(s)<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;SEEiT&apos;)]&quot;}
+Command duration or timeout: 244.53 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;SEEiT&apos;)]}
+Session ID: 2ec71086-398c-44f8-9ace-b1e75039cfe3
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=37.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.TVSupportPage.TVOnline(TVSupportPage.java:74)
+	at com.charter.test.Support.TS12_Validate_TVSupport_TVOnlineLink(Support.java:251)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;SEEiT&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/401508/AppData/Local/Temp/anonymous67482677156031389webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/401508/AppData/Local/Temp/anonymous67482677156031389webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5661791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5661791'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;SEEiT&apos;)]&quot;}
+Command duration or timeout: 244.53 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;SEEiT&apos;)]}
+Session ID: 2ec71086-398c-44f8-9ace-b1e75039cfe3
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=37.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.TVSupportPage.TVOnline(TVSupportPage.java:74)
+	at com.charter.test.Support.TS12_Validate_TVSupport_TVOnlineLink(Support.java:251)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;SEEiT&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/401508/AppData/Local/Temp/anonymous67482677156031389webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/401508/AppData/Local/Temp/anonymous67482677156031389webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>283</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS24_Validate_InternetSupport_NetworkingLink()'><b>TS24_Validate_InternetSupport_NetworkingLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS24_Validate_InternetSupport_NetworkingLink, UserPassword=Testing01}<br/>
+<a href="#Output-27348762" onClick='toggleBox("Output-27348762", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27348762" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27348762">
+<<<*** END: Support.TS24_Validate_InternetSupport_NetworkingLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Support.TS24_Validate_InternetSupport_NetworkingLink, Took 279 seconds<br/><br/>
+<a href='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS24_Validate_InternetSupport_NetworkingLink-1-29Jul15_053459.png'><img src='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS24_Validate_InternetSupport_NetworkingLink-1-29Jul15_053459.png' height='50' width='50'/><br></a><br/>
+Retrying test : com.charter.test.Support.TS24_Validate_InternetSupport_NetworkingLink, 1 time(s)<br/><br/>
+Retrying test : 'com.charter.test.Support.TS24_Validate_InternetSupport_NetworkingLink', 1 time(s)<br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for visibility of element located by By.xpath: //div/h5[contains(text(),&quot;Networking / Wireless&quot;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.charter.page.InternetSupportPage.Networking(InternetSupportPage.java:114)
+	at com.charter.test.Support.TS24_Validate_InternetSupport_NetworkingLink(Support.java:482)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27348762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27348762'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for visibility of element located by By.xpath: //div/h5[contains(text(),&quot;Networking / Wireless&quot;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.charter.page.InternetSupportPage.Networking(InternetSupportPage.java:114)
+	at com.charter.test.Support.TS24_Validate_InternetSupport_NetworkingLink(Support.java:482)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>279</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS24_Validate_InternetSupport_NetworkingLink()'><b>TS24_Validate_InternetSupport_NetworkingLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS24_Validate_InternetSupport_NetworkingLink, UserPassword=Testing01}<br/>
+<a href="#Output-15059426" onClick='toggleBox("Output-15059426", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15059426" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15059426">
+<<<*** END: Support.TS24_Validate_InternetSupport_NetworkingLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Support.TS24_Validate_InternetSupport_NetworkingLink, Took 275 seconds<br/><br/>
+<a href='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS24_Validate_InternetSupport_NetworkingLink-2-29Jul15_053943.png'><img src='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS24_Validate_InternetSupport_NetworkingLink-2-29Jul15_053943.png' height='50' width='50'/><br></a><br/>
+Test failed after max allowed retries  : com.charter.test.Support.TS24_Validate_InternetSupport_NetworkingLink<br/>
+<br><a href='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS24_Validate_InternetSupport_NetworkingLink-2-29Jul15_053943.png'><img src='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS24_Validate_InternetSupport_NetworkingLink-2-29Jul15_053943.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for visibility of element located by By.xpath: //div/h5[contains(text(),&quot;Networking / Wireless&quot;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.charter.page.InternetSupportPage.Networking(InternetSupportPage.java:114)
+	at com.charter.test.Support.TS24_Validate_InternetSupport_NetworkingLink(Support.java:482)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15059426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15059426'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 40 seconds waiting for visibility of element located by By.xpath: //div/h5[contains(text(),&quot;Networking / Wireless&quot;)]
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.charter.page.InternetSupportPage.Networking(InternetSupportPage.java:114)
+	at com.charter.test.Support.TS24_Validate_InternetSupport_NetworkingLink(Support.java:482)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>275</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS27_Validate_InternetSupport_TVOnlineLink()'><b>TS27_Validate_InternetSupport_TVOnlineLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS27_Validate_InternetSupport_TVOnlineLink, UserPassword=Testing01}<br/>
+<a href="#Output-10077736" onClick='toggleBox("Output-10077736", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10077736" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10077736">
+<<<*** END: Support.TS27_Validate_InternetSupport_TVOnlineLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Support.TS27_Validate_InternetSupport_TVOnlineLink, Took 275 seconds<br/><br/>
+<a href='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS27_Validate_InternetSupport_TVOnlineLink-1-29Jul15_055121.png'><img src='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS27_Validate_InternetSupport_TVOnlineLink-1-29Jul15_055121.png' height='50' width='50'/><br></a><br/>
+Retrying test : com.charter.test.Support.TS27_Validate_InternetSupport_TVOnlineLink, 1 time(s)<br/><br/>
+Retrying test : 'com.charter.test.Support.TS27_Validate_InternetSupport_TVOnlineLink', 1 time(s)<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),\&quot;Charter TV App\&quot;)]&quot;}
+Command duration or timeout: 240.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+*** Element info: {Using=xpath, value=//a[contains(text(),&quot;Charter TV App&quot;)]}
+Session ID: a59dcfd4-2d54-46a5-a008-2fc8eaf86f87
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=37.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.InternetSupportPage.TVOnline(InternetSupportPage.java:152)
+	at com.charter.test.Support.TS27_Validate_InternetSupport_TVOnlineLink(Support.java:539)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),\&quot;Charter TV App\&quot;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/401508/AppData/Local/Temp/anonymous7635514788681445783webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/401508/AppData/Local/Temp/anonymous7635514788681445783webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10077736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10077736'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),\&quot;Charter TV App\&quot;)]&quot;}
+Command duration or timeout: 240.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+*** Element info: {Using=xpath, value=//a[contains(text(),&quot;Charter TV App&quot;)]}
+Session ID: a59dcfd4-2d54-46a5-a008-2fc8eaf86f87
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=37.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.InternetSupportPage.TVOnline(InternetSupportPage.java:152)
+	at com.charter.test.Support.TS27_Validate_InternetSupport_TVOnlineLink(Support.java:539)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),\&quot;Charter TV App\&quot;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/401508/AppData/Local/Temp/anonymous7635514788681445783webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/401508/AppData/Local/Temp/anonymous7635514788681445783webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>275</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS27_Validate_InternetSupport_TVOnlineLink()'><b>TS27_Validate_InternetSupport_TVOnlineLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS27_Validate_InternetSupport_TVOnlineLink, UserPassword=Testing01}<br/>
+<a href="#Output-30871661" onClick='toggleBox("Output-30871661", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30871661" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30871661">
+<<<*** END: Support.TS27_Validate_InternetSupport_TVOnlineLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Support.TS27_Validate_InternetSupport_TVOnlineLink, Took 277 seconds<br/><br/>
+<a href='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS27_Validate_InternetSupport_TVOnlineLink-2-29Jul15_055608.png'><img src='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS27_Validate_InternetSupport_TVOnlineLink-2-29Jul15_055608.png' height='50' width='50'/><br></a><br/>
+Test failed after max allowed retries  : com.charter.test.Support.TS27_Validate_InternetSupport_TVOnlineLink<br/>
+<br><a href='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS27_Validate_InternetSupport_TVOnlineLink-2-29Jul15_055608.png'><img src='D:\EngProd_Charter\target\surefire-reports\html\screenshots\TS27_Validate_InternetSupport_TVOnlineLink-2-29Jul15_055608.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),\&quot;Charter TV App\&quot;)]&quot;}
+Command duration or timeout: 240.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+*** Element info: {Using=xpath, value=//a[contains(text(),&quot;Charter TV App&quot;)]}
+Session ID: d707bb59-f694-4483-99b2-dccd1f7d8c56
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=37.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.InternetSupportPage.TVOnline(InternetSupportPage.java:152)
+	at com.charter.test.Support.TS27_Validate_InternetSupport_TVOnlineLink(Support.java:539)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),\&quot;Charter TV App\&quot;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/401508/AppData/Local/Temp/anonymous8621723132755504621webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/401508/AppData/Local/Temp/anonymous8621723132755504621webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace30871661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30871661'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),\&quot;Charter TV App\&quot;)]&quot;}
+Command duration or timeout: 240.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+*** Element info: {Using=xpath, value=//a[contains(text(),&quot;Charter TV App&quot;)]}
+Session ID: d707bb59-f694-4483-99b2-dccd1f7d8c56
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=37.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.InternetSupportPage.TVOnline(InternetSupportPage.java:152)
+	at com.charter.test.Support.TS27_Validate_InternetSupport_TVOnlineLink(Support.java:539)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),\&quot;Charter TV App\&quot;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.11.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/401508/AppData/Local/Temp/anonymous8621723132755504621webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/401508/AppData/Local/Temp/anonymous8621723132755504621webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>277</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.Support.TS01_Validate_TV_Voice_Internet_MyAccount_Links_SupportOverview()'><b>TS01_Validate_TV_Voice_Internet_MyAccount_Links_SupportOverview</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS01_Validate_TV_Voice_Internet_MyAccount_Links_SupportOverview, UserPassword=Testing01}<br/>
+<a href="#Output-15050308" onClick='toggleBox("Output-15050308", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15050308" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15050308">
+<<<*** END: Support.TS01_Validate_TV_Voice_Internet_MyAccount_Links_SupportOverview ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS01_Validate_TV_Voice_Internet_MyAccount_Links_SupportOverview, Took 169 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>169</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS02_Validate_SupportPage_AskCharterWidget_HOHUser()'><b>TS02_Validate_SupportPage_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e5020, TestCaseId=TS02_Validate_SupportPage_AskCharterWidget_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-21582598" onClick='toggleBox("Output-21582598", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21582598" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21582598">
+<<<*** END: Support.TS02_Validate_SupportPage_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS02_Validate_SupportPage_AskCharterWidget_HOHUser, Took 159 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>159</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS03_Validate_TVSupport_ArticleLinks()'><b>TS03_Validate_TVSupport_ArticleLinks</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS03_Validate_TVSupport_ArticleLinks, UserPassword=Testing01}<br/>
+<a href="#Output-19842144" onClick='toggleBox("Output-19842144", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19842144" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19842144">
+<<<*** END: Support.TS03_Validate_TVSupport_ArticleLinks ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS03_Validate_TVSupport_ArticleLinks, Took 84 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>84</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS04_Validate_VoiceSupport_ArticleLinks()'><b>TS04_Validate_VoiceSupport_ArticleLinks</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS04_Validate_VoiceSupport_ArticleLinks, UserPassword=Testing01}<br/>
+<a href="#Output-15191913" onClick='toggleBox("Output-15191913", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15191913" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15191913">
+<<<*** END: Support.TS04_Validate_VoiceSupport_ArticleLinks ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS04_Validate_VoiceSupport_ArticleLinks, Took 138 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>138</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS05_Validate_InternetSupport_ArticleLinks()'><b>TS05_Validate_InternetSupport_ArticleLinks</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS05_Validate_InternetSupport_ArticleLinks, UserPassword=Testing01}<br/>
+<a href="#Output-27973053" onClick='toggleBox("Output-27973053", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27973053" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27973053">
+<<<*** END: Support.TS05_Validate_InternetSupport_ArticleLinks ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS05_Validate_InternetSupport_ArticleLinks, Took 86 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>86</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS07_Validate_SupportVideo_browsing()'><b>TS07_Validate_SupportVideo_browsing</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS07_Validate_SupportVideo_browsing, UserPassword=Testing01}<br/>
+<a href="#Output-21704826" onClick='toggleBox("Output-21704826", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21704826" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21704826">
+<<<*** END: Support.TS07_Validate_SupportVideo_browsing ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS07_Validate_SupportVideo_browsing, Took 267 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>267</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS08_Validate_TVSupportPage_AskCharterWidget_HOHUser()'><b>TS08_Validate_TVSupportPage_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e5020, TestCaseId=TS08_Validate_TVSupportPage_AskCharterWidget_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-27917071" onClick='toggleBox("Output-27917071", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27917071" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27917071">
+<<<*** END: Support.TS08_Validate_TVSupportPage_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS08_Validate_TVSupportPage_AskCharterWidget_HOHUser, Took 68 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>68</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS09_Validate_TVSupportVideo_browsing()'><b>TS09_Validate_TVSupportVideo_browsing</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS09_Validate_TVSupportVideo_browsing, UserPassword=Testing01}<br/>
+<a href="#Output-30009324" onClick='toggleBox("Output-30009324", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30009324" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30009324">
+<<<*** END: Support.TS09_Validate_TVSupportVideo_browsing ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS09_Validate_TVSupportVideo_browsing, Took 62 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>62</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS10_Validate_TVSupport_CharterTVServiceLink()'><b>TS10_Validate_TVSupport_CharterTVServiceLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS10_Validate_TVSupport_CharterTVServiceLink, UserPassword=Testing01}<br/>
+<a href="#Output-13477454" onClick='toggleBox("Output-13477454", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13477454" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13477454">
+<<<*** END: Support.TS10_Validate_TVSupport_CharterTVServiceLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS10_Validate_TVSupport_CharterTVServiceLink, Took 154 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>154</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS11_Validate_TVSupport_TVEquipmentLink()'><b>TS11_Validate_TVSupport_TVEquipmentLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS11_Validate_TVSupport_TVEquipmentLink, UserPassword=Testing01}<br/>
+<a href="#Output-27310604" onClick='toggleBox("Output-27310604", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27310604" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27310604">
+<<<*** END: Support.TS11_Validate_TVSupport_TVEquipmentLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS11_Validate_TVSupport_TVEquipmentLink, Took 69 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>69</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS12_Validate_TVSupport_TVOnlineLink()'><b>TS12_Validate_TVSupport_TVOnlineLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS12_Validate_TVSupport_TVOnlineLink, UserPassword=Testing01}<br/>
+<a href="#Output-18851328" onClick='toggleBox("Output-18851328", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18851328" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18851328">
+<<<*** END: Support.TS12_Validate_TVSupport_TVOnlineLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS12_Validate_TVSupport_TVOnlineLink, Took 210 seconds<br/><br/>
+Test 'TS12_Validate_TVSupport_TVOnlineLink' passed after 1 retrie(s)<br/>
+</div>
+</td>
+<td></td>
+<td>210</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS13_Validate_TVSupport_ProgramGuidesLink()'><b>TS13_Validate_TVSupport_ProgramGuidesLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS13_Validate_TVSupport_ProgramGuidesLink, UserPassword=Testing01}<br/>
+<a href="#Output-5572779" onClick='toggleBox("Output-5572779", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5572779" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5572779">
+<<<*** END: Support.TS13_Validate_TVSupport_ProgramGuidesLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS13_Validate_TVSupport_ProgramGuidesLink, Took 241 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>241</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS14_Validate_TVSupport_HDLink()'><b>TS14_Validate_TVSupport_HDLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS14_Validate_TVSupport_HDLink, UserPassword=Testing01}<br/>
+<a href="#Output-10085670" onClick='toggleBox("Output-10085670", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10085670" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10085670">
+<<<*** END: Support.TS14_Validate_TVSupport_HDLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS14_Validate_TVSupport_HDLink, Took 49 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS15_Validate_TVSupport_PayPerViewLink()'><b>TS15_Validate_TVSupport_PayPerViewLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS15_Validate_TVSupport_PayPerViewLink, UserPassword=Testing01}<br/>
+<a href="#Output-14300228" onClick='toggleBox("Output-14300228", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14300228" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14300228">
+<<<*** END: Support.TS15_Validate_TVSupport_PayPerViewLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS15_Validate_TVSupport_PayPerViewLink, Took 54 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS16_Validate_TVSupport_TroubleshootingLink()'><b>TS16_Validate_TVSupport_TroubleshootingLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS16_Validate_TVSupport_TroubleshootingLink, UserPassword=Testing01}<br/>
+<a href="#Output-9947599" onClick='toggleBox("Output-9947599", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9947599" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9947599">
+<<<*** END: Support.TS16_Validate_TVSupport_TroubleshootingLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS16_Validate_TVSupport_TroubleshootingLink, Took 58 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS17_Validate_SupportInternetPage_AskCharterWidget_HOHUser()'><b>TS17_Validate_SupportInternetPage_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e5020, TestCaseId=TS17_Validate_SupportInternetPage_AskCharterWidget_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-6246147" onClick='toggleBox("Output-6246147", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6246147" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6246147">
+<<<*** END: Support.TS17_Validate_SupportInternetPage_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS17_Validate_SupportInternetPage_AskCharterWidget_HOHUser, Took 60 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>60</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS18_Validate_SupportInternetVideo_browsing()'><b>TS18_Validate_SupportInternetVideo_browsing</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS18_Validate_SupportInternetVideo_browsing, UserPassword=Testing01}<br/>
+<a href="#Output-16618215" onClick='toggleBox("Output-16618215", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16618215" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16618215">
+<<<*** END: Support.TS18_Validate_SupportInternetVideo_browsing ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS18_Validate_SupportInternetVideo_browsing, Took 59 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>59</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS19_Validate_InternetSupport_CharterDotNetLink()'><b>TS19_Validate_InternetSupport_CharterDotNetLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS19_Validate_InternetSupport_CharterDotNetLink, UserPassword=Testing01}<br/>
+<a href="#Output-1268268" onClick='toggleBox("Output-1268268", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1268268" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1268268">
+<<<*** END: Support.TS19_Validate_InternetSupport_CharterDotNetLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS19_Validate_InternetSupport_CharterDotNetLink, Took 44 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS20_Validate_InternetSupport_InternetEquipmentLink()'><b>TS20_Validate_InternetSupport_InternetEquipmentLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS20_Validate_InternetSupport_InternetEquipmentLink, UserPassword=Testing01}<br/>
+<a href="#Output-15446979" onClick='toggleBox("Output-15446979", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15446979" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15446979">
+<<<*** END: Support.TS20_Validate_InternetSupport_InternetEquipmentLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS20_Validate_InternetSupport_InternetEquipmentLink, Took 101 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>101</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS21_Validate_InternetSupport_EmailLink()'><b>TS21_Validate_InternetSupport_EmailLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS21_Validate_InternetSupport_EmailLink, UserPassword=Testing01}<br/>
+<a href="#Output-13011704" onClick='toggleBox("Output-13011704", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13011704" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13011704">
+<<<*** END: Support.TS21_Validate_InternetSupport_EmailLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS21_Validate_InternetSupport_EmailLink, Took 52 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>52</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS22_Validate_InternetSupport_SecuritySuiteLink()'><b>TS22_Validate_InternetSupport_SecuritySuiteLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS22_Validate_InternetSupport_SecuritySuiteLink, UserPassword=Testing01}<br/>
+<a href="#Output-8487798" onClick='toggleBox("Output-8487798", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8487798" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8487798">
+<<<*** END: Support.TS22_Validate_InternetSupport_SecuritySuiteLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS22_Validate_InternetSupport_SecuritySuiteLink, Took 45 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS23_Validate_InternetSupport_InstallationLink()'><b>TS23_Validate_InternetSupport_InstallationLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS23_Validate_InternetSupport_InstallationLink, UserPassword=Testing01}<br/>
+<a href="#Output-9029158" onClick='toggleBox("Output-9029158", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9029158" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9029158">
+<<<*** END: Support.TS23_Validate_InternetSupport_InstallationLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS23_Validate_InternetSupport_InstallationLink, Took 151 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>151</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS25_Validate_InternetSupport_OnlineSecurityLink()'><b>TS25_Validate_InternetSupport_OnlineSecurityLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS25_Validate_InternetSupport_OnlineSecurityLink, UserPassword=Testing01}<br/>
+<a href="#Output-4503077" onClick='toggleBox("Output-4503077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4503077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4503077">
+<<<*** END: Support.TS25_Validate_InternetSupport_OnlineSecurityLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS25_Validate_InternetSupport_OnlineSecurityLink, Took 156 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>156</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS26_Validate_InternetSupport_TroubleshootingLink()'><b>TS26_Validate_InternetSupport_TroubleshootingLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS26_Validate_InternetSupport_TroubleshootingLink, UserPassword=Testing01}<br/>
+<a href="#Output-28006219" onClick='toggleBox("Output-28006219", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28006219" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28006219">
+<<<*** END: Support.TS26_Validate_InternetSupport_TroubleshootingLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS26_Validate_InternetSupport_TroubleshootingLink, Took 222 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>222</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS28_Validate_InternetSupport_WifiLink()'><b>TS28_Validate_InternetSupport_WifiLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS28_Validate_InternetSupport_WifiLink, UserPassword=Testing01}<br/>
+<a href="#Output-17269741" onClick='toggleBox("Output-17269741", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17269741" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17269741">
+<<<*** END: Support.TS28_Validate_InternetSupport_WifiLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS28_Validate_InternetSupport_WifiLink, Took 144 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>144</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS29_Validate_VoiceSupportPage_AskCharterWidget_HOHUser()'><b>TS29_Validate_VoiceSupportPage_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e5020, TestCaseId=TS29_Validate_VoiceSupportPage_AskCharterWidget_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-32118258" onClick='toggleBox("Output-32118258", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32118258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32118258">
+<<<*** END: Support.TS29_Validate_VoiceSupportPage_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS29_Validate_VoiceSupportPage_AskCharterWidget_HOHUser, Took 43 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS30_Validate_VoiceSupport_FeaturesLink()'><b>TS30_Validate_VoiceSupport_FeaturesLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS30_Validate_VoiceSupport_FeaturesLink, UserPassword=Testing01}<br/>
+<a href="#Output-3842495" onClick='toggleBox("Output-3842495", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3842495" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3842495">
+<<<*** END: Support.TS30_Validate_VoiceSupport_FeaturesLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS30_Validate_VoiceSupport_FeaturesLink, Took 41 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS31_Validate_VoiceSupport_VoiceEquipmentLink()'><b>TS31_Validate_VoiceSupport_VoiceEquipmentLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS31_Validate_VoiceSupport_VoiceEquipmentLink, UserPassword=Testing01}<br/>
+<a href="#Output-1869664" onClick='toggleBox("Output-1869664", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1869664" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1869664">
+<<<*** END: Support.TS31_Validate_VoiceSupport_VoiceEquipmentLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS31_Validate_VoiceSupport_VoiceEquipmentLink, Took 38 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS32_Validate_VoiceSupport_InternationalCallingLink()'><b>TS32_Validate_VoiceSupport_InternationalCallingLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS32_Validate_VoiceSupport_InternationalCallingLink, UserPassword=Testing01}<br/>
+<a href="#Output-5599737" onClick='toggleBox("Output-5599737", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5599737" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5599737">
+<<<*** END: Support.TS32_Validate_VoiceSupport_InternationalCallingLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS32_Validate_VoiceSupport_InternationalCallingLink, Took 54 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS33_Validate_VoiceSupport_TroubleshootingLink()'><b>TS33_Validate_VoiceSupport_TroubleshootingLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS33_Validate_VoiceSupport_TroubleshootingLink, UserPassword=Testing01}<br/>
+<a href="#Output-17054232" onClick='toggleBox("Output-17054232", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17054232" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17054232">
+<<<*** END: Support.TS33_Validate_VoiceSupport_TroubleshootingLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS33_Validate_VoiceSupport_TroubleshootingLink, Took 45 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS34_Validate_MyAccountSupportPage_AskCharterWidget_HOHUser()'><b>TS34_Validate_MyAccountSupportPage_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e5020, TestCaseId=TS34_Validate_MyAccountSupportPage_AskCharterWidget_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-29810208" onClick='toggleBox("Output-29810208", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29810208" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29810208">
+<<<*** END: Support.TS34_Validate_MyAccountSupportPage_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS34_Validate_MyAccountSupportPage_AskCharterWidget_HOHUser, Took 377 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>377</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS35_Validate_MyAccountSupport_MyAccountLink()'><b>TS35_Validate_MyAccountSupport_MyAccountLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS35_Validate_MyAccountSupport_MyAccountLink, UserPassword=Testing01}<br/>
+<a href="#Output-32570793" onClick='toggleBox("Output-32570793", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32570793" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32570793">
+<<<*** END: Support.TS35_Validate_MyAccountSupport_MyAccountLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS35_Validate_MyAccountSupport_MyAccountLink, Took 81 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>81</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TS36_Validate_MyAccountSupport_BillingLink()'><b>TS36_Validate_MyAccountSupport_BillingLink</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TS36_Validate_MyAccountSupport_BillingLink, UserPassword=Testing01}<br/>
+<a href="#Output-23836996" onClick='toggleBox("Output-23836996", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-23836996" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-23836996">
+<<<*** END: Support.TS36_Validate_MyAccountSupport_BillingLink ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TS36_Validate_MyAccountSupport_BillingLink, Took 53 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TV37_Validate_SupportOverview_Search()'><b>TV37_Validate_SupportOverview_Search</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TV37_Validate_SupportOverview_Search, UserPassword=Testing01}<br/>
+<a href="#Output-25553625" onClick='toggleBox("Output-25553625", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25553625" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25553625">
+<<<*** END: Support.TV37_Validate_SupportOverview_Search ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TV37_Validate_SupportOverview_Search, Took 187 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>187</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TV38_Validate_SupportOverview_WatchOnline_SearchResults()'><b>TV38_Validate_SupportOverview_WatchOnline_SearchResults</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TV38_Validate_SupportOverview_WatchOnline_SearchResults, UserPassword=Testing01}<br/>
+<a href="#Output-33045996" onClick='toggleBox("Output-33045996", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-33045996" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-33045996">
+<<<*** END: Support.TV38_Validate_SupportOverview_WatchOnline_SearchResults ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TV38_Validate_SupportOverview_WatchOnline_SearchResults, Took 107 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>107</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TV39_Validate_SupportOverview_WatchOnTV_SearchResults()'><b>TV39_Validate_SupportOverview_WatchOnTV_SearchResults</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TV39_Validate_SupportOverview_WatchOnTV_SearchResults, UserPassword=Testing01}<br/>
+<a href="#Output-917439" onClick='toggleBox("Output-917439", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-917439" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-917439">
+<<<*** END: Support.TV39_Validate_SupportOverview_WatchOnTV_SearchResults ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TV39_Validate_SupportOverview_WatchOnTV_SearchResults, Took 158 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>158</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TV40_Validate_SupportOverview_Support_SearchResults()'><b>TV40_Validate_SupportOverview_Support_SearchResults</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TV40_Validate_SupportOverview_Support_SearchResults, UserPassword=Testing01}<br/>
+<a href="#Output-19858638" onClick='toggleBox("Output-19858638", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19858638" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19858638">
+<<<*** END: Support.TV40_Validate_SupportOverview_Support_SearchResults ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TV40_Validate_SupportOverview_Support_SearchResults, Took 108 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>108</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+<tr>
+<td title='com.charter.test.Support.TV41_Validate_SupportOverview_Google_SearchResults()'><b>TV41_Validate_SupportOverview_Google_SearchResults</b><br>Test class: com.charter.test.Support<br>Parameters: {UserID1=, UserID=e2e224, TestCaseId=TV41_Validate_SupportOverview_Google_SearchResults, UserPassword=Testing01}<br/>
+<a href="#Output-29124972" onClick='toggleBox("Output-29124972", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29124972" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29124972">
+<<<*** END: Support.TV41_Validate_SupportOverview_Google_SearchResults ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Support.TV41_Validate_SupportOverview_Google_SearchResults, Took 124 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>124</td>
+<td>com.charter.test.Support@19177b9</td></tr>
+</table><p>
+</body>
+</html>

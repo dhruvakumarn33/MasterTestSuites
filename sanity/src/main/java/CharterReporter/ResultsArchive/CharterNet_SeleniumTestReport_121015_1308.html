@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Chater.Net Test Report</title>
+<style type="text/css">
+table {background-color: #CEF6CE; margin-bottom:10px; border: 1px solid black; border-collapse:collapse; font-family: 'Arial'; font-size: 14px}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:65%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body bgcolor=#E0F8E0><h2 align='center'>Charter.Net Selenium Test Report</h2></br>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Module</th><th>Total</th><th>Pass</th><th>Fail</th><th>Skipped</th><th>Total Time(Mins)</th></tr><tr><td style="text-align:left;padding-right:2em">Stage</td><td class="numi">67</td><td class="numi">64</td><td class="numi_attn">3</td><td class="numi">0</td><td class="numi">81.3</td></tr>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script><script type='text/javascript'>
+google.load('visualization', '1', {packages:['corechart']});google.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([['Result', 'Count'],['Pass',64],['Fail',3],['Skip',0]]);
+var options = {title: 'Test Results Graph', is3D: true, backgroundColor: '#CEF6CE', chartArea: {width:'80%',height:'80%'}, colors: ['green', 'red', 'yellow']};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);}</script>
+<tr><td colspan='6' id='piechart' style='width: 200px; height: 200px'></td></tr>
+<tr><td>Browser</td><td colspan='5'>Mozilla Firefox</td></tr>
+<tr><td>Date</td><td colspan='5'>12-Oct-2015</td></tr>
+<tr><td>Timezone</td><td colspan='5'>India Standard Time</td></tr>
+<tr><td colspan='6' align='right'><a href='FAQ.txt'>FAQ</a> and <a href='readme.txt'>Readme.txt</a></td></tr></table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Sl No.</th><th>Module</th><th>Scenario</th><th>Test Result</th><th>Validation Remarks</th><th>Date/Time</th><th>Time (Sec)</th></tr>
+<tr id="t1"><th colspan="7">Stage: Failed</th></tr>
+<tr><td>1</td><td>Billpay</td><td>TB01_Validate_OTPSchedule_ByDebitCard_HOHUser</td>
+<td bgcolor='red', align='center'>Fail</td><td>Unable to locate element: {"method":"xpath","selector":"//a[contains(@href, '/payment/')]"}
+Command duration or timeout: 240.04 seconds
+</td><td align='center'>13:49:29</td><td align='center'>302</td></tr><tr><td>2</td><td>Billpay</td><td>TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser</td>
+<td bgcolor='red', align='center'>Fail</td><td>Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 242.07 seconds
+</td><td align='center'>14:01:38</td><td align='center'>316</td></tr><tr><td>3</td><td>CharterDotCom</td><td>TE06_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_Business_Customers_Link_inLoginpage</td>
+<td bgcolor='red', align='center'>Fail</td><td>Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/main/div/div/div[1]/div/div/div[2]/div/a"}
+Command duration or timeout: 20.09 seconds
+</td><td align='center'>13:21:51</td><td align='center'>49</td></tr><tr><th colspan="7">Stage: Passed</th></tr>
+<tr><td>1</td><td>ForgotUsername</td><td>TA051_Validate_ForgotUsername_Non_Converted_CharterID</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:13:17</td><td align='center'>119</td></tr><tr><td>2</td><td>ForgotUsername</td><td>TA20_Validate_RetrievingChaterID_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:15:23</td><td align='center'>85</td></tr><tr><td>3</td><td>ForgotUsername</td><td>TA21_Validate_RetrievingChaterID_AdminUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:16:58</td><td align='center'>33</td></tr><tr><td>4</td><td>ForgotUsername</td><td>TA22_Validate_RetrievingChaterID_StandardUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:17:39</td><td align='center'>35</td></tr><tr><td>5</td><td>ForgotPassword</td><td>TA35_Validate_RetrievingPassword_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:10:06</td><td align='center'>35</td></tr><tr><td>6</td><td>ForgotPassword</td><td>TA37_Validate_RetrievingPassword_AdminUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:10:52</td><td align='center'>35</td></tr><tr><td>7</td><td>ForgotPassword</td><td>TA38_Validate_RetrievingPassword_StandardUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:11:43</td><td align='center'>35</td></tr><tr><td>8</td><td>ForgotUsername</td><td>TA50_Validate_ForgotUsername_Non_Converted_MS_Login</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:12:29</td><td align='center'>40</td></tr><tr><td>9</td><td>ForgotPassword</td><td>TA52_Validate_ForgotPassword_Non_Converted_MS_Login</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:09:04</td><td align='center'>47</td></tr><tr><td>10</td><td>Billpay</td><td>TB02_Validate_OTPSchedule_ByCreditCard_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:54:39</td><td align='center'>91</td></tr><tr><td>11</td><td>Billpay</td><td>TB06_Validate_OTPayment_ByCreditCard_AdminUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:56:16</td><td align='center'>153</td></tr><tr><td>12</td><td>Billpay</td><td>TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:58:57</td><td align='center'>71</td></tr><tr><td>13</td><td>Billpay</td><td>TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:00:17</td><td align='center'>74</td></tr><tr><td>14</td><td>Billpay</td><td>TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:07:02</td><td align='center'>90</td></tr><tr><td>15</td><td>Billpay</td><td>TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:08:39</td><td align='center'>79</td></tr><tr><td>16</td><td>Billpay</td><td>TB16_Validate_ModifyOTPayment_ByCreditCard_VerificationPage</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:10:05</td><td align='center'>73</td></tr><tr><td>17</td><td>Billpay</td><td>TB19_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:11:28</td><td align='center'>58</td></tr><tr><td>18</td><td>Billpay</td><td>TB20_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_AdminUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:12:34</td><td align='center'>58</td></tr><tr><td>19</td><td>Billpay</td><td>TB24_Validate_ViewImportantBillMessagesLink_NavigateTo_BillMessagesPage_AdminUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:13:39</td><td align='center'>50</td></tr><tr><td>20</td><td>Billpay</td><td>TB26_Validate_UpcomingPaymentsLink_NavigateTo_UpcomingPaymentsPage_AdminUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:14:40</td><td align='center'>40</td></tr><tr><td>21</td><td>Billpay</td><td>TB29_Validate_Duplicate_OTP_Message_ByDebitCard</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:15:34</td><td align='center'>91</td></tr><tr><td>22</td><td>MyAccount</td><td>TC01_Validate_OverviewPageHeaders_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:23:11</td><td align='center'>50</td></tr><tr><td>23</td><td>MyAccount</td><td>TC02_Validate_BillingandTransactionSection_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:24:10</td><td align='center'>45</td></tr><tr><td>24</td><td>MyAccount</td><td>TC03_Validate_AskCharterWidget_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:25:02</td><td align='center'>45</td></tr><tr><td>25</td><td>MyAccount</td><td>TC13_Validate_OverviewPage_AvatarImagesViewProfile_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:25:55</td><td align='center'>47</td></tr><tr><td>26</td><td>MyAccount</td><td>TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:26:50</td><td align='center'>50</td></tr><tr><td>27</td><td>MyAccount</td><td>TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:27:51</td><td align='center'>39</td></tr><tr><td>28</td><td>MyAccount</td><td>TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:28:38</td><td align='center'>39</td></tr><tr><td>29</td><td>MyAccount</td><td>TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:17:12</td><td align='center'>55</td></tr><tr><td>30</td><td>MyAccount</td><td>TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:18:16</td><td align='center'>44</td></tr><tr><td>31</td><td>MyAccount</td><td>TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:19:07</td><td align='center'>36</td></tr><tr><td>32</td><td>MyAccount</td><td>TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:19:51</td><td align='center'>46</td></tr><tr><td>33</td><td>MyAccount</td><td>TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:20:46</td><td align='center'>38</td></tr><tr><td>34</td><td>MyAccount</td><td>TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:21:32</td><td align='center'>40</td></tr><tr><td>35</td><td>MyAccount</td><td>TC57_Validate_VoiceServicesPage_AskCharterWidget_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:22:19</td><td align='center'>43</td></tr><tr><td>36</td><td>MyServices</td><td>TD03_Validate_MyServicesPage_TVNonSubscribedUser_AbleToView_BannerAndSupportVideo</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:37:21</td><td align='center'>69</td></tr><tr><td>37</td><td>MyServices</td><td>TD06_Validate_MyServices_TV_Page_UpdateNickname</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:38:39</td><td align='center'>63</td></tr><tr><td>38</td><td>MyServices</td><td>TD13_Validate_MyServicesPage_InternetNonSubscribedUser_AbleToView_BannerAndSupportVideo</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:39:51</td><td align='center'>100</td></tr><tr><td>39</td><td>MyServices</td><td>TD14_Validate_MyServicesPage_ChaterEmail_NavigateTo_EmailInbox</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:41:41</td><td align='center'>64</td></tr><tr><td>40</td><td>MyServices</td><td>TD16_Validate_MyservicesPage_SecuritySuite_NavigateTo_ChaterSecuritySuite</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:42:55</td><td align='center'>74</td></tr><tr><td>41</td><td>MyServices</td><td>TD22_Validate_MyServicesPage_VoiceNonSubscribedUser_AbleToView_BannerAndSupportVideo</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:44:21</td><td align='center'>78</td></tr><tr><td>42</td><td>MyServices</td><td>TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:45:48</td><td align='center'>51</td></tr><tr><td>43</td><td>MyServices</td><td>TD25_Validate_MyServicesPage_LinksWithLogin</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:47:00</td><td align='center'>83</td></tr><tr><td>44</td><td>MyServices</td><td>TD26_Validate_MyServicesPage_LinksWithOutLogin</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:48:35</td><td align='center'>46</td></tr><tr><td>45</td><td>CharterDotCom</td><td>TE01_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_CreateIDbutton_inLoginpage</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:18:23</td><td align='center'>80</td></tr><tr><td>46</td><td>CharterDotCom</td><td>TE02_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_ForgotUsername_Link_inLoginpage</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:19:50</td><td align='center'>32</td></tr><tr><td>47</td><td>CharterDotCom</td><td>TE03_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_ForgotPassword_Link_inLoginpage</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:20:28</td><td align='center'>34</td></tr><tr><td>48</td><td>CharterDotCom</td><td>TE05_Validate_CharterDotCom_LoginOption</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:21:10</td><td align='center'>35</td></tr><tr><td>49</td><td>Home</td><td>TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:22:47</td><td align='center'>34</td></tr><tr><td>50</td><td>Home</td><td>TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:23:31</td><td align='center'>42</td></tr><tr><td>51</td><td>Home</td><td>TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:24:20</td><td align='center'>43</td></tr><tr><td>52</td><td>Home</td><td>TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:25:10</td><td align='center'>33</td></tr><tr><td>53</td><td>Home</td><td>TH07_Validate_WatchAnywhere_LiveTVTab_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:25:48</td><td align='center'>24</td></tr><tr><td>54</td><td>Home</td><td>TH08_Validate_WatchAnywhere_OnDemandTab_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:26:19</td><td align='center'>46</td></tr><tr><td>55</td><td>Home</td><td>TH09_Validate_WatchAnywhere_NetworkTab_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:27:17</td><td align='center'>146</td></tr><tr><td>56</td><td>Home</td><td>TH12_Validate_HomePage_EmailIcon_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:29:50</td><td align='center'>157</td></tr><tr><td>57</td><td>Home</td><td>TH13_Validate_HomePage_VoicemailIcon_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:32:36</td><td align='center'>38</td></tr><tr><td>58</td><td>Home</td><td>TH17_Validate_WatchTV_NavigateTo_WatchTVOverviewPage_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:33:21</td><td align='center'>32</td></tr><tr><td>59</td><td>Home</td><td>TH18_Validate_MyAccount_NavigateTo_OverviewPage_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:34:00</td><td align='center'>82</td></tr><tr><td>60</td><td>Home</td><td>TH19_Validate_Support_NavigateTo_SupportPage_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:35:30</td><td align='center'>30</td></tr><tr><td>61</td><td>Home</td><td>TH20_Validate_HomePage_StaticBanner_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:36:08</td><td align='center'>54</td></tr><tr><td>62</td><td>Home</td><td>TH22_Validate_HomePage_Without_Login</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:37:09</td><td align='center'>8</td></tr><tr><td>63</td><td>Login</td><td>TL01_Validate_ChaterValidLogin</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:29:25</td><td align='center'>26</td></tr><tr><td>64</td><td>Login</td><td>TL02_Validate_ChaterInvalidLogin</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:29:55</td><td align='center'>22</td></tr></table>
+</body></html>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Charter - Suite]">
+  <listeners>
+    <listener class-name="com.cognizant.framework.listeners.WebTestListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="com.cognizant.framework.listeners.AdvancedListener"/>
+    <listener class-name="CharterReporter.TestNGReporter"/>
+  </listeners>
+  <test name="Stage(failed)">
+    <classes>
+      <class name="com.charter.test.ForgotPassword">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testSetup"/>
+          <include name="suiteConfig"/>
+          <include name="TA35_Validate_RetrievingPassword_HOHuser" invocation-numbers="0"/>
+          <include name="postTestCase"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.charter.test.ForgotPassword -->
+      <class name="com.charter.test.Home">
+        <methods>
+          <include name="TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser" invocation-numbers="0"/>
+          <include name="testSetup"/>
+          <include name="TH18_Validate_MyAccount_NavigateTo_OverviewPage_HOHUser" invocation-numbers="0"/>
+          <include name="postTestCase"/>
+        </methods>
+      </class> <!-- com.charter.test.Home -->
+      <class name="com.charter.test.ForgotUsername">
+        <methods>
+          <include name="testSetup"/>
+          <include name="postTestCase"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.charter.test.ForgotUsername -->
+      <class name="com.charter.test.MyServices">
+        <methods>
+          <include name="testSetup"/>
+          <include name="afterMethod"/>
+          <include name="postTestCase"/>
+        </methods>
+      </class> <!-- com.charter.test.MyServices -->
+      <class name="com.charter.test.Login">
+        <methods>
+          <include name="TL01_Validate_ChaterValidLogin" invocation-numbers="0"/>
+          <include name="testSetup"/>
+          <include name="postTestCase"/>
+        </methods>
+      </class> <!-- com.charter.test.Login -->
+      <class name="com.charter.test.CharterDotCom">
+        <methods>
+          <include name="testSetup"/>
+          <include name="afterMethod"/>
+          <include name="TE06_Validate_Navigation_from_charterDotCom_with_Login_option_and_Verify_Business_Customers_Link_inLoginpage" invocation-numbers="0"/>
+          <include name="postTestCase"/>
+        </methods>
+      </class> <!-- com.charter.test.CharterDotCom -->
+      <class name="com.charter.test.MyAccount">
+        <methods>
+          <include name="testSetup"/>
+          <include name="postTestCase"/>
+        </methods>
+      </class> <!-- com.charter.test.MyAccount -->
+    </classes>
+  </test> <!-- Stage(failed) -->
+</suite> <!-- Failed suite [Charter - Suite] -->
