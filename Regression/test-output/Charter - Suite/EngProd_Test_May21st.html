@@ -1,0 +1,1062 @@
+<html>
+<head>
+<title>TestNG:  EngProd_Test_May21st</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>EngProd_Test_May21st</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>33/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 21 16:17:19 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>6175 seconds (6175550 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices()'><b>TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, SelectDate=, hohuser=, mac_fID=, TestCaseId=TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices, charterID=, Account_Type=, password=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, security_answer=, Mobilephone=, CharterID_fp=, UserID=e2e5020, lastname=, firstname_CID=, Zipcode=, ACnumber=, security_question=, Account_pom=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, UserID1=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-5525932" onClick='toggleBox("Output-5525932", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5525932" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5525932">
+<<<*** END: MyAccount.TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.MyAccount.TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices, Took 317 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices-1-21May15_042550.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices-1-21May15_042550.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 248.45 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Session ID: 96b1b192-982a-41c4-9975-7b6ff5c888f1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:267)
+	at com.charter.test.MyAccount.TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices(MyAccount.java:311)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:8953)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/393859/AppData/Local/Temp/anonymous6845350832242849839webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:8546)
+	at &lt;anonymous class&gt;.WebElement.isElementDisplayed(file:///C:/Users/393859/AppData/Local/Temp/anonymous6845350832242849839webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11789)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/393859/AppData/Local/Temp/anonymous6845350832242849839webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous6845350832242849839webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:603)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5525932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5525932'><pre>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 248.45 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Session ID: 96b1b192-982a-41c4-9975-7b6ff5c888f1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:267)
+	at com.charter.test.MyAccount.TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices(MyAccount.java:311)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:8953)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/393859/AppData/Local/Temp/anonymous6845350832242849839webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:8546)
+	at &lt;anonymous class&gt;.WebElement.isElementDisplayed(file:///C:/Users/393859/AppData/Local/Temp/anonymous6845350832242849839webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11789)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/393859/AppData/Local/Temp/anonymous6845350832242849839webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous6845350832242849839webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:603)
+</pre></div></td>
+<td>317</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail()'><b>TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5020, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-2015422" onClick='toggleBox("Output-2015422", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2015422" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2015422">
+<<<*** END: MyAccount.TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.MyAccount.TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail, Took 272 seconds<br/><br/>
+Unable to capture the screenshotCould not take screenshot of current page - TypeError: d.style is undefined
+Command duration or timeout: 240.13 seconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'PC220578', ip: '10.102.6.129', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_21'
+Session ID: 96734a30-6844-441a-9ba0-0baaeafe794c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]<br/><br/>
+Source must not be null<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail-1-21May15_043433.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail-1-21May15_043433.png' height='50' width='50'/><br></a><br/>
+Unable to capture the screenshotCould not take screenshot of current page - TypeError: d.style is undefined
+Command duration or timeout: 240.08 seconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'PC220578', ip: '10.102.6.129', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_21'
+Session ID: 96734a30-6844-441a-9ba0-0baaeafe794c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]<br/><br/>
+Source must not be null<br/><br/>
+The data "null" is not legal for a JDOM attribute: A null is not a legal XML value.<br/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.linkText: Policies
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Session ID: 96734a30-6844-441a-9ba0-0baaeafe794c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.charter.page.HomePage.pagewait(HomePage.java:92)
+	at com.charter.page.MyAccountPage.loadOverviewPage(MyAccountPage.java:59)
+	at com.charter.test.MyAccount.TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail(MyAccount.java:349)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Policies&quot;}
+Command duration or timeout: 241.20 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+*** Element info: {Using=link text, value=Policies}
+Session ID: 96734a30-6844-441a-9ba0-0baaeafe794c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Policies&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/393859/AppData/Local/Temp/anonymous8011884706675283682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous8011884706675283682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2015422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2015422'><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.linkText: Policies
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Session ID: 96734a30-6844-441a-9ba0-0baaeafe794c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.charter.page.HomePage.pagewait(HomePage.java:92)
+	at com.charter.page.MyAccountPage.loadOverviewPage(MyAccountPage.java:59)
+	at com.charter.test.MyAccount.TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail(MyAccount.java:349)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Policies&quot;}
+Command duration or timeout: 241.20 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+*** Element info: {Using=link text, value=Policies}
+Session ID: 96734a30-6844-441a-9ba0-0baaeafe794c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Policies&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/393859/AppData/Local/Temp/anonymous8011884706675283682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous8011884706675283682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>272</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks()'><b>TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5020, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-3572415" onClick='toggleBox("Output-3572415", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3572415" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3572415">
+<<<*** END: MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks, Took 1967 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks-1-21May15_052111.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks-1-21May15_052111.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Voice Services Headers are -Not Present -Failed expected [true] but found [false]
+	at com.charter.test.MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks(MyAccount.java:1147)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3572415", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3572415'><pre>java.lang.AssertionError: Voice Services Headers are -Not Present -Failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.charter.test.MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks(MyAccount.java:1147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>1967</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD13_Validate_MyServicesPage_InternetNonSubscribedUser_AbleToView_BannerAndSupportVideo()'><b>TD13_Validate_MyServicesPage_InternetNonSubscribedUser_AbleToView_BannerAndSupportVideo</b><br>Test class: com.charter.test.MyServices<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TD13_Validate_MyServicesPage_InternetNonSubscribedUser_AbleToView_BannerAndSupportVideo, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5004, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-20879615" onClick='toggleBox("Output-20879615", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20879615" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20879615">
+<<<*** END: MyServices.TD13_Validate_MyServicesPage_InternetNonSubscribedUser_AbleToView_BannerAndSupportVideo ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.MyServices.TD13_Validate_MyServicesPage_InternetNonSubscribedUser_AbleToView_BannerAndSupportVideo, Took 297 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TD13_Validate_MyServicesPage_InternetNonSubscribedUser_AbleToView_BannerAndSupportVideo-1-21May15_052950.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TD13_Validate_MyServicesPage_InternetNonSubscribedUser_AbleToView_BannerAndSupportVideo-1-21May15_052950.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.linkText: Policies
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Session ID: 322c3539-cd15-4aa1-a8d2-a85d1a60baa9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.charter.page.HomePage.pagewait(HomePage.java:92)
+	at com.charter.page.HomePage.loadCharterPage(HomePage.java:83)
+	at com.charter.test.MyServices.TD13_Validate_MyServicesPage_InternetNonSubscribedUser_AbleToView_BannerAndSupportVideo(MyServices.java:279)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Policies&quot;}
+Command duration or timeout: 240.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+*** Element info: {Using=link text, value=Policies}
+Session ID: 322c3539-cd15-4aa1-a8d2-a85d1a60baa9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Policies&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/393859/AppData/Local/Temp/anonymous5727637220132649720webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous5727637220132649720webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20879615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20879615'><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.linkText: Policies
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Session ID: 322c3539-cd15-4aa1-a8d2-a85d1a60baa9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.charter.page.HomePage.pagewait(HomePage.java:92)
+	at com.charter.page.HomePage.loadCharterPage(HomePage.java:83)
+	at com.charter.test.MyServices.TD13_Validate_MyServicesPage_InternetNonSubscribedUser_AbleToView_BannerAndSupportVideo(MyServices.java:279)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Policies&quot;}
+Command duration or timeout: 240.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+*** Element info: {Using=link text, value=Policies}
+Session ID: 322c3539-cd15-4aa1-a8d2-a85d1a60baa9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Policies&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/393859/AppData/Local/Temp/anonymous5727637220132649720webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous5727637220132649720webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>297</td>
+<td>com.charter.test.MyServices@1a97149</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser()'><b>TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5002, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-2319870" onClick='toggleBox("Output-2319870", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2319870" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2319870">
+<<<*** END: Home.TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Home.TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser, Took 271 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser-1-21May15_054605.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser-1-21May15_054605.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;// button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)]&quot;}
+Command duration or timeout: 240.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+*** Element info: {Using=xpath, value=// button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)]}
+Session ID: a635f74f-09af-4820-8c53-d5c9ef4333a6
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:267)
+	at com.charter.test.Home.TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser(Home.java:116)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;// button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/393859/AppData/Local/Temp/anonymous6173845517166206867webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous6173845517166206867webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2319870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2319870'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;// button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)]&quot;}
+Command duration or timeout: 240.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+*** Element info: {Using=xpath, value=// button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)]}
+Session ID: a635f74f-09af-4820-8c53-d5c9ef4333a6
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:267)
+	at com.charter.test.Home.TH06_Validate_FindACharterStoreLink_NavigateTo_LocationPage_HOHuser(Home.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;// button[contains(@id,&apos;logout&apos;) and contains(text(),&apos;Sign Out&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/393859/AppData/Local/Temp/anonymous6173845517166206867webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous6173845517166206867webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>271</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.Login.TA48_Validate_ChaterValidLogin()'><b>TA48_Validate_ChaterValidLogin</b><br>Test class: com.charter.test.Login<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TA48_Validate_ChaterValidLogin, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, Statement=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=tdr33001, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-11229828" onClick='toggleBox("Output-11229828", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11229828" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11229828">
+<<<*** END: Login.TA48_Validate_ChaterValidLogin ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Login.TA48_Validate_ChaterValidLogin, Took 47 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.charter.test.Login@1a6a354</td></tr>
+<tr>
+<td title='com.charter.test.Login.TA49_Validate_ChaterInvalidLogin()'><b>TA49_Validate_ChaterInvalidLogin</b><br>Test class: com.charter.test.Login<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TA49_Validate_ChaterInvalidLogin, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, Statement=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=fef, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=feff, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-11351082" onClick='toggleBox("Output-11351082", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11351082" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11351082">
+<<<*** END: Login.TA49_Validate_ChaterInvalidLogin ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Login.TA49_Validate_ChaterInvalidLogin, Took 23 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.charter.test.Login@1a6a354</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC01_Validate_OverviewPageHeaders_HOHUser()'><b>TC01_Validate_OverviewPageHeaders_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {UserID1=, UserID=e2e5020, TestCaseId=TC01_Validate_OverviewPageHeaders_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-20555821" onClick='toggleBox("Output-20555821", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20555821" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20555821">
+Expected value: Billing Actual value: Billing - PASSED : BTSection<br/><br/>
+Expected value: Services and Equipment Actual value: Services and Equipment - PASSED : SE Section<br/><br/>
+Expected value: Settings Actual value: Settings - PASSED : UP Section<br/><br/>
+Expected value: Service Actual value: Service - PASSED : Service Address Label<br/><br/>
+Expected value: Billing Address: Actual value: Billing Address: - PASSED : Billing Address Label<br/><br/>
+<<<*** END: MyAccount.TC01_Validate_OverviewPageHeaders_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC01_Validate_OverviewPageHeaders_HOHUser, Took 54 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC02_Validate_BillingandTransactionSection_HOHUser()'><b>TC02_Validate_BillingandTransactionSection_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {UserID1=, UserID=e2e5016, TestCaseId=TC02_Validate_BillingandTransactionSection_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-19444224" onClick='toggleBox("Output-19444224", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19444224" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19444224">
+<<<*** END: MyAccount.TC02_Validate_BillingandTransactionSection_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC02_Validate_BillingandTransactionSection_HOHUser, Took 50 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC03_Validate_AskCharterWidget_HOHUser()'><b>TC03_Validate_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {invalidLastname=, SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, lastname=, UserID=e2e5023, TestCaseId=TC03_Validate_AskCharterWidget_HOHUser, firstname_CID=, ACnumber=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-19805994" onClick='toggleBox("Output-19805994", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19805994" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19805994">
+<<<*** END: MyAccount.TC03_Validate_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC03_Validate_AskCharterWidget_HOHUser, Took 49 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser()'><b>TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, SelectDate=, hohuser=, mac_fID=, TestCaseId=TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser, charterID=, password=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, ParentalControl_Unratedcontent=, invalidLastname=, security_answer=, Mobilephone=, CharterID_fp=, UserID=e2e224, lastname=, firstname_CID=, Zipcode=, ACnumber=, security_question=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, UserID1=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-191613" onClick='toggleBox("Output-191613", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-191613" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-191613">
+<<<*** END: MyAccount.TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser, Took 281 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>281</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser()'><b>TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {invalidLastname=, SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, lastname=, UserID=e2e5020, TestCaseId=TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser, firstname_CID=, ACnumber=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-3633613" onClick='toggleBox("Output-3633613", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3633613" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3633613">
+<<<*** END: MyAccount.TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser, Took 49 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser()'><b>TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {invalidLastname=, SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, lastname=, UserID=e2e5020, TestCaseId=TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser, firstname_CID=, ACnumber=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-16305947" onClick='toggleBox("Output-16305947", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16305947" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16305947">
+<<<*** END: MyAccount.TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser, Took 47 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser()'><b>TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {invalidLastname=, SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, lastname=, UserID=e2e5020, TestCaseId=TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser, firstname_CID=, ACnumber=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-11118407" onClick='toggleBox("Output-11118407", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11118407" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11118407">
+<<<*** END: MyAccount.TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser, Took 47 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser()'><b>TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e237, TestCaseId=TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-10497705" onClick='toggleBox("Output-10497705", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10497705" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10497705">
+<<<*** END: MyAccount.TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser, Took 40 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser()'><b>TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e5023, TestCaseId=TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-3602368" onClick='toggleBox("Output-3602368", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3602368" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3602368">
+<<<*** END: MyAccount.TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser, Took 52 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>52</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC57_Validate_VoiceServicesPage_AskCharterWidget_HOHUser()'><b>TC57_Validate_VoiceServicesPage_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TC57_Validate_VoiceServicesPage_AskCharterWidget_HOHUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, Statement=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5023, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-1567646" onClick='toggleBox("Output-1567646", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1567646" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1567646">
+<<<*** END: MyAccount.TC57_Validate_VoiceServicesPage_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC57_Validate_VoiceServicesPage_AskCharterWidget_HOHUser, Took 72 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>72</td>
+<td>com.charter.test.MyAccount@134cd7b</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD03_Validate_MyServicesPage_TVNonSubscribedUser_AbleToView_BannerAndSupportVideo()'><b>TD03_Validate_MyServicesPage_TVNonSubscribedUser_AbleToView_BannerAndSupportVideo</b><br>Test class: com.charter.test.MyServices<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TD03_Validate_MyServicesPage_TVNonSubscribedUser_AbleToView_BannerAndSupportVideo, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5002, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-2361923" onClick='toggleBox("Output-2361923", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2361923" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2361923">
+<<<*** END: MyServices.TD03_Validate_MyServicesPage_TVNonSubscribedUser_AbleToView_BannerAndSupportVideo ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD03_Validate_MyServicesPage_TVNonSubscribedUser_AbleToView_BannerAndSupportVideo, Took 60 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>60</td>
+<td>com.charter.test.MyServices@1a97149</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD06_Validate_MyServices_TV_Page_UpdateNickname()'><b>TD06_Validate_MyServices_TV_Page_UpdateNickname</b><br>Test class: com.charter.test.MyServices<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TD06_Validate_MyServices_TV_Page_UpdateNickname, charterID=, Devicenickname=STP143, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5023, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-32539012" onClick='toggleBox("Output-32539012", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32539012" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32539012">
+Expected value: STP143 Actual value: STP143 - PASSED : Nick name is not updated in the tv services page<br/><br/>
+<<<*** END: MyServices.TD06_Validate_MyServices_TV_Page_UpdateNickname ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD06_Validate_MyServices_TV_Page_UpdateNickname, Took 51 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>com.charter.test.MyServices@1a97149</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD14_Validate_MyServicesPage_ChaterEmail_NavigateTo_EmailInbox()'><b>TD14_Validate_MyServicesPage_ChaterEmail_NavigateTo_EmailInbox</b><br>Test class: com.charter.test.MyServices<br>Parameters: {SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, UserID=e2e5002, TestCaseId=TD14_Validate_MyServicesPage_ChaterEmail_NavigateTo_EmailInbox, firstname_CID=, ACnumber=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, ExpDate=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-6605858" onClick='toggleBox("Output-6605858", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6605858" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6605858">
+<<<*** END: MyServices.TD14_Validate_MyServicesPage_ChaterEmail_NavigateTo_EmailInbox ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD14_Validate_MyServicesPage_ChaterEmail_NavigateTo_EmailInbox, Took 71 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>71</td>
+<td>com.charter.test.MyServices@1a97149</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD16_Validate_MyservicesPage_SecuritySuite_NavigateTo_ChaterSecuritySuite()'><b>TD16_Validate_MyservicesPage_SecuritySuite_NavigateTo_ChaterSecuritySuite</b><br>Test class: com.charter.test.MyServices<br>Parameters: {SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, UserID=e2e5002, TestCaseId=TD16_Validate_MyservicesPage_SecuritySuite_NavigateTo_ChaterSecuritySuite, firstname_CID=, ACnumber=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, ExpDate=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-30991082" onClick='toggleBox("Output-30991082", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30991082" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30991082">
+<<<*** END: MyServices.TD16_Validate_MyservicesPage_SecuritySuite_NavigateTo_ChaterSecuritySuite ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD16_Validate_MyservicesPage_SecuritySuite_NavigateTo_ChaterSecuritySuite, Took 44 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>com.charter.test.MyServices@1a97149</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD22_Validate_MyServicesPage_VoiceNonSubscribedUser_AbleToView_BannerAndSupportVideo()'><b>TD22_Validate_MyServicesPage_VoiceNonSubscribedUser_AbleToView_BannerAndSupportVideo</b><br>Test class: com.charter.test.MyServices<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TD22_Validate_MyServicesPage_VoiceNonSubscribedUser_AbleToView_BannerAndSupportVideo, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5002, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-769017" onClick='toggleBox("Output-769017", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-769017" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-769017">
+<<<*** END: MyServices.TD22_Validate_MyServicesPage_VoiceNonSubscribedUser_AbleToView_BannerAndSupportVideo ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD22_Validate_MyServicesPage_VoiceNonSubscribedUser_AbleToView_BannerAndSupportVideo, Took 53 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>com.charter.test.MyServices@1a97149</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage()'><b>TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage</b><br>Test class: com.charter.test.MyServices<br>Parameters: {SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, UserID=e2e5023, TestCaseId=TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage, firstname_CID=, ACnumber=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, ExpDate=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-18322198" onClick='toggleBox("Output-18322198", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18322198" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18322198">
+<<<*** END: MyServices.TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD23_Validate_MyServicesPage_CharterPhoneLink_NavigateTo_PhoneOnlineManagerPage, Took 46 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.charter.test.MyServices@1a97149</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD25_Validate_MyServicesPage_LinksWithLogin()'><b>TD25_Validate_MyServicesPage_LinksWithLogin</b><br>Test class: com.charter.test.MyServices<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TD25_Validate_MyServicesPage_LinksWithLogin, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5023, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-6137824" onClick='toggleBox("Output-6137824", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6137824" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6137824">
+<<<*** END: MyServices.TD25_Validate_MyServicesPage_LinksWithLogin ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD25_Validate_MyServicesPage_LinksWithLogin, Took 57 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>com.charter.test.MyServices@1a97149</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD26_Validate_MyServicesPage_LinksWithOutLogin()'><b>TD26_Validate_MyServicesPage_LinksWithOutLogin</b><br>Test class: com.charter.test.MyServices<br/>
+<a href="#Output-17975741" onClick='toggleBox("Output-17975741", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17975741" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17975741">
+<<<*** END: MyServices.TD26_Validate_MyServicesPage_LinksWithOutLogin ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD26_Validate_MyServicesPage_LinksWithOutLogin, Took 173 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>173</td>
+<td>com.charter.test.MyServices@1a97149</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser()'><b>TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e224, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-24478569" onClick='toggleBox("Output-24478569", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24478569" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24478569">
+<<<*** END: Home.TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser, Took 42 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser()'><b>TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e224, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-6798458" onClick='toggleBox("Output-6798458", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6798458" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6798458">
+<<<*** END: Home.TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser, Took 58 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser()'><b>TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5004, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-4379536" onClick='toggleBox("Output-4379536", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4379536" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4379536">
+<<<*** END: Home.TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser, Took 50 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH07_Validate_WatchAnywhere_LiveTVTab_HOHuser()'><b>TH07_Validate_WatchAnywhere_LiveTVTab_HOHuser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH07_Validate_WatchAnywhere_LiveTVTab_HOHuser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5004, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-26387896" onClick='toggleBox("Output-26387896", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26387896" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26387896">
+Expected value: Watch Anywhere Actual value: Watch Anywhere - PASSED : Watch Anywhere Option for Live TV Tab<br/><br/>
+<<<*** END: Home.TH07_Validate_WatchAnywhere_LiveTVTab_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH07_Validate_WatchAnywhere_LiveTVTab_HOHuser, Took 41 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH08_Validate_WatchAnywhere_OnDemandTab_HOHuser()'><b>TH08_Validate_WatchAnywhere_OnDemandTab_HOHuser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH08_Validate_WatchAnywhere_OnDemandTab_HOHuser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5004, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-15009847" onClick='toggleBox("Output-15009847", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15009847" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15009847">
+Expected value: Watch Anywhere Actual value: Watch Anywhere - PASSED : Watch Anywhere Option for OnDemand Tab<br/><br/>
+<<<*** END: Home.TH08_Validate_WatchAnywhere_OnDemandTab_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH08_Validate_WatchAnywhere_OnDemandTab_HOHuser, Took 34 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH09_Validate_WatchAnywhere_NetworkTab_HOHuser()'><b>TH09_Validate_WatchAnywhere_NetworkTab_HOHuser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH09_Validate_WatchAnywhere_NetworkTab_HOHuser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5004, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-7019110" onClick='toggleBox("Output-7019110", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7019110" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7019110">
+Expected value: Watch Anywhere Actual value: Watch Anywhere - PASSED : Watch Anywhere Option for OnDemand Tab<br/><br/>
+<<<*** END: Home.TH09_Validate_WatchAnywhere_NetworkTab_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH09_Validate_WatchAnywhere_NetworkTab_HOHuser, Took 34 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH12_Validate_HomePage_EmailIcon_HOHuser()'><b>TH12_Validate_HomePage_EmailIcon_HOHuser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e5004, TestCaseId=TH12_Validate_HomePage_EmailIcon_HOHuser, UserPassword=Testing01}<br/>
+<a href="#Output-24669815" onClick='toggleBox("Output-24669815", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24669815" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24669815">
+<<<*** END: Home.TH12_Validate_HomePage_EmailIcon_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH12_Validate_HomePage_EmailIcon_HOHuser, Took 41 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH13_Validate_HomePage_VoicemailIcon_HOHuser()'><b>TH13_Validate_HomePage_VoicemailIcon_HOHuser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e5002, TestCaseId=TH13_Validate_HomePage_VoicemailIcon_HOHuser, UserPassword=Testing01}<br/>
+<a href="#Output-16981709" onClick='toggleBox("Output-16981709", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16981709" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16981709">
+<<<*** END: Home.TH13_Validate_HomePage_VoicemailIcon_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH13_Validate_HomePage_VoicemailIcon_HOHuser, Took 46 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH17_Validate_WatchTV_NavigateTo_WatchTVOverviewPage_HOHUser()'><b>TH17_Validate_WatchTV_NavigateTo_WatchTVOverviewPage_HOHUser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e5024, TestCaseId=TH17_Validate_WatchTV_NavigateTo_WatchTVOverviewPage_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-7528430" onClick='toggleBox("Output-7528430", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7528430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7528430">
+<<<*** END: Home.TH17_Validate_WatchTV_NavigateTo_WatchTVOverviewPage_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH17_Validate_WatchTV_NavigateTo_WatchTVOverviewPage_HOHUser, Took 108 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>108</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH18_Validate_MyAccount_NavigateTo_OverviewPage_HOHUser()'><b>TH18_Validate_MyAccount_NavigateTo_OverviewPage_HOHUser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e5024, TestCaseId=TH18_Validate_MyAccount_NavigateTo_OverviewPage_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-29957811" onClick='toggleBox("Output-29957811", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29957811" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29957811">
+<<<*** END: Home.TH18_Validate_MyAccount_NavigateTo_OverviewPage_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH18_Validate_MyAccount_NavigateTo_OverviewPage_HOHUser, Took 91 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>91</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH19_Validate_Support_NavigateTo_SupportPage_HOHUser()'><b>TH19_Validate_Support_NavigateTo_SupportPage_HOHUser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e5024, TestCaseId=TH19_Validate_Support_NavigateTo_SupportPage_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-9275388" onClick='toggleBox("Output-9275388", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9275388" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9275388">
+<<<*** END: Home.TH19_Validate_Support_NavigateTo_SupportPage_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH19_Validate_Support_NavigateTo_SupportPage_HOHUser, Took 154 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>154</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH20_Validate_HomePage_StaticBanner_HOHuser()'><b>TH20_Validate_HomePage_StaticBanner_HOHuser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e5004, TestCaseId=TH20_Validate_HomePage_StaticBanner_HOHuser, UserPassword=Testing01}<br/>
+<a href="#Output-27832509" onClick='toggleBox("Output-27832509", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27832509" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27832509">
+<<<*** END: Home.TH20_Validate_HomePage_StaticBanner_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH20_Validate_HomePage_StaticBanner_HOHuser, Took 32 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH22_Validate_HomePage_Without_Login()'><b>TH22_Validate_HomePage_Without_Login</b><br>Test class: com.charter.test.Home<br/>
+<a href="#Output-32378340" onClick='toggleBox("Output-32378340", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32378340" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32378340">
+<<<*** END: Home.TH22_Validate_HomePage_Without_Login ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH22_Validate_HomePage_Without_Login, Took 14 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.charter.test.Home@15ece16</td></tr>
+</table><p>
+</body>
+</html>

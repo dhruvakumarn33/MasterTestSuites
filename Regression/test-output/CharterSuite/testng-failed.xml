@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CharterSuite]">
+  <listeners>
+    <listener class-name="com.cognizant.framework.listeners.WebTestListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="com.cognizant.framework.listeners.AdvancedListener"/>
+    <listener class-name="CharterReporter.TestNGReporter"/>
+  </listeners>
+  <test name="Prod_Test_Aug10th2015(failed)">
+    <classes>
+      <class name="com.charter.test.CharterMail">
+        <methods>
+          <include name="TM13_Validate_Adding_NewAccountFunctionality" invocation-numbers="0"/>
+          <include name="testSetup"/>
+          <include name="suiteConfig"/>
+          <include name="postTestCase"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.charter.test.CharterMail -->
+    </classes>
+  </test> <!-- Prod_Test_Aug10th2015(failed) -->
+</suite> <!-- Failed suite [CharterSuite] -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Charter - Suite]">
+  <listeners>
+    <listener class-name="com.cognizant.framework.listeners.WebTestListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="com.cognizant.framework.listeners.AdvancedListener"/>
+    <listener class-name="CharterReporter.TestNGReporter"/>
+  </listeners>
+  <test name="Prod(failed)">
+    <classes>
+      <class name="com.charter.test.Login">
+        <methods>
+          <include name="TL05_Validate_Convert_StdUser_Check_HOHAdminLogin" invocation-numbers="0"/>
+          <include name="testSetup"/>
+          <include name="TL03_Validate_Non_ConvertedUser_UpdateUserPage" invocation-numbers="0"/>
+          <include name="TL07_Validate_Convert_twoUsers_SamePassword" invocation-numbers="0"/>
+          <include name="suiteConfig"/>
+          <include name="postTestCase"/>
+          <include name="afterMethod"/>
+          <include name="TL06_Validate_Convert_AdminUser_Check_HOHLogin" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword"/>
+          <include name="TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword"/>
+          <include name="TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID"/>
+          <include name="TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID"/>
+          <include name="TL23_Validate_Login_HardDisconnectedAccount"/>
+        </methods>
+      </class> <!-- com.charter.test.Login -->
+    </classes>
+  </test> <!-- Prod(failed) -->
+</suite> <!-- Failed suite [Charter - Suite] -->

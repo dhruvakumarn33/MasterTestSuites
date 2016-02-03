@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Chater.Net Test Report</title>
+<style type="text/css">
+table {background-color: #CEF6CE; margin-bottom:10px; border: 1px solid black; border-collapse:collapse; font-family: 'Arial'; font-size: 14px}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:65%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body bgcolor=#E0F8E0><h2 align='center'>Charter.Net Selenium Test Report</h2></br>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Module</th><th>Total</th><th>Pass</th><th>Fail</th><th>Skipped</th><th>Total Time(Mins)</th></tr><tr><td style="text-align:left;padding-right:2em">Prod</td><td class="numi">20</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">20</td><td class="numi">0.1</td></tr>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script><script type='text/javascript'>
+google.load('visualization', '1', {packages:['corechart']});google.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([['Result', 'Count'],['Pass',0],['Fail',20],['Skip',0]]);
+var options = {title: 'Test Results Graph', is3D: true, backgroundColor: '#CEF6CE', chartArea: {width:'80%',height:'80%'}, colors: ['green', 'red', 'yellow']};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);}</script>
+<tr><td colspan='6' id='piechart' style='width: 200px; height: 200px'></td></tr>
+<tr><td>Browser</td><td colspan='5'>MS Internet Explorer</td></tr>
+<tr><td>Date</td><td colspan='5'>18-Dec-2015</td></tr>
+<tr><td>Timezone</td><td colspan='5'>India Standard Time</td></tr>
+<tr><td colspan='6' align='right'><a href='FAQ.txt'>FAQ</a> and <a href='readme.txt'>Readme.txt</a></td></tr></table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Sl No.</th><th>Module</th><th>Scenario</th><th>Test Result</th><th>Validation Remarks</th><th>Date/Time</th><th>Time (Sec)</th></tr>
+<tr id="t1"><th colspan="7">Prod: Skipped</th></tr>
+<tr><td>1</td><td>Billpay</td><td>TB34_Validate_LastPayment_Details_HOH</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:46</td><td align='center'>0</td></tr><tr><td>2</td><td>Billpay</td><td>TB35_Validate_LastPayment_Details_admin</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:46</td><td align='center'>0</td></tr><tr><td>3</td><td>Billpay</td><td>TB36_Validate_NoLastPayment_Message_HOH</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:46</td><td align='center'>0</td></tr><tr><td>4</td><td>Billpay</td><td>TB38_Validate_Available_LastStatements_admin</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:46</td><td align='center'>0</td></tr><tr><td>5</td><td>Billpay</td><td>TB39_Validate_OTPSchedule_ByDebitCard_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:47</td><td align='center'>0</td></tr><tr><td>6</td><td>Billpay</td><td>TB40_Validate_OTPSchedule_ByCreditCard_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:47</td><td align='center'>0</td></tr><tr><td>7</td><td>Billpay</td><td>TB41_Validate_OTPSchedule_ByChecking_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:47</td><td align='center'>0</td></tr><tr><td>8</td><td>Billpay</td><td>TB42_Validate_AutoPaySetup_ByDebitCard_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:47</td><td align='center'>0</td></tr><tr><td>9</td><td>Billpay</td><td>TB43_Validate_AutoPaySetup_ByCreditCard_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:47</td><td align='center'>0</td></tr><tr><td>10</td><td>Billpay</td><td>TB44_Validate_AutoPaySetup_ByChecking_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:47</td><td align='center'>0</td></tr><tr><td>11</td><td>Billpay</td><td>TB45_Validate_OTP_ByChecking_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:47</td><td align='center'>0</td></tr><tr><td>12</td><td>Billpay</td><td>TB46_Validate_OTPayment_ByDebitCard_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:47</td><td align='center'>0</td></tr><tr><td>13</td><td>Billpay</td><td>TB47_Validate_OTPayment_ByCreditCard_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:47</td><td align='center'>0</td></tr><tr><td>14</td><td>Billpay</td><td>TB51_Validate_StatementSummary_NotificationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:47</td><td align='center'>0</td></tr><tr><td>15</td><td>Billpay</td><td>TB52_Validate_OTP_BySaving_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:48</td><td align='center'>0</td></tr><tr><td>16</td><td>Billpay</td><td>TB53_Validate_AutoPaySetup_BySaving_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:48</td><td align='center'>0</td></tr><tr><td>17</td><td>Billpay</td><td>TB54_Validate_OTPayment_ByDebitCard_PastDueAmount</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:48</td><td align='center'>0</td></tr><tr><td>18</td><td>Billpay</td><td>TB55_Validate_OTPayment_ByCreditCard_PastDueAmount</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:48</td><td align='center'>0</td></tr><tr><td>19</td><td>Billpay</td><td>TB56_Validate_OTPayment_ByChecking_PastDueAmount</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:48</td><td align='center'>0</td></tr><tr><td>20</td><td>Billpay</td><td>TB57_Validate_OTPayment_BySaving_PastDueAmount</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>10:00:48</td><td align='center'>0</td></tr></table>
+</body></html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Chater.Net Test Report</title>
+<style type="text/css">
+table {background-color: #CEF6CE; margin-bottom:10px; border: 1px solid black; border-collapse:collapse; font-family: 'Arial'; font-size: 14px}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:65%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body bgcolor=#E0F8E0><h2 align='center'>Charter.Net Selenium Test Report</h2></br>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Module</th><th>Total</th><th>Pass</th><th>Fail</th><th>Skipped</th><th>Total Time(Mins)</th></tr><tr><td style="text-align:left;padding-right:2em">EngProd</td><td class="numi">22</td><td class="numi">8</td><td class="numi_attn">14</td><td class="numi">0</td><td class="numi">57.7</td></tr>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script><script type='text/javascript'>
+google.load('visualization', '1', {packages:['corechart']});google.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([['Result', 'Count'],['Pass',8],['Fail',14],['Skip',0]]);
+var options = {title: 'Test Results Graph', is3D: true, backgroundColor: '#CEF6CE', chartArea: {width:'80%',height:'80%'}, colors: ['green', 'red', 'yellow']};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);}</script>
+<tr><td colspan='6' id='piechart' style='width: 200px; height: 200px'></td></tr>
+<tr><td>Browser</td><td colspan='5'>Google Chrome</td></tr>
+<tr><td>Date</td><td colspan='5'>20-Jan-2016</td></tr>
+<tr><td>Timezone</td><td colspan='5'>Mountain Standard Time</td></tr>
+<tr><td colspan='6' align='right'><a href='FAQ.txt'>FAQ</a> and <a href='readme.txt'>Readme.txt</a></td></tr></table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Sl No.</th><th>Module</th><th>Scenario</th><th>Test Result</th><th>Validation Remarks</th><th>Date/Time</th><th>Time (Sec)</th></tr>
+<tr id="t1"><th colspan="7">EngProd: Failed</th></tr>
+<tr><td>1</td><td>MyAccount</td><td>TC76_CL20_Validate_SuccessMsg_on_Equipment_Refresh</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for element to be clickable: By.xpath: //*[@class="ccicon ccicon-spectrum-app-tv"]
+</td><td align='center'>12:01:40</td><td align='center'>106</td></tr><tr><td>2</td><td>MyAccount</td><td>TC77_CL20_Validate_HOH_canUpdate_AdminUserDetails</td>
+<td bgcolor='red', align='center'>Fail</td><td>no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='user-avatar']/p/span[contains(text(),'Admin')]"}
+  (Session info: chrome=47.0.2526.80)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 240.03 seconds
+</td><td align='center'>12:03:35</td><td align='center'>273</td></tr><tr><td>3</td><td>MyAccount</td><td>TC78_CL20_Validate_HOH_canUpdate_StandardUserDetails</td>
+<td bgcolor='red', align='center'>Fail</td><td>no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@id='edit-btn'])[1]"}
+  (Session info: chrome=47.0.2526.80)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 240.05 seconds
+</td><td align='center'>12:08:18</td><td align='center'>273</td></tr><tr><td>4</td><td>MyAccount</td><td>TC79_CL20_Validate_RefreshLimitMsg_on_Equipment_Refresh</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for element to be clickable: By.xpath: //*[@class="ccicon ccicon-spectrum-app-tv"]
+</td><td align='center'>12:13:01</td><td align='center'>268</td></tr><tr><td>5</td><td>MyAccount</td><td>TC82_Validate_ViewBillDetails_link_HOH</td>
+<td bgcolor='red', align='center'>Fail</td><td>User is not redirected to Billing Page </td><td align='center'>12:20:28</td><td align='center'>61</td></tr><tr><td>6</td><td>MyAccount</td><td>TC83_Validate_ViewBillDetails_link_admin</td>
+<td bgcolor='red', align='center'>Fail</td><td>User is not redirected to Billing Page </td><td align='center'>12:21:42</td><td align='center'>62</td></tr><tr><td>7</td><td>MyAccount</td><td>TC86_Validate_UserPreferencesSection_AccountControl_HOHUser</td>
+<td bgcolor='red', align='center'>Fail</td><td>no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Account Controls ')]"}
+  (Session info: chrome=47.0.2526.80)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 240.04 seconds
+</td><td align='center'>12:26:57</td><td align='center'>280</td></tr><tr><td>8</td><td>MyAccount</td><td>TC87_Validate_UserPreferencesSection_AccountControl_adminUser</td>
+<td bgcolor='red', align='center'>Fail</td><td>no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Account Controls ')]"}
+  (Session info: chrome=47.0.2526.80)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 240.07 seconds
+</td><td align='center'>12:31:47</td><td align='center'>274</td></tr><tr><td>9</td><td>MyAccount</td><td>TC88_Validate_OverviewPageHeaders_AdminUser</td>
+<td bgcolor='red', align='center'>Fail</td><td>no such element: Unable to locate element: {"method":"xpath","selector":"(//h2[contains(text(),'Billing')])[1]"}
+  (Session info: chrome=47.0.2526.80)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40.02 seconds
+</td><td align='center'>12:36:30</td><td align='center'>104</td></tr><tr><td>10</td><td>MyAccount</td><td>TC90_Validate_BillingAndTransactionPage_ViewCurrentBillLink_NavigateTo_CurrentBillPage_AdminUser</td>
+<td bgcolor='red', align='center'>Fail</td><td>unknown error: Element is not clickable at point (936, 19). Other element would receive the click: <div class="modal-content" modal-transclude="">...</div>
+  (Session info: chrome=47.0.2526.80)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 53 milliseconds
+</td><td align='center'>12:39:25</td><td align='center'>50</td></tr><tr><td>11</td><td>MyAccount</td><td>TC92_Validate_BillingAndTransactionPage_ContactInfoSection_Standarduser</td>
+<td bgcolor='red', align='center'>Fail</td><td>Account Info Section available for Standard User </td><td align='center'>12:41:23</td><td align='center'>272</td></tr><tr><td>12</td><td>MyAccount</td><td>TC93_Validate_UserPreferencesPage_EditFields_AdminUser</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for element to be clickable: By.xpath: //label[@for='newPassword']/..//a[@id='edit-btn']
+</td><td align='center'>12:46:04</td><td align='center'>278</td></tr><tr><td>13</td><td>MyAccount</td><td>TC95_Validate_CurrentBillStatement_PrintPDF</td>
+<td bgcolor='red', align='center'>Fail</td><td>no such element: Unable to locate element: {"method":"id","selector":"print"}
+  (Session info: chrome=47.0.2526.80)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40.04 seconds
+</td><td align='center'>12:55:37</td><td align='center'>90</td></tr><tr><td>14</td><td>MyAccount</td><td>TC97_Validate_OverviewPage_ViewPaymentViewDate_AdminUser</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for visibility of element located by By.xpath: //*[contains(text(),'Due by')]
+</td><td align='center'>12:58:25</td><td align='center'>46</td></tr><tr><th colspan="7">EngProd: Passed</th></tr>
+<tr><td>1</td><td>MyAccount</td><td>TC80_Validate_DateOfPayment_Selection</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>12:17:39</td><td align='center'>83</td></tr><tr><td>2</td><td>MyAccount</td><td>TC81_Validate_AutopayStatus</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>12:19:11</td><td align='center'>68</td></tr><tr><td>3</td><td>MyAccount</td><td>TC84_Validate_BillingAndTransaction_PayBillLink_NavigateTo_PaymentOption_adminUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>12:22:56</td><td align='center'>85</td></tr><tr><td>4</td><td>MyAccount</td><td>TC85_Validate_ViewBillStatements_adminUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>12:24:30</td><td align='center'>139</td></tr><tr><td>5</td><td>MyAccount</td><td>TC89_Validate_BillingAndTransactionPage_BillDeliveryStatus_HOHUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>12:38:24</td><td align='center'>52</td></tr><tr><td>6</td><td>MyAccount</td><td>TC91_Validate_BillingAndTransactionPage_ContactInfoSection_Adminuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>12:40:25</td><td align='center'>48</td></tr><tr><td>7</td><td>MyAccount</td><td>TC94_Validate_UserPreferencesPage_EmailControlSection_StdUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>12:50:51</td><td align='center'>276</td></tr><tr><td>8</td><td>MyAccount</td><td>TC96_Validate_AvailableBillStatement_PrintPDF</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>12:57:16</td><td align='center'>60</td></tr></table>
+</body></html>

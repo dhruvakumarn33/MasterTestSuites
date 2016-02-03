@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Charter - Suite">
+	<listeners>
+		<listener class-name="com.cognizant.framework.listeners.WebTestListeners" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.cognizant.framework.listeners.AdvancedListener" />
+		<listener class-name="CharterReporter.TestNGReporter" />
+	</listeners>
+	<test name="Prod">
+		<classes>
+			<class name="com.charter.test.Billpay">
+		    	<methods>
+		       		<include name="TB31_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_adminUser"/> 
+		       		<include name="TB32_Validate_BillingAndTransactionPage_BillDeliveryOptionsLink_NavigateTo_BilldeliveryOptionsPage_adminUser"/>
+		       		<include name="TB33_Validate_UpcomingPaymentLink_NavigateTo_NoUpcomingPayments_HOHUser"/>
+		       		<include name="TB34_Validate_LastPayment_Details_HOH"/>
+		       		<include name="TB35_Validate_LastPayment_Details_admin"/>
+		       		<include name="TB36_Validate_NoLastPayment_Message_HOH"/>
+		       		<include name="TB37_Validate_AutoPayStatus_admin"/>
+		       		<include name="TB38_Validate_Available_LastStatements_admin"/>
+		     	</methods>
+		    </class>
+			<class name="com.charter.test.MyAccount">
+		     	<methods>
+		     		<include name="TC76_CL20_Validate_SuccessMsg_on_Equipment_Refresh"/>
+		     		<include name="TC77_CL20_Validate_HOH_canUpdate_AdminUserDetails"/>
+		     		<include name="TC78_CL20_Validate_HOH_canUpdate_StandardUserDetails"/>
+		     		<include name="TC79_CL20_Validate_RefreshLimitMsg_on_Equipment_Refresh"/>
+		     		<include name="TC80_Validate_DateOfPayment_Selection"/>
+		     		<include name="TC81_Validate_AutopayStatus"/>
+		     		<include name="TC82_Validate_ViewBillDetails_link_HOH"/>
+		     		<include name="TC83_Validate_ViewBillDetails_link_admin"/>
+		     		<include name="TC84_Validate_BillingAndTransaction_PayBillLink_NavigateTo_PaymentOption_adminUser"/>
+		     		<include name="TC85_Validate_ViewBillStatements_adminUser"/>
+		     		<include name="TC86_Validate_UserPreferencesSection_AccountControl_HOHUser"/>
+		      		<include name="TC87_Validate_UserPreferencesSection_AccountControl_adminUser"/>
+		      		<include name="TC88_Validate_OverviewPageHeaders_AdminUser"/> 
+					<include name="TC89_Validate_BillingAndTransactionPage_BillDeliveryStatus_HOHUser"/>
+		      		<include name="TC90_Validate_BillingAndTransactionPage_ViewCurrentBillLink_NavigateTo_CurrentBillPage_AdminUser"/>
+		      		<include name="TC91_Validate_BillingAndTransactionPage_ContactInfoSection_Adminuser"/>
+		      		<include name="TC92_Validate_BillingAndTransactionPage_ContactInfoSection_Standarduser"/>
+		      		<include name="TC93_Validate_UserPreferencesPage_EditFields_AdminUser"/>
+		      		<include name="TC94_Validate_UserPreferencesPage_EmailControlSection_StdUser"/>
+		      		<include name="TC95_Validate_CurrentBillStatement_PrintPDF"/>
+		      		<include name="TC96_Validate_AvailableBillStatement_PrintPDF"/>
+		      		<include name="TC97_Validate_OverviewPage_ViewPaymentViewDate_AdminUser"/>
+		      	</methods>
+			</class>
+ 			<class name="com.charter.test.Home">
+				<methods>
+					<include name="TH23_CL20_Validate_search_withoutLogin"/>
+					<include name="TH24_CL20_Validate_predictive_searchDropdown"/>
+					<include name="TH25_Validate_PayBill_Guide_AskSpectrum_LocationLinks_HOH"/>
+					<include name="TH26_Validate_PayBill_userNotAuthenticated"/>
+					<include name="TH27_Validate_WatchAnywhere_OnDemand_ManageAssets"/>
+				</methods> 
+			</class>
+			<class name="com.charter.test.MyServices">
+				<methods>
+					<include name="TD27_Validate_CharterSecuritySuite_SupportLinks"/>
+					<include name="TD28_Validate_CharterSecuritySuite_UninstallSoftwareLink"/>
+					<include name="TD29_Validate_CharterSecuritySuite_DeviceNickName_WarningMsg"/>
+					<include name="TD30_Validate_CharterSecuritySuite_AskSpectrum_Widget"/>
+					<include name="TD31_Validate_TVEquipment_ToggleOnImages"/>
+					<include name="TD32_Validate_NoInternetEquipment"/>
+					<include name="TD33_Validate_NoVoiceEquipment"/>
+					<include name="TD34_Validate_TVEquipmentDetailsPage"/>
+					<include name="TD35_Validate_TVEquipment_MakePrimary"/>
+				</methods>
+			</class>
+ 			<class name="com.charter.test.ForgotPassword">
+				<methods>
+					<include name="TA55_Validate_ForgotPassword_InvalidCharterIDMessage"/>
+				</methods>
+			</class>
+			<class name="com.charter.test.Login">
+				<methods>
+					<include name="TL03_Validate_Non_ConvertedUser_UpdateUserPage"/>
+				</methods>
+			</class>
+			<class name="com.charter.test.Support"/>
+				<methods>
+					<include name="TS01_Validate_TV_Voice_Internet_MyAccount_Links_SupportOverview"/>
+					<include name="TS02_Validate_SupportPage_AskCharterWidget_HOHUser"/>
+					<include name="TS03_Validate_TVSupport_ArticleLinks"/>
+					<include name="TS04_Validate_VoiceSupport_ArticleLinks"/>
+					<include name="TS05_Validate_InternetSupport_ArticleLinks"/>
+					<include name="TS06_Validate_MyAccountSupport_ArticleLinks"/>
+					<include name="TS07_Validate_SupportVideo_browsing"/>
+					<include name="TS08_Validate_TVSupportPage_AskCharterWidget_HOHUser"/>
+					<include name="TS09_Validate_TVSupportVideo_browsing"/>
+					<include name="TS10_Validate_TVSupport_CharterTVServiceLink"/>
+					<include name="TS11_Validate_TVSupport_TVEquipmentLink"/>
+					<include name="TS12_Validate_TVSupport_TVOnlineLink"/>
+					<include name="TS13_Validate_TVSupport_ProgramGuidesLink"/>
+					<include name="TS14_Validate_TVSupport_HDLink"/>
+					<include name="TS15_Validate_TVSupport_PayPerViewLink"/>
+					<include name="TS16_Validate_TVSupport_TroubleshootingLink"/>
+					<include name="TS17_Validate_SupportInternetPage_AskCharterWidget_HOHUser"/>
+					<include name="TS18_Validate_SupportInternetVideo_browsing"/>
+					<include name="TS19_Validate_InternetSupport_CharterDotNetLink"/>
+					<include name="TS20_Validate_InternetSupport_InternetEquipmentLink"/>
+					<include name="TS21_Validate_InternetSupport_EmailLink"/>
+					<include name="TS22_Validate_InternetSupport_SecuritySuiteLink"/>
+					<include name="TS23_Validate_InternetSupport_InstallationLink"/>
+					<include name="TS24_Validate_InternetSupport_NetworkingLink"/>
+					<include name="TS25_Validate_InternetSupport_OnlineSecurityLink"/>
+					<include name="TS26_Validate_InternetSupport_TroubleshootingLink"/>
+					<include name="TS27_Validate_InternetSupport_TVOnlineLink"/>
+					<include name="TS28_Validate_InternetSupport_WifiLink"/>
+					<include name="TS29_Validate_VoiceSupportPage_AskCharterWidget_HOHUser"/>
+					<include name="TS30_Validate_VoiceSupport_FeaturesLink"/>
+					<include name="TS31_Validate_VoiceSupport_VoiceEquipmentLink"/>
+					<include name="TS32_Validate_VoiceSupport_InternationalCallingLink"/>
+					<include name="TS33_Validate_VoiceSupport_TroubleshootingLink"/>
+					<include name="TS34_Validate_MyAccountSupportPage_AskCharterWidget_HOHUser"/>
+					<include name="TS35_Validate_MyAccountSupport_MyAccountLink"/>
+					<include name="TS36_Validate_MyAccountSupport_BillingLink"/>
+					<include name="TV37_Validate_SupportOverview_Search"/>
+					<include name="TV38_Validate_SupportOverview_WatchOnline_SearchResults"/>
+					<include name="TV39_Validate_SupportOverview_WatchOnTV_SearchResults"/>
+					<include name="TV40_Validate_SupportOverview_Support_SearchResults"/>
+					<include name="TV41_Validate_SupportOverview_Google_SearchResults"/>
+				</methods>
+			<class name="com.charter.test.WatchTV"/>
+				<methods>
+					<include name="TV01_Validate_WatchTVOverview_ToGuide_Navigation"/>
+					<include name="TV02_Validate_WatchTVOverview_ToLiveTV_Navigation"/>
+					<include name="TV03_Validate_WatchTVOverview_ToOnDemand_Navigation"/>
+					<include name="TV04_Validate_WatchTVOverview_Networkslist"/>
+					<include name="TV05_Validate_WatchTVOverview_Ondemandlist"/>
+					<include name="TV06_Validate_WatchTVOverview_LiveTVlist"/>
+					<include name="TV07_Validate_WatchTVOnDemand_Movieslist"/>
+					<include name="TV08_Validate_WatchTVOnDemand_TVshowslist"/>
+					<include name="TV09_Validate_WatchTVOnDemand_Networkslist"/>
+					<include name="TV10_Validate_WatchTVOnDemand_Premiumslist"/>
+					<include name="TV11_Validate_WatchTVOnDemand_Movies_Tvshows_Networks_Premium_tabs"/>
+					<include name="TV12_Validate_WatchTVOnDemand_WatchOnline_WatchOnTV_tabs"/>
+					<include name="TV13_Validate_WatchTVGuide_DateTime_Channels_Programs"/>
+					<include name="TV14_Validate_WatchTVGuide_DateNavigation"/>
+					<include name="TV15_Validate_WatchTVGuide_TimeNavigation"/>
+					<include name="TV16_Validate_WatchTVGuide_FilterChannel"/>
+					<include name="TV17_Validate_WatchTVGuide_FilterChannel_SortList"/>
+					<include name="TV18_Validate_WatchTVGuide_ClearFilters"/>
+					<include name="TV19_Validate_WatchTVOverview_Search"/>
+					<include name="TV20_Validate_WatchTVOverview_WatchOnline_SearchResults"/>
+					<include name="TV21_Validate_WatchTVOverview_WatchOnTV_SearchResults"/>
+					<include name="TV22_Validate_WatchTVOverview_Support_SearchResults"/>
+					<include name="TV23_Validate_WatchTVOverview_Google_SearchResults"/>
+					<include name="TV24_CL20_Validate_Telemundo_Channel_Changes"/>
+					<include name="TV25_CL20_Validate_StartOnDemand_OnWatchTVGuide"/>
+					<include name="TV26_CL20_Validate_SendAsset_fromOnDemand_WatchOnTV_toSTB"/>
+					<include name="TV27_CL20_Validate_PlayAsset_fromOnDemand_WatchOnline"/>
+					<include name="TV28_Validate_Record_OnWatchTVGuide"/>
+					<include name="TV29_Validate_Record_OnWatchTV_OnDemandPage"/>
+					<include name="TV30_Validate_Record_OnWatchTV_LiveTVPage"/>
+				</methods>
+			<class name="com.charter.test.CharterMail"/>
+				<methods>
+					<include name="TM01_Validate_SendEmail_functionality"/>
+					<include name="TM02_Validate_Text_Font_changeIn_ComposeMail"/>
+					<include name="TM03_Validate_Delete_ComposedMail"/>
+					<include name="TM04_Validate_GetMailBtn_OnInbox"/>
+					<include name="TM05_Validate_GetHelpLink_QuickEmailReferenceGuidePage"/>
+					<include name="TM06_Validate_displayOf_AllAccounts_InShowAllAccounts_Dropdown"/>
+					<include name="TM07_Validate_SearchEmail_Functionality"/>
+					<include name="TM08_Validate_accessTo_Inbox_Drafts_Sent_Spam_TrashFolders"/>
+					<include name="TM09_Validate_SentFolder_EditFunctionality"/>
+					<include name="TM10_Validate_CreateNewFolder_functionality"/>
+					<include name="TM11_Validate_Create_NewUserGroup_Functionality"/>
+					<include name="TM12_Validate_Create_NewContact_Functionality"/>
+					<include name="TM13_Validate_Adding_NewAccountFunctionality"/>
+					<include name="TM14_Validate_CharterMail_SignOut"/>
+				</methods>
+			<class name="com.charter.test.CL19"/>
+				<methods>
+					<include name="CL19_CHARTERNET_2407_Validate_InvalidDomain_Users_at_Login"/>
+					<include name="CL19_CHARTERNET_2072_Validate_CreditAdjutsments_AmountSign"/>
+					<include name="CL19_CHARTERNET_2053_Validate_SupportDD_Position"/>
+					<include name="CL19_CHARTERNET_2037_Validate_Networks_HeaderColor"/>
+					<include name="CL19_CHARTERNET_1954_Validate_MACid_popup_msg"/>
+				</methods>
+			<class name="com.charter.test.Authentication"/>
+				<methods>
+					<include name="TU01_Validate_LoginErrorMsg_InvalidDomain"/>
+					<include name="TU02_Validate_LoginZipCode_WeakPassword"/>
+					<include name="TU03_Validate_ForgotPassword_DontRemember_SecurityAnswer_Email"/>
+					<include name="TU04_Validate_ForgotUsername_UsingEmail"/>
+					<include name="TU05_Validate_ForgotPassword_nonCPNI_SecurityQA"/>
+					<include name="TU06_Validate_ForgotPassword_CPNI_SecurityQA_convertTo_NonCPNI"/>
+					<include name="TU07_Validate_ForgotPassword_nonCPNI_Email"/>
+					<include name="TU08_Validate_ForgotPassword_CPNI_Email_convertTo_NonCPNI"/>
+				</methods>
+		</classes>
+	</test>
+</suite>

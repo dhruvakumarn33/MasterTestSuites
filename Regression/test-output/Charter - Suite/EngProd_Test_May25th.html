@@ -1,0 +1,408 @@
+<html>
+<head>
+<title>TestNG:  EngProd_Test_May25th</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>EngProd_Test_May25th</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 25 15:24:03 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>3610 seconds (3610589 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks()'><b>TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5020, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-3688570" onClick='toggleBox("Output-3688570", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3688570" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3688570">
+<<<*** END: MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks, Took 2694 seconds<br/><br/>
+Unable to capture the screenshotError communicating with the remote browser. It may have died.
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'PC220578', ip: '10.102.6.129', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_21'
+Driver info: driver.version: FirefoxDriver<br/><br/>
+<<<*** END: MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks, Took 2701 seconds<br/><br/>
+Unable to capture the screenshotError communicating with the remote browser. It may have died.
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'PC220578', ip: '10.102.6.129', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_21'
+Driver info: driver.version: FirefoxDriver<br/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Voice Services Headers are -Not Present -Failed expected [true] but found [false]
+	at com.charter.test.MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks(MyAccount.java:1147)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3688570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3688570'><pre>java.lang.AssertionError: Voice Services Headers are -Not Present -Failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.charter.test.MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks(MyAccount.java:1147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>2694</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks()'><b>TC54_Validate_VoiceServicesPage_Navigation_AndVerifyHeaderLinks</b><br>Test class: com.charter.test.MyAccount</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:459)
+	at com.cognizant.framework.listeners.ResultContainer.setWebpage(ResultContainer.java:54)
+	at com.cognizant.framework.listeners.WebTestListeners.onTestFailure(WebTestListeners.java:153)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:126)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:72)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:133)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 25 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 40 more
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12804989", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12804989'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:459)
+	at com.cognizant.framework.listeners.ResultContainer.setWebpage(ResultContainer.java:54)
+	at com.cognizant.framework.listeners.WebTestListeners.onTestFailure(WebTestListeners.java:153)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1895)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:126)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:72)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:133)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 25 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 40 more
+</pre></div></td>
+<td>2701</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC01_Validate_OverviewPageHeaders_HOHUser()'><b>TC01_Validate_OverviewPageHeaders_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {UserID1=, UserID=e2e5020, TestCaseId=TC01_Validate_OverviewPageHeaders_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-15323733" onClick='toggleBox("Output-15323733", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15323733" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15323733">
+Expected value: Billing Actual value: Billing - PASSED : BTSection<br/><br/>
+Expected value: Services and Equipment Actual value: Services and Equipment - PASSED : SE Section<br/><br/>
+Expected value: Settings Actual value: Settings - PASSED : UP Section<br/><br/>
+Expected value: Service Actual value: Service - PASSED : Service Address Label<br/><br/>
+Expected value: Billing Address: Actual value: Billing Address: - PASSED : Billing Address Label<br/><br/>
+<<<*** END: MyAccount.TC01_Validate_OverviewPageHeaders_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC01_Validate_OverviewPageHeaders_HOHUser, Took 53 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC02_Validate_BillingandTransactionSection_HOHUser()'><b>TC02_Validate_BillingandTransactionSection_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {UserID1=, UserID=e2e5016, TestCaseId=TC02_Validate_BillingandTransactionSection_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-7775313" onClick='toggleBox("Output-7775313", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7775313" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7775313">
+<<<*** END: MyAccount.TC02_Validate_BillingandTransactionSection_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC02_Validate_BillingandTransactionSection_HOHUser, Took 43 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC03_Validate_AskCharterWidget_HOHUser()'><b>TC03_Validate_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {invalidLastname=, SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, lastname=, UserID=e2e5023, TestCaseId=TC03_Validate_AskCharterWidget_HOHUser, firstname_CID=, ACnumber=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-8537226" onClick='toggleBox("Output-8537226", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8537226" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8537226">
+<<<*** END: MyAccount.TC03_Validate_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC03_Validate_AskCharterWidget_HOHUser, Took 41 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices()'><b>TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, SelectDate=, hohuser=, mac_fID=, TestCaseId=TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices, charterID=, Account_Type=, password=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, security_answer=, Mobilephone=, CharterID_fp=, UserID=e2e5020, lastname=, firstname_CID=, Zipcode=, ACnumber=, security_question=, Account_pom=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, UserID1=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-11010664" onClick='toggleBox("Output-11010664", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11010664" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11010664">
+<<<*** END: MyAccount.TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices, Took 49 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail()'><b>TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5020, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-16946606" onClick='toggleBox("Output-16946606", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16946606" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16946606">
+<<<*** END: MyAccount.TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC16_Validate_OverviewPage_CheckEmailLink_NavigationTo_Webmail, Took 40 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser()'><b>TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, SelectDate=, hohuser=, mac_fID=, TestCaseId=TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser, charterID=, password=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, ParentalControl_Unratedcontent=, invalidLastname=, security_answer=, Mobilephone=, CharterID_fp=, UserID=e2e224, lastname=, firstname_CID=, Zipcode=, ACnumber=, security_question=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, UserID1=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-25174159" onClick='toggleBox("Output-25174159", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25174159" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25174159">
+<<<*** END: MyAccount.TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC18_Validate_OverviewPage_ServiceEquipmentPanel_Stduser, Took 285 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>285</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser()'><b>TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {invalidLastname=, SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, lastname=, UserID=e2e5020, TestCaseId=TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser, firstname_CID=, ACnumber=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-32017016" onClick='toggleBox("Output-32017016", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32017016" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32017016">
+<<<*** END: MyAccount.TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC39_Validate_BillingAndTransactionPage_AskCharterWidget_HOHUser, Took 52 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>52</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser()'><b>TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {invalidLastname=, SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, lastname=, UserID=e2e5020, TestCaseId=TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser, firstname_CID=, ACnumber=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-895821" onClick='toggleBox("Output-895821", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-895821" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-895821">
+<<<*** END: MyAccount.TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC43_Validate_TVServicesPage_AskCharterWidget_HOHUser, Took 49 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser()'><b>TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {invalidLastname=, SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, lastname=, UserID=e2e5020, TestCaseId=TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser, firstname_CID=, ACnumber=, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, AccountNumberVerify=, invalidZipcode=, address_fID=, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-9007203" onClick='toggleBox("Output-9007203", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9007203" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9007203">
+<<<*** END: MyAccount.TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC49_Validate_InternetServicesPage_AskCharterWidget_HOHUser, Took 52 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>52</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser()'><b>TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e237, TestCaseId=TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-9852574" onClick='toggleBox("Output-9852574", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9852574" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9852574">
+<<<*** END: MyAccount.TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC51_Validate_InternetServicesPage_CharterEmailLink_NavigateTo_ChaterEmail_HOHUser, Took 58 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser()'><b>TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e5023, TestCaseId=TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-26286014" onClick='toggleBox("Output-26286014", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26286014" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26286014">
+<<<*** END: MyAccount.TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC52_Validate_InternetServicesPage_CharterSecurityLink_NavigateTo_CharterSecurityPage_HOHUser, Took 48 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>com.charter.test.MyAccount@ada1dc</td></tr>
+</table><p>
+</body>
+</html>

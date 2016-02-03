@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Chater.Net Test Report</title>
+<style type="text/css">
+table {background-color: #CEF6CE; margin-bottom:10px; border: 1px solid black; border-collapse:collapse; font-family: 'Arial'; font-size: 14px}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:65%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body bgcolor=#E0F8E0><h2 align='center'>Charter.Net Selenium Test Report</h2></br>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Module</th><th>Total</th><th>Pass</th><th>Fail</th><th>Skipped</th><th>Total Time(Mins)</th></tr><tr><td style="text-align:left;padding-right:2em">Prod</td><td class="numi">52</td><td class="numi">26</td><td class="numi_attn">26</td><td class="numi">0</td><td class="numi">143.6</td></tr>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script><script type='text/javascript'>
+google.load('visualization', '1', {packages:['corechart']});google.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([['Result', 'Count'],['Pass',26],['Fail',26],['Skip',0]]);
+var options = {title: 'Test Results Graph', is3D: true, backgroundColor: '#CEF6CE', chartArea: {width:'80%',height:'80%'}, colors: ['green', 'red', 'yellow']};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);}</script>
+<tr><td colspan='6' id='piechart' style='width: 200px; height: 200px'></td></tr>
+<tr><td>Browser</td><td colspan='5'>Google Chrome</td></tr>
+<tr><td>Date</td><td colspan='5'>31-Dec-2015</td></tr>
+<tr><td>Timezone</td><td colspan='5'>India Standard Time</td></tr>
+<tr><td colspan='6' align='right'><a href='FAQ.txt'>FAQ</a> and <a href='readme.txt'>Readme.txt</a></td></tr></table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Sl No.</th><th>Module</th><th>Scenario</th><th>Test Result</th><th>Validation Remarks</th><th>Date/Time</th><th>Time (Sec)</th></tr>
+<tr id="t1"><th colspan="7">Prod: Failed</th></tr>
+<tr><td>1</td><td>MyServices</td><td>TD41_Validate_Internet_Upgrade_charterDotNet</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:37:36</td><td align='center'>80</td></tr><tr><td>2</td><td>MyServices</td><td>TD47_Validate_Internet_Upgrade_DoublePlayAccount_charterDotCom</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:47:21</td><td align='center'>69</td></tr><tr><td>3</td><td>MyServices</td><td>TD48_Validate_Internet_Equipment_details</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:48:39</td><td align='center'>302</td></tr><tr><td>4</td><td>ForgotPassword</td><td>TA61_Validate_ForgotPassword_nonCPNI_SecurityQA</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>15:21:00</td><td align='center'>261</td></tr><tr><td>5</td><td>ForgotPassword</td><td>TA62_Validate_ForgotPassword_CPNI_SecurityQA_convertTo_NonCPNI</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>15:25:32</td><td align='center'>260</td></tr><tr><td>6</td><td>ForgotPassword</td><td>TA64_Validate_ForgotPassword_CPNI_Email_convertTo_NonCPNI</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>15:30:01</td><td align='center'>261</td></tr><tr><td>7</td><td>ForgotPassword</td><td>TA66_Validate_ForgotPassword_Change_SecurityQuestionAnswer</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>15:34:36</td><td align='center'>298</td></tr><tr><td>8</td><td>ForgotUsername</td><td>TA57_Validate_ForgotUsername_ConflictingEmail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>15:45:58</td><td align='center'>277</td></tr><tr><td>9</td><td>ForgotUsername</td><td>TA70_Validate_ForgotUsername_CPNINonVoiceUser_UsingEmail_confirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>15:54:17</td><td align='center'>262</td></tr><tr><td>10</td><td>ForgotUsername</td><td>TA71_Validate_ForgotUsername_CPNIVoiceUser_UsingEmail_confirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>15:58:48</td><td align='center'>275</td></tr><tr><td>11</td><td>ForgotUsername</td><td>TA72_Validate_ForgotUsername_CPNIVoiceUser_SecurityQandA_confirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:03:35</td><td align='center'>81</td></tr><tr><td>12</td><td>WatchTV</td><td>TV17_Validate_WatchTVGuide_FilterChannel_SortList</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:08:04</td><td align='center'>240</td></tr><tr><td>13</td><td>WatchTV</td><td>TV31_Validate_WatchTVGuide_ManageFavorites</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:12:10</td><td align='center'>88</td></tr><tr><td>14</td><td>WatchTV</td><td>TV32_Validate_WatchTVOnDemand_WatchPremiumMovie</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:13:44</td><td align='center'>296</td></tr><tr><td>15</td><td>Login</td><td>TL03_Validate_Non_ConvertedUser_UpdateUserPage</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:21:51</td><td align='center'>267</td></tr><tr><td>16</td><td>Login</td><td>TL10_Validate_MSLoginConvert_LessThan6Characters_StdUser_MoreThan6Characters</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:31:42</td><td align='center'>58</td></tr><tr><td>17</td><td>Login</td><td>TL11_Validate_DotNetIDConvert_LessThan6Characters_StdUser_MoreThan6Characters</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:33:10</td><td align='center'>87</td></tr><tr><td>18</td><td>Login</td><td>TL12_Validate_MSLoginID_MSLogin_MoreThan6Characters_DotNetID_LessThan6Characters</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:35:14</td><td align='center'>24</td></tr><tr><td>19</td><td>Login</td><td>TL13_Validate_DotNetID_MSLogin_MoreThan6Characters_DotNetLogin_LessThan6Characters</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:35:52</td><td align='center'>19</td></tr><tr><td>20</td><td>Login</td><td>TL14_Validate_Account1_MSLogin_Conflicts_with_Account2_stdUser_DotNetID_HOHConverted</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:36:22</td><td align='center'>21</td></tr><tr><td>21</td><td>Login</td><td>TL18_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_differentPassword</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:38:49</td><td align='center'>28</td></tr><tr><td>22</td><td>Login</td><td>TL19_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_differentPassword</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:39:26</td><td align='center'>25</td></tr><tr><td>23</td><td>Login</td><td>TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:40:00</td><td align='center'>81</td></tr><tr><td>24</td><td>Login</td><td>TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:41:29</td><td align='center'>79</td></tr><tr><td>25</td><td>Login</td><td>TL22_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword_with_DotNetID_StandardUser</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:42:58</td><td align='center'>23</td></tr><tr><td>26</td><td>Home</td><td>TH27_Validate_WatchAnywhere_OnDemand_ManageAssets</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:43:30</td><td align='center'>268</td></tr><tr><th colspan="7">Prod: Passed</th></tr>
+<tr><td>1</td><td>MyServices</td><td>TD39_Validate_Voice_Upgrade_charterDotNet</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:32:08</td><td align='center'>156</td></tr><tr><td>2</td><td>MyServices</td><td>TD40_Validate_TV_Upgrade_charterDotNet</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:35:08</td><td align='center'>134</td></tr><tr><td>3</td><td>MyServices</td><td>TD42_Validate_Internet_Upgrade_charterDotCom</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:39:11</td><td align='center'>101</td></tr><tr><td>4</td><td>MyServices</td><td>TD43_Validate_TV_Upgrade_charterDotCom</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:41:00</td><td align='center'>83</td></tr><tr><td>5</td><td>MyServices</td><td>TD44_Validate_Voice_Upgrade_charterDotCom</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:42:32</td><td align='center'>79</td></tr><tr><td>6</td><td>MyServices</td><td>TD45_Validate_TV_Upgrade_SilverPackage_charterDotCom</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:44:09</td><td align='center'>93</td></tr><tr><td>7</td><td>MyServices</td><td>TD46_Validate_TV_Upgrade_DoublePlayAccount_charterDotCom</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:45:49</td><td align='center'>84</td></tr><tr><td>8</td><td>MyServices</td><td>TD50_Validate_TV_Upgrade_TVSelectPackage_HBOChannel_charterDotCom</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:53:51</td><td align='center'>140</td></tr><tr><td>9</td><td>MyServices</td><td>TD53_Validate_ServiceUpgrade_HardDisconnectedAccount_charterDotCom</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:56:32</td><td align='center'>135</td></tr><tr><td>10</td><td>ForgotPassword</td><td>TA35_Validate_RetrievingPassword_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:58:58</td><td align='center'>70</td></tr><tr><td>11</td><td>ForgotPassword</td><td>TA59_Validate_ForgotPassword_DontRemember_SecurityAnswer_Email</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:00:18</td><td align='center'>1226</td></tr><tr><td>12</td><td>ForgotPassword</td><td>TA67_Validate_RetrievingPassword_HOHuser_ConfirmationMail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:39:57</td><td align='center'>108</td></tr><tr><td>13</td><td>ForgotPassword</td><td>TA68_Validate_ConflictingUsername_RetrievingPassword_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:41:54</td><td align='center'>153</td></tr><tr><td>14</td><td>ForgotPassword</td><td>TA69_Validate_ConflictingUsername_RetrievingPassword_UnconvertedHOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:44:36</td><td align='center'>74</td></tr><tr><td>15</td><td>ForgotUsername</td><td>TA58_Validate_ForgotUsername_ConflictingPhone</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:50:44</td><td align='center'>68</td></tr><tr><td>16</td><td>ForgotUsername</td><td>TA65_Validate_ForgotUsername_UsingEmail_confirmationMail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:52:01</td><td align='center'>126</td></tr><tr><td>17</td><td>ForgotUsername</td><td>TA73_Validate_ForgotUsername_CPNINonVoiceUser_SecurityQandA_confirmationMail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:05:16</td><td align='center'>159</td></tr><tr><td>18</td><td>WatchTV</td><td>TV34_Validate_WatchTV_Guide_default_ZipCode</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:18:45</td><td align='center'>33</td></tr><tr><td>19</td><td>WatchTV</td><td>TV35_Validate_WatchTV_Guide_RegionalChannels</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:19:23</td><td align='center'>58</td></tr><tr><td>20</td><td>Login</td><td>TL02_Validate_ChaterInvalidLogin</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:20:38</td><td align='center'>66</td></tr><tr><td>21</td><td>Login</td><td>TL05_Validate_Convert_StdUser_Check_HOHAdminLogin</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:26:28</td><td align='center'>81</td></tr><tr><td>22</td><td>Login</td><td>TL06_Validate_Convert_AdminUser_Check_HOHLogin</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:27:56</td><td align='center'>70</td></tr><tr><td>23</td><td>Login</td><td>TL07_Validate_Convert_twoUsers_SamePassword</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:29:14</td><td align='center'>139</td></tr><tr><td>24</td><td>Login</td><td>TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:36:52</td><td align='center'>48</td></tr><tr><td>25</td><td>Login</td><td>TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:37:52</td><td align='center'>50</td></tr><tr><td>26</td><td>CreateCharter_ID</td><td>TA01_Validate_HOHUser_CreateID_MACID</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:48:18</td><td align='center'>414</td></tr></table>
+</body></html>

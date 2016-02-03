@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Chater.Net Test Report</title>
+<style type="text/css">
+table {background-color: #CEF6CE; margin-bottom:10px; border: 1px solid black; border-collapse:collapse; font-family: 'Arial'; font-size: 14px}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:65%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body bgcolor=#E0F8E0><h2 align='center'>Charter.Net Selenium Test Report</h2></br>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Module</th><th>Total</th><th>Pass</th><th>Fail</th><th>Skipped</th><th>Total Time(Mins)</th></tr><tr><td style="text-align:left;padding-right:2em">Prod</td><td class="numi">7</td><td class="numi">3</td><td class="numi_attn">4</td><td class="numi">0</td><td class="numi">23.8</td></tr>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script><script type='text/javascript'>
+google.load('visualization', '1', {packages:['corechart']});google.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([['Result', 'Count'],['Pass',3],['Fail',4],['Skip',0]]);
+var options = {title: 'Test Results Graph', is3D: true, backgroundColor: '#CEF6CE', chartArea: {width:'80%',height:'80%'}, colors: ['green', 'red', 'yellow']};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);}</script>
+<tr><td colspan='6' id='piechart' style='width: 200px; height: 200px'></td></tr>
+<tr><td>Browser</td><td colspan='5'>Google Chrome</td></tr>
+<tr><td>Date</td><td colspan='5'>20-Nov-2015</td></tr>
+<tr><td>Timezone</td><td colspan='5'>India Standard Time</td></tr>
+<tr><td colspan='6' align='right'><a href='FAQ.txt'>FAQ</a> and <a href='readme.txt'>Readme.txt</a></td></tr></table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Sl No.</th><th>Module</th><th>Scenario</th><th>Test Result</th><th>Validation Remarks</th><th>Date/Time</th><th>Time (Sec)</th></tr>
+<tr id="t1"><th colspan="7">Prod: Failed</th></tr>
+<tr><td>1</td><td>ForgotUsername</td><td>TA70_Validate_ForgotUsername_CPNINonVoiceUser_UsingEmail_confirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:18:54</td><td align='center'>454</td></tr><tr><td>2</td><td>ForgotUsername</td><td>TA71_Validate_ForgotUsername_CPNIVoiceUser_UsingEmail_confirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:26:38</td><td align='center'>223</td></tr><tr><td>3</td><td>ForgotUsername</td><td>TA72_Validate_ForgotUsername_CPNIVoiceUser_SecurityQandA_confirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:30:30</td><td align='center'>58</td></tr><tr><td>4</td><td>ForgotUsername</td><td>TA73_Validate_ForgotUsername_CPNINonVoiceUser_SecurityQandA_confirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>16:31:37</td><td align='center'>303</td></tr><tr><th colspan="7">Prod: Passed</th></tr>
+<tr><td>1</td><td>ForgotUsername</td><td>TA57_Validate_ForgotUsername_ConflictingEmail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:13:00</td><td align='center'>68</td></tr><tr><td>2</td><td>ForgotUsername</td><td>TA58_Validate_ForgotUsername_ConflictingPhone</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:14:16</td><td align='center'>49</td></tr><tr><td>3</td><td>ForgotUsername</td><td>TA65_Validate_ForgotUsername_UsingEmail_confirmationMail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:15:13</td><td align='center'>212</td></tr></table>
+</body></html>

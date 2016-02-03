@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Chater.Net Test Report</title>
+<style type="text/css">
+table {background-color: #CEF6CE; margin-bottom:10px; border: 1px solid black; border-collapse:collapse; font-family: 'Arial'; font-size: 14px}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:65%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body bgcolor=#E0F8E0><h2 align='center'>Charter.Net Selenium Test Report</h2></br>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Module</th><th>Total</th><th>Pass</th><th>Fail</th><th>Skipped</th><th>Total Time(Mins)</th></tr><tr><td style="text-align:left;padding-right:2em">Prod</td><td class="numi">89</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">89</td><td class="numi">0.2</td></tr>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script><script type='text/javascript'>
+google.load('visualization', '1', {packages:['corechart']});google.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([['Result', 'Count'],['Pass',0],['Fail',89],['Skip',0]]);
+var options = {title: 'Test Results Graph', is3D: true, backgroundColor: '#CEF6CE', chartArea: {width:'80%',height:'80%'}, colors: ['green', 'red', 'yellow']};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);}</script>
+<tr><td colspan='6' id='piechart' style='width: 200px; height: 200px'></td></tr>
+<tr><td>Browser</td><td colspan='5'>MS Internet Explorer</td></tr>
+<tr><td>Date</td><td colspan='5'>16-Dec-2015</td></tr>
+<tr><td>Timezone</td><td colspan='5'>India Standard Time</td></tr>
+<tr><td colspan='6' align='right'><a href='FAQ.txt'>FAQ</a> and <a href='readme.txt'>Readme.txt</a></td></tr></table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Sl No.</th><th>Module</th><th>Scenario</th><th>Test Result</th><th>Validation Remarks</th><th>Date/Time</th><th>Time (Sec)</th></tr>
+<tr id="t1"><th colspan="7">Prod: Skipped</th></tr>
+<tr><td>1</td><td>Billpay</td><td>TB34_Validate_LastPayment_Details_HOH</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:23</td><td align='center'>0</td></tr><tr><td>2</td><td>Billpay</td><td>TB35_Validate_LastPayment_Details_admin</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:23</td><td align='center'>0</td></tr><tr><td>3</td><td>Billpay</td><td>TB36_Validate_NoLastPayment_Message_HOH</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:24</td><td align='center'>0</td></tr><tr><td>4</td><td>Billpay</td><td>TB38_Validate_Available_LastStatements_admin</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:24</td><td align='center'>0</td></tr><tr><td>5</td><td>Billpay</td><td>TB39_Validate_OTPSchedule_ByDebitCard_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:24</td><td align='center'>0</td></tr><tr><td>6</td><td>Billpay</td><td>TB40_Validate_OTPSchedule_ByCreditCard_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:24</td><td align='center'>0</td></tr><tr><td>7</td><td>Billpay</td><td>TB41_Validate_OTPSchedule_ByChecking_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:24</td><td align='center'>0</td></tr><tr><td>8</td><td>Billpay</td><td>TB42_Validate_AutoPaySetup_ByDebitCard_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:24</td><td align='center'>0</td></tr><tr><td>9</td><td>Billpay</td><td>TB43_Validate_AutoPaySetup_ByCreditCard_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:24</td><td align='center'>0</td></tr><tr><td>10</td><td>Billpay</td><td>TB44_Validate_AutoPaySetup_ByChecking_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:24</td><td align='center'>0</td></tr><tr><td>11</td><td>Billpay</td><td>TB45_Validate_OTP_ByChecking_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:25</td><td align='center'>0</td></tr><tr><td>12</td><td>Billpay</td><td>TB46_Validate_OTPayment_ByDebitCard_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:25</td><td align='center'>0</td></tr><tr><td>13</td><td>Billpay</td><td>TB47_Validate_OTPayment_ByCreditCard_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:25</td><td align='center'>0</td></tr><tr><td>14</td><td>Billpay</td><td>TB51_Validate_StatementSummary_NotificationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:25</td><td align='center'>0</td></tr><tr><td>15</td><td>Billpay</td><td>TB52_Validate_OTP_BySaving_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:25</td><td align='center'>0</td></tr><tr><td>16</td><td>Billpay</td><td>TB53_Validate_AutoPaySetup_BySaving_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:25</td><td align='center'>0</td></tr><tr><td>17</td><td>Billpay</td><td>TB54_Validate_OTPayment_ByDebitCard_PastDueAmount</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:25</td><td align='center'>0</td></tr><tr><td>18</td><td>Billpay</td><td>TB55_Validate_OTPayment_ByCreditCard_PastDueAmount</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:25</td><td align='center'>0</td></tr><tr><td>19</td><td>Billpay</td><td>TB56_Validate_OTPayment_ByChecking_PastDueAmount</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:25</td><td align='center'>0</td></tr><tr><td>20</td><td>Billpay</td><td>TB57_Validate_OTPayment_BySaving_PastDueAmount</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:25</td><td align='center'>0</td></tr><tr><td>21</td><td>BillPay1</td><td>TBB_12_Validate_HOH_user_able_to_Manage_BillDelivery_Method_C84921</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:26</td><td align='center'>0</td></tr><tr><td>22</td><td>MyAccount</td><td>validate_TVInternetVoice_DetailsLink_T517987</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:26</td><td align='center'>0</td></tr><tr><td>23</td><td>MyAccount</td><td>MA_UsersandPreferences_Parentalcontrols_HOH_T518044</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:26</td><td align='center'>0</td></tr><tr><td>24</td><td>MyAccount</td><td>TCC_01_Validate_UserPreferences_add_Promote_demote_deleteUser_HOH</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:26</td><td align='center'>0</td></tr><tr><td>25</td><td>MyAccount</td><td>TC66_Validate_UserPreferencesPage_EmailControlSection_HOHUser</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:26</td><td align='center'>0</td></tr><tr><td>26</td><td>MyAccount</td><td>TC74_Validate_BillingandTransactonPage_PaymentHistory_Section_Records</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:26</td><td align='center'>0</td></tr><tr><td>27</td><td>MyAccount</td><td>TC76_CL20_Validate_SuccessMsg_on_Equipment_Refresh</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:26</td><td align='center'>0</td></tr><tr><td>28</td><td>MyAccount</td><td>TC85_Validate_ViewBillStatements_adminUser</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:26</td><td align='center'>0</td></tr><tr><td>29</td><td>MyAccount</td><td>TC99_Validate_UserPreferences_CreateID_Promote_demote_deleteUser_HOH</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:27</td><td align='center'>0</td></tr><tr><td>30</td><td>MyAccount</td><td>TC100_Validate_ParentalControlChanges_StandardUser</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:27</td><td align='center'>0</td></tr><tr><td>31</td><td>MyAccount</td><td>TC101_Validate_ErrorMsg_InvalidCouponRedemption</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:27</td><td align='center'>0</td></tr><tr><td>32</td><td>MyAccount</td><td>TC102_Validate_SuccessMsg_ValidCouponRedemption</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:27</td><td align='center'>0</td></tr><tr><td>33</td><td>MyAccount</td><td>TC103_Validate_ErrorMsg_SameCouponRedemption</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:27</td><td align='center'>0</td></tr><tr><td>34</td><td>MyServices</td><td>TD34_Validate_TVEquipmentDetailsPage</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:27</td><td align='center'>0</td></tr><tr><td>35</td><td>MyServices</td><td>TD35_Validate_TVEquipment_MakePrimary</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:27</td><td align='center'>0</td></tr><tr><td>36</td><td>MyServices</td><td>TD36_Validate_TVChannelList_Print</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:27</td><td align='center'>0</td></tr><tr><td>37</td><td>MyServices</td><td>TD38_Validate_VoiceMail_NotificationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:27</td><td align='center'>0</td></tr><tr><td>38</td><td>MyServices</td><td>TD39_Validate_Voice_Upgrade_charterDotNet</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:27</td><td align='center'>0</td></tr><tr><td>39</td><td>MyServices</td><td>TD40_Validate_TV_Upgrade_charterDotNet</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:28</td><td align='center'>0</td></tr><tr><td>40</td><td>MyServices</td><td>TD41_Validate_Internet_Upgrade_charterDotNet</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:28</td><td align='center'>0</td></tr><tr><td>41</td><td>MyServices</td><td>TD42_Validate_Internet_Upgrade_charterDotCom</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:28</td><td align='center'>0</td></tr><tr><td>42</td><td>MyServices</td><td>TD43_Validate_TV_Upgrade_charterDotCom</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:28</td><td align='center'>0</td></tr><tr><td>43</td><td>MyServices</td><td>TD44_Validate_Voice_Upgrade_charterDotCom</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:28</td><td align='center'>0</td></tr><tr><td>44</td><td>MyServices</td><td>TD45_Validate_TV_Upgrade_SilverPackage_charterDotCom</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:28</td><td align='center'>0</td></tr><tr><td>45</td><td>MyServices</td><td>TD46_Validate_TV_Upgrade_DoublePlayAccount_charterDotCom</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:28</td><td align='center'>0</td></tr><tr><td>46</td><td>MyServices</td><td>TD47_Validate_Internet_Upgrade_DoublePlayAccount_charterDotCom</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:28</td><td align='center'>0</td></tr><tr><td>47</td><td>MyServices</td><td>TD48_Validate_Internet_Equipment_details</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:28</td><td align='center'>0</td></tr><tr><td>48</td><td>MyServices</td><td>TD50_Validate_TV_Upgrade_TVSelectPackage_HBOChannel_charterDotCom</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:29</td><td align='center'>0</td></tr><tr><td>49</td><td>MyServices</td><td>TD53_Validate_ServiceUpgrade_HardDisconnectedAccount_charterDotCom</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:29</td><td align='center'>0</td></tr><tr><td>50</td><td>ForgotPassword</td><td>TA35_Validate_RetrievingPassword_HOHuser</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:29</td><td align='center'>0</td></tr><tr><td>51</td><td>ForgotPassword</td><td>TA59_Validate_ForgotPassword_DontRemember_SecurityAnswer_Email</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:29</td><td align='center'>0</td></tr><tr><td>52</td><td>ForgotPassword</td><td>TA61_Validate_ForgotPassword_nonCPNI_SecurityQA</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:29</td><td align='center'>0</td></tr><tr><td>53</td><td>ForgotPassword</td><td>TA62_Validate_ForgotPassword_CPNI_SecurityQA_convertTo_NonCPNI</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:29</td><td align='center'>0</td></tr><tr><td>54</td><td>ForgotPassword</td><td>TA64_Validate_ForgotPassword_CPNI_Email_convertTo_NonCPNI</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:29</td><td align='center'>0</td></tr><tr><td>55</td><td>ForgotPassword</td><td>TA66_Validate_ForgotPassword_Change_SecurityQuestionAnswer</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:29</td><td align='center'>0</td></tr><tr><td>56</td><td>ForgotPassword</td><td>TA67_Validate_RetrievingPassword_HOHuser_ConfirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:29</td><td align='center'>0</td></tr><tr><td>57</td><td>ForgotPassword</td><td>TA68_Validate_ConflictingUsername_RetrievingPassword_HOHuser</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:30</td><td align='center'>0</td></tr><tr><td>58</td><td>ForgotPassword</td><td>TA69_Validate_ConflictingUsername_RetrievingPassword_UnconvertedHOHuser</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:30</td><td align='center'>0</td></tr><tr><td>59</td><td>ForgotUsername</td><td>TA57_Validate_ForgotUsername_ConflictingEmail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:30</td><td align='center'>0</td></tr><tr><td>60</td><td>ForgotUsername</td><td>TA58_Validate_ForgotUsername_ConflictingPhone</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:30</td><td align='center'>0</td></tr><tr><td>61</td><td>ForgotUsername</td><td>TA65_Validate_ForgotUsername_UsingEmail_confirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:30</td><td align='center'>0</td></tr><tr><td>62</td><td>ForgotUsername</td><td>TA70_Validate_ForgotUsername_CPNINonVoiceUser_UsingEmail_confirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:30</td><td align='center'>0</td></tr><tr><td>63</td><td>ForgotUsername</td><td>TA71_Validate_ForgotUsername_CPNIVoiceUser_UsingEmail_confirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:30</td><td align='center'>0</td></tr><tr><td>64</td><td>ForgotUsername</td><td>TA72_Validate_ForgotUsername_CPNIVoiceUser_SecurityQandA_confirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:30</td><td align='center'>0</td></tr><tr><td>65</td><td>ForgotUsername</td><td>TA73_Validate_ForgotUsername_CPNINonVoiceUser_SecurityQandA_confirmationMail</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:31</td><td align='center'>0</td></tr><tr><td>66</td><td>WatchTV</td><td>TV17_Validate_WatchTVGuide_FilterChannel_SortList</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:31</td><td align='center'>0</td></tr><tr><td>67</td><td>WatchTV</td><td>TV31_Validate_WatchTVGuide_ManageFavorites</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:31</td><td align='center'>0</td></tr><tr><td>68</td><td>WatchTV</td><td>TV32_Validate_WatchTVOnDemand_WatchPremiumMovie</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:31</td><td align='center'>0</td></tr><tr><td>69</td><td>WatchTV</td><td>TV34_Validate_WatchTV_Guide_default_ZipCode</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:31</td><td align='center'>0</td></tr><tr><td>70</td><td>WatchTV</td><td>TV35_Validate_WatchTV_Guide_RegionalChannels</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:31</td><td align='center'>0</td></tr><tr><td>71</td><td>Login</td><td>TL02_Validate_ChaterInvalidLogin</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:31</td><td align='center'>0</td></tr><tr><td>72</td><td>Login</td><td>TL03_Validate_Non_ConvertedUser_UpdateUserPage</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:31</td><td align='center'>0</td></tr><tr><td>73</td><td>Login</td><td>TL05_Validate_Convert_StdUser_Check_HOHAdminLogin</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:32</td><td align='center'>0</td></tr><tr><td>74</td><td>Login</td><td>TL06_Validate_Convert_AdminUser_Check_HOHLogin</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:32</td><td align='center'>0</td></tr><tr><td>75</td><td>Login</td><td>TL07_Validate_Convert_twoUsers_SamePassword</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:32</td><td align='center'>0</td></tr><tr><td>76</td><td>Login</td><td>TL10_Validate_MSLoginConvert_LessThan6Characters_StdUser_MoreThan6Characters</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:32</td><td align='center'>0</td></tr><tr><td>77</td><td>Login</td><td>TL11_Validate_DotNetIDConvert_LessThan6Characters_StdUser_MoreThan6Characters</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:32</td><td align='center'>0</td></tr><tr><td>78</td><td>Login</td><td>TL12_Validate_MSLoginID_MSLogin_MoreThan6Characters_DotNetID_LessThan6Characters</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:32</td><td align='center'>0</td></tr><tr><td>79</td><td>Login</td><td>TL13_Validate_DotNetID_MSLogin_MoreThan6Characters_DotNetLogin_LessThan6Characters</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:32</td><td align='center'>0</td></tr><tr><td>80</td><td>Login</td><td>TL14_Validate_Account1_MSLogin_Conflicts_with_Account2_stdUser_DotNetID_HOHConverted</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:32</td><td align='center'>0</td></tr><tr><td>81</td><td>Login</td><td>TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:32</td><td align='center'>0</td></tr><tr><td>82</td><td>Login</td><td>TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:33</td><td align='center'>0</td></tr><tr><td>83</td><td>Login</td><td>TL18_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_differentPassword</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:33</td><td align='center'>0</td></tr><tr><td>84</td><td>Login</td><td>TL19_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_differentPassword</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:33</td><td align='center'>0</td></tr><tr><td>85</td><td>Login</td><td>TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:33</td><td align='center'>0</td></tr><tr><td>86</td><td>Login</td><td>TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:33</td><td align='center'>0</td></tr><tr><td>87</td><td>Login</td><td>TL22_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword_with_DotNetID_StandardUser</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:33</td><td align='center'>0</td></tr><tr><td>88</td><td>Home</td><td>TH27_Validate_WatchAnywhere_OnDemand_ManageAssets</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:33</td><td align='center'>0</td></tr><tr><td>89</td><td>CreateCharter_ID</td><td>TA01_Validate_HOHUser_CreateID_MACID</td>
+<td bgcolor='yellow', align='center'>Skip</td><td></td><td align='center'>18:04:33</td><td align='center'>0</td></tr></table>
+</body></html>

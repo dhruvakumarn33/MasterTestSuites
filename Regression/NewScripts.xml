@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Charter - Suite">
+	<listeners>
+		<listener class-name="com.cognizant.framework.listeners.WebTestListeners" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.cognizant.framework.listeners.AdvancedListener" />
+		<listener class-name="CharterReporter.TestNGReporter" />
+	</listeners>
+	<test name="Prod">
+		<classes>
+<!--    			<class name="com.charter.test.Billpay">
+		    	<methods>
+					<include name="TB34_Validate_LastPayment_Details_HOH"/>
+					<include name="TB35_Validate_LastPayment_Details_admin"/>
+					<include name="TB36_Validate_NoLastPayment_Message_HOH"/>
+					<include name="TB38_Validate_Available_LastStatements_admin"/>
+					<include name="TB39_Validate_OTPSchedule_ByDebitCard_ConfirmationMail"/>
+					<include name="TB40_Validate_OTPSchedule_ByCreditCard_ConfirmationMail"/>
+					<include name="TB41_Validate_OTPSchedule_ByChecking_ConfirmationMail"/>
+					<include name="TB42_Validate_AutoPaySetup_ByDebitCard_ConfirmationMail"/>
+					<include name="TB43_Validate_AutoPaySetup_ByCreditCard_ConfirmationMail"/>
+					<include name="TB44_Validate_AutoPaySetup_ByChecking_ConfirmationMail"/>
+					<include name="TB45_Validate_OTP_ByChecking_ConfirmationMail"/>
+					<include name="TB46_Validate_OTPayment_ByDebitCard_ConfirmationMail"/>
+					<include name="TB47_Validate_OTPayment_ByCreditCard_ConfirmationMail"/> 
+					<include name="TB51_Validate_StatementSummary_NotificationMail"/>
+					<include name="TB52_Validate_OTP_BySaving_ConfirmationMail"/>
+					<include name="TB53_Validate_AutoPaySetup_BySaving_ConfirmationMail"/>
+					<include name="TB54_Validate_OTPayment_ByDebitCard_PastDueAmount"/> 
+					<include name="TB55_Validate_OTPayment_ByCreditCard_PastDueAmount"/>
+					<include name="TB56_Validate_OTPayment_ByChecking_PastDueAmount"/> 
+					<include name="TB57_Validate_OTPayment_BySaving_PastDueAmount"/>
+		     	</methods>
+		    </class> 
+		    <class name="com.charter.test.BillPay1">
+		    	<methods>
+		       		<include name="TBB_12_Validate_HOH_user_able_to_Manage_BillDelivery_Method_C84921"/>
+		     	</methods>
+		    </class>
+			<class name="com.charter.test.MyAccount">
+		     	<methods>
+					<include name="validate_TVInternetVoice_DetailsLink_T517987"/>
+					<include name="MA_UsersandPreferences_Parentalcontrols_HOH_T518044"/>
+					<include name="TCC_01_Validate_UserPreferences_add_Promote_demote_deleteUser_HOH"/>
+					<include name="TC66_Validate_UserPreferencesPage_EmailControlSection_HOHUser"/>
+					<include name="TC74_Validate_BillingandTransactonPage_PaymentHistory_Section_Records"/>
+					<include name="TC76_CL20_Validate_SuccessMsg_on_Equipment_Refresh"/>
+					<include name="TC85_Validate_ViewBillStatements_adminUser"/>
+					<include name="TC99_Validate_UserPreferences_CreateID_Promote_demote_deleteUser_HOH"/>
+					<include name="TC100_Validate_ParentalControlChanges_StandardUser"/>
+					<include name="TC101_Validate_ErrorMsg_InvalidCouponRedemption"/>
+					<include name="TC102_Validate_SuccessMsg_ValidCouponRedemption"/>
+					<include name="TC103_Validate_ErrorMsg_SameCouponRedemption"/>
+		      	</methods>
+			</class>
+			<class name="com.charter.test.MyServices">
+				<methods>
+					<include name="TD34_Validate_TVEquipmentDetailsPage"/> 
+ 					<include name="TD35_Validate_TVEquipment_MakePrimary"/>
+					<include name="TD36_Validate_TVChannelList_Print"/> 
+					<include name="TD38_Validate_VoiceMail_NotificationMail"/>
+					<include name="TD39_Validate_Voice_Upgrade_charterDotNet"/>
+					<include name="TD40_Validate_TV_Upgrade_charterDotNet"/>
+					<include name="TD41_Validate_Internet_Upgrade_charterDotNet"/>
+					<include name="TD42_Validate_Internet_Upgrade_charterDotCom"/>
+					<include name="TD43_Validate_TV_Upgrade_charterDotCom"/>
+					<include name="TD44_Validate_Voice_Upgrade_charterDotCom"/>
+					<include name="TD45_Validate_TV_Upgrade_SilverPackage_charterDotCom"/>
+					<include name="TD46_Validate_TV_Upgrade_DoublePlayAccount_charterDotCom"/>
+					<include name="TD47_Validate_Internet_Upgrade_DoublePlayAccount_charterDotCom"/>
+					<include name="TD48_Validate_Internet_Equipment_details"/>
+					<include name="TD50_Validate_TV_Upgrade_TVSelectPackage_HBOChannel_charterDotCom"/>
+					<include name="TD53_Validate_ServiceUpgrade_HardDisconnectedAccount_charterDotCom"/>
+				</methods>
+			</class>
+ 			<class name="com.charter.test.ForgotPassword">
+				<methods>
+					<include name="TA35_Validate_RetrievingPassword_HOHuser"/>
+					<include name="TA59_Validate_ForgotPassword_DontRemember_SecurityAnswer_Email"/>
+					<include name="TA66_Validate_ForgotPassword_Change_SecurityQuestionAnswer"/>
+					<include name="TA67_Validate_RetrievingPassword_HOHuser_ConfirmationMail"/>
+					<include name="TA68_Validate_ConflictingUsername_RetrievingPassword_HOHuser"/>
+					<include name="TA69_Validate_ConflictingUsername_RetrievingPassword_UnconvertedHOHuser"/>
+				</methods>
+			</class>
+ 			 <class name="com.charter.test.ForgotUsername">
+				<methods>
+					<include name="TA57_Validate_ForgotUsername_ConflictingEmail"/>
+					<include name="TA58_Validate_ForgotUsername_ConflictingPhone"/>
+					<include name="TA65_Validate_ForgotUsername_UsingEmail_confirmationMail"/>
+				</methods>
+			</class>-->
+		 	<class name="com.charter.test.WatchTV">
+				<methods>
+					<include name="TV17_Validate_WatchTVGuide_FilterChannel_SortList"/>
+					<include name="TV31_Validate_WatchTVGuide_ManageFavorites"/>
+					<include name="TV32_Validate_WatchTVOnDemand_WatchPremiumMovie"/>
+					<include name="TV34_Validate_WatchTV_Guide_default_ZipCode"/>
+					<include name="TV35_Validate_WatchTV_Guide_RegionalChannels"/>
+				</methods>
+			</class> 
+<!-- 			<class name="com.charter.test.Login">
+				<methods>
+					<include name="TL02_Validate_ChaterInvalidLogin"/>
+					<include name="TL03_Validate_Non_ConvertedUser_UpdateUserPage"/>
+					<include name="TL05_Validate_Convert_StdUser_Check_HOHAdminLogin"/>
+					<include name="TL06_Validate_Convert_AdminUser_Check_HOHLogin"/>
+					<include name="TL07_Validate_Convert_twoUsers_SamePassword"/>
+					<include name="TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID"/>
+					<include name="TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID"/>
+					<include name="TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword"/>
+					<include name="TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword"/>
+					<include name="TL23_Validate_Login_HardDisconnectedAccount"/>
+				</methods>
+			</class> -->
+<!-- 			<class name="com.charter.test.Home">
+				<methods>
+					<include name="TH27_Validate_WatchAnywhere_OnDemand_ManageAssets"/>
+				</methods>
+			</class>
+			<class name="com.charter.test.CreateCharter_ID">
+				<methods>
+					<include name="TA01_Validate_HOHUser_CreateID_MACID"/>
+				</methods>
+			</class>  -->
+		</classes>
+	</test>
+</suite>

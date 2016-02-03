@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Charter - Suite">
+	<listeners>
+		<listener class-name="com.cognizant.framework.listeners.WebTestListeners" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.cognizant.framework.listeners.AdvancedListener" />
+		<listener class-name="CharterReporter.TestNGReporter" />
+	</listeners>
+	<test name="Prod">
+		<classes>
+ 			<class name="com.charter.test.Billpay">
+		    	<methods>
+ 		    		<include name="TB01_Validate_OTPSchedule_ByDebitCard_HOHUser"/>
+		       		<include name="TB02_Validate_OTPSchedule_ByCreditCard_HOHUser"/>
+		       		<include name="TB03_Validate_CancelFuturePayment_ScheduledByDebitCard_HOHUser"/>
+			  		<include name="TB05_Validate_OTPayment_ByDebitCard_AdminUser"/>
+		       		<include name="TB06_Validate_OTPayment_ByCreditCard_AdminUser"/>
+		       		<include name="TB11_Validate_AutoPaySetup_ByDebitCard_AdminUser"/>
+		       		<include name="TB12_Validate_AutoPaySetup_ByCreditCard_AdminUser"/>
+		       		<include name="TB19_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_HOHUser"/>
+		       		<include name="TB23_Validate_ViewImportantBillMessagesLink_NavigateTo_BillMessagesPage_HOHUser"/>
+		       		<include name="TB25_Validate_UpcomingPaymentsLink_NavigateTo_UpcomingPaymentsPage_HOHUser"/>
+		       		<include name="TB31_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_adminUser"/>  
+		       		<include name="TB32_Validate_BillingAndTransactionPage_BillDeliveryOptionsLink_NavigateTo_BilldeliveryOptionsPage_adminUser"/>
+		       		<include name="TB33_Validate_UpcomingPaymentLink_NavigateTo_NoUpcomingPayments_HOHUser"/>
+		       		<include name="TB34_Validate_LastPayment_Details_HOH"/>
+		       		<include name="TB35_Validate_LastPayment_Details_admin"/>
+		       		<include name="TB36_Validate_NoLastPayment_Message_HOH"/>
+		       		<include name="TB37_Validate_AutoPayStatus_admin"/>
+		       		<include name="TB38_Validate_Available_LastStatements_admin"/> 
+		       		<include name="TB39_Validate_OTPSchedule_ByDebitCard_ConfirmationMail"/>
+		       		<include name="TB40_Validate_OTPSchedule_ByCreditCard_ConfirmationMail"/>
+		       		<include name="TB41_Validate_OTPSchedule_ByChecking_ConfirmationMail"/>
+		       		<include name="TB42_Validate_AutoPaySetup_ByDebitCard_ConfirmationMail"/>
+		       		<include name="TB43_Validate_AutoPaySetup_ByCreditCard_ConfirmationMail"/>
+		       		<include name="TB44_Validate_AutoPaySetup_ByChecking_ConfirmationMail"/>
+		       		<include name="TB45_Validate_OTP_ByChecking_ConfirmationMail"/>
+		       		<include name="TB46_Validate_OTPayment_ByDebitCard_ConfirmationMail"/>
+		       		<include name="TB47_Validate_OTPayment_ByCreditCard_ConfirmationMail"/>
+		       		<include name="TB48_Validate_AutoPayCancel_ByDebitCard_ConfirmationMail"/>
+		       		<include name="TB49_Validate_AutoPayCancel_ByCreditCard_ConfirmationMail"/>
+		       		<include name="TB50_Validate_AutoPayCancel_ByChecking_ConfirmationMail"/>
+		       		<include name="TB51_Validate_StatementSummary_NotificationMail"/>
+		     	</methods>
+		    </class> 
+  	    	<class name="com.charter.test.BillPay1">
+		    	<methods>
+			  		<include name="OTP_checking_T518154"/>
+		       		<include name="OTP_Saving_T518155"/>
+		       		<include name="AutoPaymentChecking_T518264"/>
+		       		<include name="AutoPaymentSaving_T518265"/>
+		       		<include name="CancelAutoPay_Checking_T518709"/>
+		     	</methods>
+		    </class> 
+		    <class name="com.charter.test.CreateCharter_ID">
+		     	<methods>
+		     		<include name="TA01_Validate_HOHUser_CreateID"/>
+			        <include name="TA02_Validate_StandardUser_PromotTo_Admin_HOHUser"/>
+			        <include name="TA03_Validate_StandardUser_CreateID"/>
+			        <include name="TA09_Validate_CreateID_SuccessMessage"/>
+		      	</methods>
+			</class>
+			<class name="com.charter.test.MyAccount">
+		     	<methods> 		     	
+  	     			<include name="addUserbyHoH_T518024"/>
+		     		<include name="deleteUserbyHoH_C84683"/> 
+		     		<include name="MA_UsersandPreferences_Parentalcontrols_HOH_T518044"/>
+		     		<include name="validate_TVInternetVoice_DetailsLink_T517987"/>
+		     		<include name="MyAccount_ServiceAndEquipment_TV_T517981"/>
+		     		<include name="MyAccount_ServiceAndEquipment_Internet_T517988"/>
+		     		<include name="MyAccount_ServiceAndEquipment_Voice_T517992"/>
+		     		<include name="TCC_01_Validate_UserPreferences_add_Promote_demote_deleteUser_HOH"/>
+		     		<include name="TC01_Validate_OverviewPageHeaders_HOHUser"/>
+		     		<include name="TC03_Validate_AskCharterWidget_HOHUser"/>
+		     		<include name="TC04_Validate_ServiceAndEquipmentSection_And_UpgradeRules_TVInternetVoice_HOHUser"/>
+		     		<include name="TC09_Validate_ServiceAndEquipment_SectionEachLink_AdminUser"/>
+		     		<include name="TC12_Validate_OverviewPage_ViewPaymentViewDate_HOHUser"/>  
+		     		<include name="TC14_Validate_OverviewPage_NickNameLink_NavigationTo_TVServices"/>
+		     		<include name="TC22_Validate_BillingAndTransactionPage_ViewCurrentBillLink_NavigateTo_CurrentBillPage_HOHUser"/>
+		     		<include name="TC23_Validate_BillingAndTransactionPage_BillDeliveryOptionsLink_NavigateTo_BilldeliveryOptionsPage_HOHUser"/>
+		     		<include name="TC25_Validate_BillingAndTransPage_UpcomingPaymentLink_NavigateTo_UpcomingPaymentPage_HOHUser"/>
+		     		<include name="TC26_Validate_BillingAndTransactionPage_SummarySection_HOHUser"/>
+		     		<include name="TC29_Validate_BillingAndTransaction_PayBillLink_NavigateTo_PaymentOption_HOHUser"/>
+		     		<include name="TC30_Validate_BillingAndTransactionPage_ContactInfoSection_HOHuser"/>
+		     		<include name="TC31_Validate_BillingandTransPage_ChangeNameLink_NavigateTo_TransferAccountOwnershipPage_HOHuser"/>
+		     		<include name="TC32_Validate_BillingAndTransactionPage_TransferMyServiceLink_NavigateTo_TransferServicePage_HOHUser"/>
+		     		<include name="TC37_Validate_BillingAndTransactionPage_PaymentHistorySection_HOHUser"/>
+		     		<include name="TC38_Validate_BillingAndTransactionPage_RecentTransactionsSection_HOHUser"/>
+ 		     		<include name="TC62_Validate_UserPreferencesPage_EditFields_HOHUser"/>
+		     		<include name="TC63_Validate_UserPreferencesPage_BillingAddressEditFields_HOHUser"/>
+		     		<include name="TC64_Validate_UserPreferencesPage_AccountControlSection_HOHUser"/>
+		     		<include name="TC65_Validate_UserPreferencesPage_ParentalControlSection_HOHUser"/>
+		     		<include name="TC66_Validate_UserPreferencesPage_EmailControlSection_HOHUser"/>
+		     		<include name="TC74_Validate_BillingandTransactonPage_PaymentHistory_Section_Records"/>
+		     		<include name="TC76_CL20_Validate_SuccessMsg_on_Equipment_Refresh"/>
+		     		<include name="TC80_Validate_DateOfPayment_Selection"/>
+		     		<include name="TC81_Validate_AutopayStatus"/>
+		     		<include name="TC82_Validate_ViewBillDetails_link_HOH"/>
+		     		<include name="TC83_Validate_ViewBillDetails_link_admin"/>
+		     		<include name="TC84_Validate_BillingAndTransaction_PayBillLink_NavigateTo_PaymentOption_adminUser"/>
+		     		<include name="TC85_Validate_ViewBillStatements_adminUser"/>
+		     		<include name="TC86_Validate_UserPreferencesSection_AccountControl_HOHUser"/>
+		      		<include name="TC87_Validate_UserPreferencesSection_AccountControl_adminUser"/>
+		      		<include name="TC88_Validate_OverviewPageHeaders_AdminUser"/> 
+					<include name="TC89_Validate_BillingAndTransactionPage_BillDeliveryStatus_HOHUser"/>
+		      		<include name="TC90_Validate_BillingAndTransactionPage_ViewCurrentBillLink_NavigateTo_CurrentBillPage_AdminUser"/>
+		      		<include name="TC91_Validate_BillingAndTransactionPage_ContactInfoSection_Adminuser"/>
+		      		<include name="TC92_Validate_BillingAndTransactionPage_ContactInfoSection_Standarduser"/>
+		      		<include name="TC93_Validate_UserPreferencesPage_EditFields_AdminUser"/>
+		      		<include name="TC94_Validate_UserPreferencesPage_EmailControlSection_StdUser"/>
+		      		<include name="TC95_Validate_CurrentBillStatement_PrintPDF"/>
+		      		<include name="TC96_Validate_AvailableBillStatement_PrintPDF"/>
+		      		<include name="TC97_Validate_OverviewPage_ViewPaymentViewDate_AdminUser"/>
+		      		<include name="TC98_Validate_MyAccount_FirstTime_Access"/> 
+		      	</methods>
+			</class> 
+  			<class name="com.charter.test.Home">
+				<methods>
+					<include name="TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser"/>
+					<include name="TH25_Validate_PayBill_Guide_AskSpectrum_LocationLinks_HOH"/>
+					<include name="TH26_Validate_PayBill_userNotAuthenticated"/>
+					<include name="TH27_Validate_WatchAnywhere_OnDemand_ManageAssets"/>
+				</methods> 
+			</class>
+			<class name="com.charter.test.MyServices">
+				<methods>
+					<include name="TD06_Validate_MyServices_TV_Page_UpdateNickname"/>
+					<include name="TD31_Validate_TVEquipment_ToggleOnImages"/>
+					<include name="TD32_Validate_NoInternetEquipment"/>
+					<include name="TD33_Validate_NoVoiceEquipment"/>
+					<include name="TD34_Validate_TVEquipmentDetailsPage"/>
+					<include name="TD35_Validate_TVEquipment_MakePrimary"/>
+					<include name="TD36_Validate_TVChannelList_Print"/>
+				</methods>
+			</class>
+ 			<class name="com.charter.test.ForgotPassword">
+				<methods>
+					<include name="TA35_Validate_RetrievingPassword_HOHuser"/>
+					<include name="TA46_Validate_ForgotPassword_PasswordMismatchMessage"/>
+					<include name="TA55_Validate_ForgotPassword_InvalidCharterIDMessage"/>
+				</methods>
+			</class>
+			 <class name="com.charter.test.ForgotUsername">
+				<methods>
+					<include name="TA20_Validate_RetrievingChaterID_HOHuser"/>
+					<include name="TA56_Validate_ForgotUsername_3C_InlineErrorMessage"/>
+					<include name="TA57_Validate_ForgotUsername_ConflictingEmail"/>
+					<include name="TA58_Validate_ForgotUsername_ConflictingPhone"/>
+					<include name="TA65_Validate_ForgotUsername_UsingEmail_confirmationMail"/>
+				</methods>
+			</class>
+			<class name="com.charter.test.WatchTV">
+				<methods>
+					<include name="TV17_Validate_WatchTVGuide_FilterChannel_SortList"/>
+					<include name="TV27_CL20_Validate_PlayAsset_fromOnDemand_WatchOnline"/>
+					<include name="TV28_Validate_Record_OnWatchTVGuide"/>
+					<include name="TV29_Validate_Record_OnWatchTV_OnDemandPage"/>
+					<include name="TV30_Validate_Record_OnWatchTV_LiveTVPage"/>
+					<include name="TV31_Validate_WatchTVGuide_ManageFavorites"/>
+					<include name="TV32_Validate_WatchTVOnDemand_WatchPremiumMovie"/>
+					<include name="TV33_Validate_SendAsset_fromLiveTV_WatchOnTV_toSTB"/>
+					<include name="TV34_Validate_SendAsset_fromLiveTV_WatchOnTV_toSTB"/>
+					<include name="TV35_Validate_WatchTV_Guide_RegionalChannels"/>
+				</methods>
+			</class>
+			<class name="com.charter.test.Login">
+				<methods>
+					<include name="TL03_Validate_Non_ConvertedUser_UpdateUserPage"/>
+				</methods>
+			</class> 
+			<class name="com.charter.test.Authentication">
+				<methods>
+					<include name="TU03_Validate_ForgotPassword_DontRemember_SecurityAnswer_Email"/>
+				</methods>
+			</class> 
+		</classes>
+	</test>
+</suite>

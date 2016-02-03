@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Charter - Suite">
+	<listeners>
+		<listener class-name="com.cognizant.framework.listeners.WebTestListeners" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.cognizant.framework.listeners.AdvancedListener" />
+		<listener class-name="CharterReporter.TestNGReporter" />
+	</listeners>
+	<test name="Prod">
+		<classes>
+			<class name="com.charter.test.MyServices">
+				<methods>
+					<include name="TD45_Validate_TV_Upgrade_SilverPackage_charterDotCom"/>
+					<include name="TD53_Validate_ServiceUpgrade_HardDisconnectedAccount_charterDotCom"/>
+					<include name="TD47_Validate_Internet_Upgrade_DoublePlayAccount_charterDotCom"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

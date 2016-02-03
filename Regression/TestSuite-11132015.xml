@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Charter - Suite">
+	<listeners>
+		<listener class-name="com.cognizant.framework.listeners.WebTestListeners" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.cognizant.framework.listeners.AdvancedListener" />
+		<listener class-name="CharterReporter.TestNGReporter" />
+	</listeners>
+	<test name="Prod">
+		<classes>
+
+			<class name="com.charter.test.MyAccount">
+				<methods>
+					<include name="TC62_Validate_UserPreferencesPage_EditFields_HOHUser"/>
+					<include name="TC63_Validate_UserPreferencesPage_BillingAddressEditFields_HOHUser"/>
+					<include name="TC66_Validate_UserPreferencesPage_EmailControlSection_HOHUser"/>
+					<include name="TC99_Validate_UserPreferences_CreateID_Promote_demote_deleteUser_HOH"/>
+					<include name="TC100_Validate_ParentalControlChanges_StandardUser"/>
+					<include name="TC101_Validate_ErrorMsg_InvalidCouponRedemption"/>
+				</methods>
+			</class>
+			<class name="com.charter.test.Billpay">
+				<methods>
+					<include name="TB43_Validate_AutoPaySetup_ByCreditCard_ConfirmationMail"/>
+					<include name="TB44_Validate_AutoPaySetup_ByChecking_ConfirmationMail"/>
+					<include name="TB51_Validate_StatementSummary_NotificationMail"/>
+					<include name="TB54_Validate_OTPayment_ByDebitCard_PastDueAmount"/>
+				</methods>
+			</class>
+			<class name="com.charter.test.BillPay1">
+				<methods>
+					<include name="TBB_12_Validate_HOH_user_able_to_Manage_BillDelivery_Method_C84921"></include>
+				</methods>
+			</class>
+			<class name="com.charter.test.Login">
+				<methods>
+					<include name="TL02_Validate_ChaterInvalidLogin"/>
+					<include name="TL03_Validate_Non_ConvertedUser_UpdateUserPage"/>
+				</methods>
+			</class>
+			<class name="com.charter.test.WatchTV">
+				<methods>
+					<include name="TV17_Validate_WatchTVGuide_FilterChannel_SortList"/>
+					<include name="TV31_Validate_WatchTVGuide_ManageFavorites"/>
+					<include name="TV32_Validate_WatchTVOnDemand_WatchPremiumMovie"/>
+					<include name="TV34_Validate_WatchTV_Guide_default_ZipCode"/>
+					<include name="TV35_Validate_WatchTV_Guide_RegionalChannels"/>
+				</methods>
+			</class>
+			<class name="com.charter.test.Home">
+				<methods>
+					<include name="TH27_Validate_WatchAnywhere_OnDemand_ManageAssets"/>
+				</methods>
+			</class>
+			
+		</classes>
+	</test>
+</suite>

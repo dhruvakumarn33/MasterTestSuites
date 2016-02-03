@@ -1,0 +1,656 @@
+<html>
+<head>
+<title>TestNG:  EngProd_Test_May15th</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>EngProd_Test_May15th</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 20 17:45:17 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>1166 seconds (1166163 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.Billpay.TB01_Validate_OTPSchedule_ByDebitCard_HOHUser()'><b>TB01_Validate_OTPSchedule_ByDebitCard_HOHUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB01_Validate_OTPSchedule_ByDebitCard_HOHUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=26, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=E2E202, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-821235" onClick='toggleBox("Output-821235", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-821235" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-821235">
+<<<*** END: Billpay.TB01_Validate_OTPSchedule_ByDebitCard_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB01_Validate_OTPSchedule_ByDebitCard_HOHUser, Took 291 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB01_Validate_OTPSchedule_ByDebitCard_HOHUser-1-20May15_055016.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB01_Validate_OTPSchedule_ByDebitCard_HOHUser-1-20May15_055016.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.linkText: Policies
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Session ID: 216f3f82-d7dc-4535-a927-d0670f633579
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.charter.page.HomePage.pagewait(HomePage.java:92)
+	at com.charter.page.BillingAndTransactionsPage.makePayment(BillingAndTransactionsPage.java:129)
+	at com.charter.test.Billpay.TB01_Validate_OTPSchedule_ByDebitCard_HOHUser(Billpay.java:44)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Policies&quot;}
+Command duration or timeout: 240.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+*** Element info: {Using=link text, value=Policies}
+Session ID: 216f3f82-d7dc-4535-a927-d0670f633579
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Policies&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/393859/AppData/Local/Temp/anonymous4919291033263787438webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous4919291033263787438webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace821235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace821235'><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.linkText: Policies
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Session ID: 216f3f82-d7dc-4535-a927-d0670f633579
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.charter.page.HomePage.pagewait(HomePage.java:92)
+	at com.charter.page.BillingAndTransactionsPage.makePayment(BillingAndTransactionsPage.java:129)
+	at com.charter.test.Billpay.TB01_Validate_OTPSchedule_ByDebitCard_HOHUser(Billpay.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Policies&quot;}
+Command duration or timeout: 240.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+*** Element info: {Using=link text, value=Policies}
+Session ID: 216f3f82-d7dc-4535-a927-d0670f633579
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Policies&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/393859/AppData/Local/Temp/anonymous4919291033263787438webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous4919291033263787438webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>291</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB02_Validate_OTPSchedule_ByCreditCard_HOHUser()'><b>TB02_Validate_OTPSchedule_ByCreditCard_HOHUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB02_Validate_OTPSchedule_ByCreditCard_HOHUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=27, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=E2E203, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-31543991" onClick='toggleBox("Output-31543991", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31543991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31543991">
+<<<*** END: Billpay.TB02_Validate_OTPSchedule_ByCreditCard_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB02_Validate_OTPSchedule_ByCreditCard_HOHUser, Took 353 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB02_Validate_OTPSchedule_ByCreditCard_HOHUser-1-20May15_055619.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB02_Validate_OTPSchedule_ByCreditCard_HOHUser-1-20May15_055619.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Finish&apos;)]&quot;}
+Command duration or timeout: 240.23 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Finish&apos;)]}
+Session ID: 19147bb2-23aa-4b9b-b1db-1b4a40da1bad
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.BillingAndTransactionsPage.Finishbtn(BillingAndTransactionsPage.java:140)
+	at com.charter.test.Billpay.TB02_Validate_OTPSchedule_ByCreditCard_HOHUser(Billpay.java:83)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Finish&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/393859/AppData/Local/Temp/anonymous322326972326806359webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous322326972326806359webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31543991", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31543991'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Finish&apos;)]&quot;}
+Command duration or timeout: 240.23 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Finish&apos;)]}
+Session ID: 19147bb2-23aa-4b9b-b1db-1b4a40da1bad
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.BillingAndTransactionsPage.Finishbtn(BillingAndTransactionsPage.java:140)
+	at com.charter.test.Billpay.TB02_Validate_OTPSchedule_ByCreditCard_HOHUser(Billpay.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Finish&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/393859/AppData/Local/Temp/anonymous322326972326806359webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous322326972326806359webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>353</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser()'><b>TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=28, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5016_child_02, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-27930434" onClick='toggleBox("Output-27930434", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27930434" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27930434">
+<<<*** END: Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser, Took 295 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser-1-20May15_060242.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser-1-20May15_060242.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Finish&apos;)]&quot;}
+Command duration or timeout: 240.21 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Finish&apos;)]}
+Session ID: 4867ec7a-1222-4275-84db-7d2bcccf39d9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.BillingAndTransactionsPage.Finishbtn(BillingAndTransactionsPage.java:140)
+	at com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser(Billpay.java:246)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Finish&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/393859/AppData/Local/Temp/anonymous735072768918250300webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous735072768918250300webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27930434", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27930434'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Finish&apos;)]&quot;}
+Command duration or timeout: 240.21 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Finish&apos;)]}
+Session ID: 4867ec7a-1222-4275-84db-7d2bcccf39d9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.BillingAndTransactionsPage.Finishbtn(BillingAndTransactionsPage.java:140)
+	at com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser(Billpay.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Finish&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/393859/AppData/Local/Temp/anonymous735072768918250300webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/393859/AppData/Local/Temp/anonymous735072768918250300webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>295</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser()'><b>TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=29, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5016_child_02, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-29610826" onClick='toggleBox("Output-29610826", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29610826" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29610826">
+<<<*** END: Billpay.TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser, Took 109 seconds<br/><br/>
+Unable to capture the screenshotError communicating with the remote browser. It may have died.
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'PC220578', ip: '10.102.6.129', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_21'
+Driver info: driver.version: FirefoxDriver<br/><br/>
+<<<*** END: Billpay.TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser, Took 116 seconds<br/><br/>
+Unable to capture the screenshotError communicating with the remote browser. It may have died.
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'PC220578', ip: '10.102.6.129', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_21'
+Driver info: driver.version: FirefoxDriver<br/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.BillingAndTransactionsPage.Finishbtn(BillingAndTransactionsPage.java:140)
+	at com.charter.test.Billpay.TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser(Billpay.java:280)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:72)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:133)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 31 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 46 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29610826", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29610826'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.BillingAndTransactionsPage.Finishbtn(BillingAndTransactionsPage.java:140)
+	at com.charter.test.Billpay.TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser(Billpay.java:280)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:72)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:133)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 31 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 46 more
+</pre></div></td>
+<td>109</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser()'><b>TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser</b><br>Test class: com.charter.test.Billpay</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:459)
+	at com.cognizant.framework.listeners.ResultContainer.setWebpage(ResultContainer.java:54)
+	at com.cognizant.framework.listeners.WebTestListeners.onTestFailure(WebTestListeners.java:153)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:126)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:72)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:133)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 25 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 40 more
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26202645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26202645'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:459)
+	at com.cognizant.framework.listeners.ResultContainer.setWebpage(ResultContainer.java:54)
+	at com.cognizant.framework.listeners.WebTestListeners.onTestFailure(WebTestListeners.java:153)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1895)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:126)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:72)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:133)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 25 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 40 more
+</pre></div></td>
+<td>116</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser()'><b>TB06_Validate_OTPayment_ByCreditCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB06_Validate_OTPayment_ByCreditCard_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5016_child_02, lastname=, firstname_CID=, searchkey=, couponNumber=, Zipcode=, ACnumber=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-12610903" onClick='toggleBox("Output-12610903", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12610903" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12610903">
+<<<*** END: Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser, Took 71 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>71</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+</table><p>
+</body>
+</html>

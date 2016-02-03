@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Charter - Suite">
+	<listeners>
+		<listener class-name="com.cognizant.framework.listeners.WebTestListeners" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.cognizant.framework.listeners.AdvancedListener" />
+		<listener class-name="CharterReporter.TestNGReporter" />
+	</listeners>
+	<test name="Prod">
+		<classes>
+
+			<class name="com.charter.test.CharterMail">
+		     	<methods> 		     	
+  	     			<include name="TM15_Validate_ATMailError_Inbox"/>
+		     		<include name="TM16_Validate_ATMailError_Drafts"/> 
+		     		<include name="TM17_Validate_ATMailError_SentMail"/>
+		     		<include name="TM18_Validate_ATMailError_Spam"/> 
+		     		<include name="TM19_Validate_ATMailError_Trash"/>
+		      	</methods>
+			</class>  
+		</classes>
+	</test>
+</suite>

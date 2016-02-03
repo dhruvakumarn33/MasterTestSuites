@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="10" passed="10">
+  <reporter-output>
+    <line>
+      <![CDATA[1<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Prod<br/>]]>
+    </line>
+    <line>
+      <![CDATA[null<br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** START: Login.TL02_Validate_ChaterInvalidLogin ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** END: Login.TL02_Validate_ChaterInvalidLogin ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed :com.charter.test.Login.TL02_Validate_ChaterInvalidLogin, Took 57 seconds<br/>]]>
+    </line>
+    <line>
+      <![CDATA[1<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Prod<br/>]]>
+    </line>
+    <line>
+      <![CDATA[null<br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** START: Login.TL03_Validate_Non_ConvertedUser_UpdateUserPage ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** END: Login.TL03_Validate_Non_ConvertedUser_UpdateUserPage ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed :com.charter.test.Login.TL03_Validate_Non_ConvertedUser_UpdateUserPage, Took 66 seconds<br/>]]>
+    </line>
+    <line>
+      <![CDATA[1<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Prod<br/>]]>
+    </line>
+    <line>
+      <![CDATA[null<br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** START: Login.TL05_Validate_Convert_StdUser_Check_HOHAdminLogin ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** END: Login.TL05_Validate_Convert_StdUser_Check_HOHAdminLogin ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed :com.charter.test.Login.TL05_Validate_Convert_StdUser_Check_HOHAdminLogin, Took 67 seconds<br/>]]>
+    </line>
+    <line>
+      <![CDATA[1<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Prod<br/>]]>
+    </line>
+    <line>
+      <![CDATA[null<br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** START: Login.TL06_Validate_Convert_AdminUser_Check_HOHLogin ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** END: Login.TL06_Validate_Convert_AdminUser_Check_HOHLogin ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed :com.charter.test.Login.TL06_Validate_Convert_AdminUser_Check_HOHLogin, Took 69 seconds<br/>]]>
+    </line>
+    <line>
+      <![CDATA[1<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Prod<br/>]]>
+    </line>
+    <line>
+      <![CDATA[null<br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** START: Login.TL07_Validate_Convert_twoUsers_SamePassword ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** END: Login.TL07_Validate_Convert_twoUsers_SamePassword ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed :com.charter.test.Login.TL07_Validate_Convert_twoUsers_SamePassword, Took 134 seconds<br/>]]>
+    </line>
+    <line>
+      <![CDATA[1<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Prod<br/>]]>
+    </line>
+    <line>
+      <![CDATA[null<br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** START: Login.TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** END: Login.TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed :com.charter.test.Login.TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID, Took 52 seconds<br/>]]>
+    </line>
+    <line>
+      <![CDATA[1<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Prod<br/>]]>
+    </line>
+    <line>
+      <![CDATA[null<br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** START: Login.TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** END: Login.TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed :com.charter.test.Login.TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID, Took 51 seconds<br/>]]>
+    </line>
+    <line>
+      <![CDATA[1<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Prod<br/>]]>
+    </line>
+    <line>
+      <![CDATA[null<br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** START: Login.TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** END: Login.TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed :com.charter.test.Login.TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword, Took 41 seconds<br/>]]>
+    </line>
+    <line>
+      <![CDATA[1<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Prod<br/>]]>
+    </line>
+    <line>
+      <![CDATA[null<br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** START: Login.TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** END: Login.TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed :com.charter.test.Login.TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword, Took 45 seconds<br/>]]>
+    </line>
+    <line>
+      <![CDATA[1<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Prod<br/>]]>
+    </line>
+    <line>
+      <![CDATA[null<br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** START: Login.TL23_Validate_Login_HardDisconnectedAccount ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[<<<*** END: Login.TL23_Validate_Login_HardDisconnectedAccount ***>>> <br/>]]>
+    </line>
+    <line>
+      <![CDATA[=====================================================================================<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed :com.charter.test.Login.TL23_Validate_Login_HardDisconnectedAccount, Took 22 seconds<br/>]]>
+    </line>
+  </reporter-output>
+  <suite name="Charter - Suite" duration-ms="690585" started-at="2016-01-29T12:21:27Z" finished-at="2016-01-29T12:32:58Z">
+    <groups>
+    </groups>
+    <test name="Prod" duration-ms="690585" started-at="2016-01-29T12:21:27Z" finished-at="2016-01-29T12:32:58Z">
+      <class name="com.charter.test.Login">
+        <test-method status="PASS" signature="suiteConfig(java.lang.String)[pri:0, instance:com.charter.test.Login@1248c21]" name="suiteConfig" is-config="true" duration-ms="7" started-at="2016-01-29T17:51:27Z" finished-at="2016-01-29T17:51:27Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteConfig -->
+        <test-method status="PASS" signature="testSetup(java.lang.String)[pri:0, instance:com.charter.test.Login@1248c21]" name="testSetup" is-config="true" duration-ms="4910" started-at="2016-01-29T17:51:27Z" finished-at="2016-01-29T17:51:32Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="TL02_Validate_ChaterInvalidLogin(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21]" name="TL02_Validate_ChaterInvalidLogin" duration-ms="57674" started-at="2016-01-29T17:51:32Z" data-provider="TestDataCharter" finished-at="2016-01-29T17:52:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CardNumber=, mac_CID=, security_question=, Devicenickname=, zipcode_fID=, Account_Type=, invalidLastname=, invalidPassword=Testing01, SecurityQuestion=, lastname_fp=, email2=, password=, security_answer=, Account_pom=, invalidMAC=, Zipcode=, Relogin_UserID=, Operatingsystem=, invalidEmail=, SecurityAnswer=, couponNumber=, NewRole=, MSLogin=, UserPassword=Testing01, City=, selectUser=, PC_Unratedcontent=, ACnumber=, Relogin_Password=, charterID=, lastname=, lastname_fID=, Zipcode_fp=, State=, firstname_CID=, zipcode_CID=, ParentalControl_TV=, mac_fID=, invalidSecurityAns=, address_CID=, ParentalControl_Unratedcontent=, Message=, adminuser=, ParentalControl_Movie=, TestCaseId=TL02_Validate_ChaterInvalidLogin, PC_TV=, Password1=, searchkey=, invalidZipcode=, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=tdr33001, CardType=, UserID1=fef0122, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, email=, AccountNumberVerify=, LegacySiteURL=, accountnumber=, FutureDate=, Statement=, Address2=, Mobilephone=, PC_Movie=, Account_DVRcontrol=, Address1=, hohuser=, ConfirmPassword=, routingnumber=, ContactEmail=, SelectDate=, ExpYear=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<<<*** END: Login.TL02_Validate_ChaterInvalidLogin ***>>> <br/>]]>
+            </line>
+            <line>
+              <![CDATA[=====================================================================================<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed :com.charter.test.Login.TL02_Validate_ChaterInvalidLogin, Took 57 seconds<br/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TL02_Validate_ChaterInvalidLogin -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.charter.test.Login@1248c21]" name="afterMethod" is-config="true" duration-ms="5561" started-at="2016-01-29T17:52:30Z" finished-at="2016-01-29T17:52:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:com.charter.test.Login@1248c21]" name="postTestCase" is-config="true" duration-ms="1153" started-at="2016-01-29T17:52:35Z" finished-at="2016-01-29T17:52:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TL02_Validate_ChaterInvalidLogin status=SUCCESS method=Login.TL02_Validate_ChaterInvalidLogin(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21] output=<<<*** END: Login.TL02_Validate_ChaterInvalidLogin ***>>> <br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="testSetup(java.lang.String)[pri:0, instance:com.charter.test.Login@1248c21]" name="testSetup" is-config="true" duration-ms="1900" started-at="2016-01-29T17:52:37Z" finished-at="2016-01-29T17:52:38Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="TL03_Validate_Non_ConvertedUser_UpdateUserPage(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21]" name="TL03_Validate_Non_ConvertedUser_UpdateUserPage" duration-ms="66549" started-at="2016-01-29T17:52:38Z" data-provider="TestDataCharter" finished-at="2016-01-29T17:53:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode_fID=, Account_Type=, invalidLastname=, invalidPassword=, SecurityQuestion=, lastname_fp=, filterbyPhone=, email2=, password=, security_answer=red, Account_pom=, invalidMAC=, Zipcode=, Relogin_UserID=, Operatingsystem=, SecurityCode=, invalidEmail=, SecurityAnswer=, couponNumber=, NewRole=, MSLogin=, UserPassword=Testing01, City=, selectUser=, PC_Unratedcontent=, ACnumber=, Relogin_Password=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, BusinessCharterID=, filterbyRate=, State=, firstname_CID=, zipcode_CID=, ParentalControl_TV=, mac_fID=, invalidSecurityAns=, address_CID=, ParentalControl_Unratedcontent=, Message=, adminuser=, ParentalControl_Movie=, TestCaseId=TL03_Validate_Non_ConvertedUser_UpdateUserPage, PC_TV=, Password1=, searchkey=, invalidZipcode=, lastname_CID=, fLinked_CharterID=, ExpDate=, filterbyType=, UserID=e2eauto002, CardType=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, email=e2eauto002@charter.net, AccountNumberVerify=, LegacySiteURL=, accountnumber=, FutureDate=, Statement=, Gmailpw=Relaunch2.0, Address2=, Mobilephone=8888888888, PC_Movie=, Account_DVRcontrol=, Address1=, hohuser=, ConfirmPassword=, routingnumber=, ContactEmail=, GmailID=charter.net2014@gmail.com, SelectDate=, ExpYear=, businessaccountNo=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<<<*** END: Login.TL03_Validate_Non_ConvertedUser_UpdateUserPage ***>>> <br/>]]>
+            </line>
+            <line>
+              <![CDATA[=====================================================================================<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed :com.charter.test.Login.TL03_Validate_Non_ConvertedUser_UpdateUserPage, Took 66 seconds<br/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TL03_Validate_Non_ConvertedUser_UpdateUserPage -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.charter.test.Login@1248c21]" name="afterMethod" is-config="true" duration-ms="4116" started-at="2016-01-29T17:53:45Z" finished-at="2016-01-29T17:53:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:com.charter.test.Login@1248c21]" name="postTestCase" is-config="true" duration-ms="1145" started-at="2016-01-29T17:53:49Z" finished-at="2016-01-29T17:53:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TL03_Validate_Non_ConvertedUser_UpdateUserPage status=SUCCESS method=Login.TL03_Validate_Non_ConvertedUser_UpdateUserPage(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21] output=<<<*** END: Login.TL03_Validate_Non_ConvertedUser_UpdateUserPage ***>>> <br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="testSetup(java.lang.String)[pri:0, instance:com.charter.test.Login@1248c21]" name="testSetup" is-config="true" duration-ms="1906" started-at="2016-01-29T17:53:50Z" finished-at="2016-01-29T17:53:52Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="TL05_Validate_Convert_StdUser_Check_HOHAdminLogin(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21]" name="TL05_Validate_Convert_StdUser_Check_HOHAdminLogin" duration-ms="67876" started-at="2016-01-29T17:53:52Z" data-provider="TestDataCharter" finished-at="2016-01-29T17:55:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode_fID=, Account_Type=, invalidLastname=, invalidPassword=, SecurityQuestion=, lastname_fp=, filterbyPhone=, email2=, password=, security_answer=red, Account_pom=, invalidMAC=, Zipcode=, Relogin_UserID=, Operatingsystem=, SecurityCode=, invalidEmail=, SecurityAnswer=, couponNumber=, NewRole=, MSLogin=, UserPassword=Testing01, City=, selectUser=, PC_Unratedcontent=, ACnumber=, Relogin_Password=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, BusinessCharterID=, filterbyRate=, State=, firstname_CID=, zipcode_CID=, ParentalControl_TV=, mac_fID=, invalidSecurityAns=, address_CID=, ParentalControl_Unratedcontent=, Message=, adminuser=admin_e2eauto009, ParentalControl_Movie=, TestCaseId=TL05_Validate_Convert_StdUser_Check_HOHAdminLogin, PC_TV=, Password1=, searchkey=, invalidZipcode=, lastname_CID=, fLinked_CharterID=, ExpDate=, filterbyType=, UserID=std_e2eauto009, CardType=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, email=std_e2eauto009@charter.net, AccountNumberVerify=, LegacySiteURL=, accountnumber=, FutureDate=, Statement=, Gmailpw=Relaunch2.0, Address2=, Mobilephone=8888888888, PC_Movie=, Account_DVRcontrol=, Address1=, hohuser=e2eauto009, ConfirmPassword=, routingnumber=, ContactEmail=, GmailID=charter.net2014@gmail.com, SelectDate=, ExpYear=, businessaccountNo=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<<<*** END: Login.TL05_Validate_Convert_StdUser_Check_HOHAdminLogin ***>>> <br/>]]>
+            </line>
+            <line>
+              <![CDATA[=====================================================================================<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed :com.charter.test.Login.TL05_Validate_Convert_StdUser_Check_HOHAdminLogin, Took 67 seconds<br/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TL05_Validate_Convert_StdUser_Check_HOHAdminLogin -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.charter.test.Login@1248c21]" name="afterMethod" is-config="true" duration-ms="4693" started-at="2016-01-29T17:55:00Z" finished-at="2016-01-29T17:55:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:com.charter.test.Login@1248c21]" name="postTestCase" is-config="true" duration-ms="1146" started-at="2016-01-29T17:55:05Z" finished-at="2016-01-29T17:55:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TL05_Validate_Convert_StdUser_Check_HOHAdminLogin status=SUCCESS method=Login.TL05_Validate_Convert_StdUser_Check_HOHAdminLogin(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21] output=<<<*** END: Login.TL05_Validate_Convert_StdUser_Check_HOHAdminLogin ***>>> <br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="testSetup(java.lang.String)[pri:0, instance:com.charter.test.Login@1248c21]" name="testSetup" is-config="true" duration-ms="2043" started-at="2016-01-29T17:55:06Z" finished-at="2016-01-29T17:55:08Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="TL06_Validate_Convert_AdminUser_Check_HOHLogin(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21]" name="TL06_Validate_Convert_AdminUser_Check_HOHLogin" duration-ms="69839" started-at="2016-01-29T17:55:08Z" data-provider="TestDataCharter" finished-at="2016-01-29T17:56:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=admin_e2eauto009, invalidLastname=, invalidPassword=, TestCaseId=TL06_Validate_Convert_AdminUser_Check_HOHLogin, lastname_fp=, invalidZipcode=, email2=, password=, security_answer=red, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=admin_e2eauto009, CardType=, invalidMAC=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, invalidEmail=, email=admin_e2eauto009@charter.net, AccountNumberVerify=, LegacySiteURL=, FutureDate=, MSLogin=, UserPassword=Testing01, Mobilephone=8888888888, ACnumber=, hohuser=e2eauto009, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, firstname_CID=, zipcode_CID=, SelectDate=, mac_fID=, invalidSecurityAns=, ExpYear=, address_CID=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<<<*** END: Login.TL06_Validate_Convert_AdminUser_Check_HOHLogin ***>>> <br/>]]>
+            </line>
+            <line>
+              <![CDATA[=====================================================================================<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed :com.charter.test.Login.TL06_Validate_Convert_AdminUser_Check_HOHLogin, Took 69 seconds<br/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TL06_Validate_Convert_AdminUser_Check_HOHLogin -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.charter.test.Login@1248c21]" name="afterMethod" is-config="true" duration-ms="4364" started-at="2016-01-29T17:56:18Z" finished-at="2016-01-29T17:56:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:com.charter.test.Login@1248c21]" name="postTestCase" is-config="true" duration-ms="1123" started-at="2016-01-29T17:56:22Z" finished-at="2016-01-29T17:56:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TL06_Validate_Convert_AdminUser_Check_HOHLogin status=SUCCESS method=Login.TL06_Validate_Convert_AdminUser_Check_HOHLogin(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21] output=<<<*** END: Login.TL06_Validate_Convert_AdminUser_Check_HOHLogin ***>>> <br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="testSetup(java.lang.String)[pri:0, instance:com.charter.test.Login@1248c21]" name="testSetup" is-config="true" duration-ms="2309" started-at="2016-01-29T17:56:24Z" finished-at="2016-01-29T17:56:26Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="TL07_Validate_Convert_twoUsers_SamePassword(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21]" name="TL07_Validate_Convert_twoUsers_SamePassword" duration-ms="134185" started-at="2016-01-29T17:56:26Z" data-provider="TestDataCharter" finished-at="2016-01-29T17:58:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=, invalidLastname=, invalidPassword=, TestCaseId=TL07_Validate_Convert_twoUsers_SamePassword, lastname_fp=, invalidZipcode=, email2=, password=, security_answer=red, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=EngTestSprint051, CardType=, invalidMAC=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, invalidEmail=, email=engtestSprint051@charter.net, AccountNumberVerify=, LegacySiteURL=, FutureDate=, MSLogin=EngTestRel051, UserPassword=Testing01, Mobilephone=8888888888, ACnumber=, hohuser=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, firstname_CID=, zipcode_CID=, SelectDate=, mac_fID=, invalidSecurityAns=, ExpYear=, address_CID=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<<<*** END: Login.TL07_Validate_Convert_twoUsers_SamePassword ***>>> <br/>]]>
+            </line>
+            <line>
+              <![CDATA[=====================================================================================<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed :com.charter.test.Login.TL07_Validate_Convert_twoUsers_SamePassword, Took 134 seconds<br/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TL07_Validate_Convert_twoUsers_SamePassword -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.charter.test.Login@1248c21]" name="afterMethod" is-config="true" duration-ms="3998" started-at="2016-01-29T17:58:40Z" finished-at="2016-01-29T17:58:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:com.charter.test.Login@1248c21]" name="postTestCase" is-config="true" duration-ms="1146" started-at="2016-01-29T17:58:44Z" finished-at="2016-01-29T17:58:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TL07_Validate_Convert_twoUsers_SamePassword status=SUCCESS method=Login.TL07_Validate_Convert_twoUsers_SamePassword(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21] output=<<<*** END: Login.TL07_Validate_Convert_twoUsers_SamePassword ***>>> <br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="testSetup(java.lang.String)[pri:0, instance:com.charter.test.Login@1248c21]" name="testSetup" is-config="true" duration-ms="2667" started-at="2016-01-29T17:58:45Z" finished-at="2016-01-29T17:58:48Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21]" name="TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID" duration-ms="52204" started-at="2016-01-29T17:58:48Z" data-provider="TestDataCharter" finished-at="2016-01-29T17:59:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=, invalidLastname=, invalidPassword=, TestCaseId=TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID, lastname_fp=, invalidZipcode=, email2=, password=, security_answer=red, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=e2eadd405, CardType=, invalidMAC=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=Testing01, invalidEmail=, email=E2EADD405@charter.net, AccountNumberVerify=, LegacySiteURL=, FutureDate=, MSLogin=e2eadd405, UserPassword=, Mobilephone=8888888888, ACnumber=, hohuser=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, firstname_CID=, zipcode_CID=, SelectDate=, mac_fID=, invalidSecurityAns=, ExpYear=, address_CID=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<<<*** END: Login.TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID ***>>> <br/>]]>
+            </line>
+            <line>
+              <![CDATA[=====================================================================================<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed :com.charter.test.Login.TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID, Took 52 seconds<br/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.charter.test.Login@1248c21]" name="afterMethod" is-config="true" duration-ms="4301" started-at="2016-01-29T17:59:40Z" finished-at="2016-01-29T17:59:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:com.charter.test.Login@1248c21]" name="postTestCase" is-config="true" duration-ms="1163" started-at="2016-01-29T17:59:44Z" finished-at="2016-01-29T17:59:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID status=SUCCESS method=Login.TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21] output=<<<*** END: Login.TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID ***>>> <br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="testSetup(java.lang.String)[pri:0, instance:com.charter.test.Login@1248c21]" name="testSetup" is-config="true" duration-ms="2692" started-at="2016-01-29T17:59:46Z" finished-at="2016-01-29T17:59:48Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21]" name="TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID" duration-ms="51128" started-at="2016-01-29T17:59:48Z" data-provider="TestDataCharter" finished-at="2016-01-29T18:00:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=, invalidLastname=, invalidPassword=, TestCaseId=TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID, lastname_fp=, invalidZipcode=, email2=, password=, security_answer=red, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=e2eadd404, CardType=, invalidMAC=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, invalidEmail=, email=E2EADD404@charter.net, AccountNumberVerify=, LegacySiteURL=, FutureDate=, MSLogin=, UserPassword=Testing01, Mobilephone=8888888888, ACnumber=, hohuser=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, firstname_CID=, zipcode_CID=, SelectDate=, mac_fID=, invalidSecurityAns=, ExpYear=, address_CID=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<<<*** END: Login.TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID ***>>> <br/>]]>
+            </line>
+            <line>
+              <![CDATA[=====================================================================================<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed :com.charter.test.Login.TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID, Took 51 seconds<br/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.charter.test.Login@1248c21]" name="afterMethod" is-config="true" duration-ms="4403" started-at="2016-01-29T18:00:40Z" finished-at="2016-01-29T18:00:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:com.charter.test.Login@1248c21]" name="postTestCase" is-config="true" duration-ms="1136" started-at="2016-01-29T18:00:44Z" finished-at="2016-01-29T18:00:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID status=SUCCESS method=Login.TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21] output=<<<*** END: Login.TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID ***>>> <br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="testSetup(java.lang.String)[pri:0, instance:com.charter.test.Login@1248c21]" name="testSetup" is-config="true" duration-ms="2375" started-at="2016-01-29T18:00:45Z" finished-at="2016-01-29T18:00:48Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21]" name="TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword" duration-ms="41454" started-at="2016-01-29T18:00:48Z" data-provider="TestDataCharter" finished-at="2016-01-29T18:01:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=, invalidLastname=, invalidPassword=, TestCaseId=TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword, lastname_fp=, invalidZipcode=, email2=, password=, security_answer=red, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=e2e5001, CardType=, invalidMAC=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=Testing01, invalidEmail=, email=e2e5001@charter.net, AccountNumberVerify=, LegacySiteURL=, FutureDate=, MSLogin=e2e5001, UserPassword=, Mobilephone=8888888888, ACnumber=, hohuser=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, firstname_CID=, zipcode_CID=, SelectDate=, mac_fID=, invalidSecurityAns=, ExpYear=, address_CID=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<<<*** END: Login.TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword ***>>> <br/>]]>
+            </line>
+            <line>
+              <![CDATA[=====================================================================================<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed :com.charter.test.Login.TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword, Took 41 seconds<br/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.charter.test.Login@1248c21]" name="afterMethod" is-config="true" duration-ms="4290" started-at="2016-01-29T18:01:29Z" finished-at="2016-01-29T18:01:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:com.charter.test.Login@1248c21]" name="postTestCase" is-config="true" duration-ms="1141" started-at="2016-01-29T18:01:33Z" finished-at="2016-01-29T18:01:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword status=SUCCESS method=Login.TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21] output=<<<*** END: Login.TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword ***>>> <br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="testSetup(java.lang.String)[pri:0, instance:com.charter.test.Login@1248c21]" name="testSetup" is-config="true" duration-ms="1968" started-at="2016-01-29T18:01:35Z" finished-at="2016-01-29T18:01:37Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21]" name="TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword" duration-ms="45027" started-at="2016-01-29T18:01:37Z" data-provider="TestDataCharter" finished-at="2016-01-29T18:02:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=, invalidLastname=, invalidPassword=, TestCaseId=TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword, lastname_fp=, invalidZipcode=, email2=, password=, security_answer=red, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=e2e5001, CardType=, invalidMAC=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, invalidEmail=, email=e2e5001@charter.net, AccountNumberVerify=, LegacySiteURL=, FutureDate=, MSLogin=, UserPassword=Testing01, Mobilephone=8888888888, ACnumber=, hohuser=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, firstname_CID=, zipcode_CID=, SelectDate=, mac_fID=, invalidSecurityAns=, ExpYear=, address_CID=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<<<*** END: Login.TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword ***>>> <br/>]]>
+            </line>
+            <line>
+              <![CDATA[=====================================================================================<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed :com.charter.test.Login.TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword, Took 45 seconds<br/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.charter.test.Login@1248c21]" name="afterMethod" is-config="true" duration-ms="4409" started-at="2016-01-29T18:02:22Z" finished-at="2016-01-29T18:02:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:com.charter.test.Login@1248c21]" name="postTestCase" is-config="true" duration-ms="1169" started-at="2016-01-29T18:02:26Z" finished-at="2016-01-29T18:02:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword status=SUCCESS method=Login.TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21] output=<<<*** END: Login.TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword ***>>> <br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="testSetup(java.lang.String)[pri:0, instance:com.charter.test.Login@1248c21]" name="testSetup" is-config="true" duration-ms="2230" started-at="2016-01-29T18:02:27Z" finished-at="2016-01-29T18:02:30Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="TL23_Validate_Login_HardDisconnectedAccount(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21]" name="TL23_Validate_Login_HardDisconnectedAccount" duration-ms="22146" started-at="2016-01-29T18:02:30Z" data-provider="TestDataCharter" finished-at="2016-01-29T18:02:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserID=e2eauto021, UserID1=, TestCaseId=TL23_Validate_Login_HardDisconnectedAccount, UserPassword=Testing01}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<<<*** END: Login.TL23_Validate_Login_HardDisconnectedAccount ***>>> <br/>]]>
+            </line>
+            <line>
+              <![CDATA[=====================================================================================<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed :com.charter.test.Login.TL23_Validate_Login_HardDisconnectedAccount, Took 22 seconds<br/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TL23_Validate_Login_HardDisconnectedAccount -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.charter.test.Login@1248c21]" name="afterMethod" is-config="true" duration-ms="4703" started-at="2016-01-29T18:02:52Z" finished-at="2016-01-29T18:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="postTestCase(org.testng.ITestResult)[pri:0, instance:com.charter.test.Login@1248c21]" name="postTestCase" is-config="true" duration-ms="1127" started-at="2016-01-29T18:02:56Z" finished-at="2016-01-29T18:02:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TL23_Validate_Login_HardDisconnectedAccount status=SUCCESS method=Login.TL23_Validate_Login_HardDisconnectedAccount(java.util.Map)[pri:0, instance:com.charter.test.Login@1248c21] output=<<<*** END: Login.TL23_Validate_Login_HardDisconnectedAccount ***>>> <br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestCase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.charter.test.Login@1248c21]" name="tearDown" is-config="true" duration-ms="517" started-at="2016-01-29T18:02:58Z" finished-at="2016-01-29T18:02:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.charter.test.Login -->
+    </test> <!-- Prod -->
+  </suite> <!-- Charter - Suite -->
+</testng-results>

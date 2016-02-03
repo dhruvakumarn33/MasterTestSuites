@@ -1,0 +1,6 @@
+#surefire
+#Fri Dec 18 10:00:37 IST 2015
+org.uncommons.reportng.escape-output=false
+user.dir=D\:\\Regression
+localRepository=C\:\\Users\\401508\\.m2\\repository
+basedir=D\:\\Regression

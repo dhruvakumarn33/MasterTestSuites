@@ -1,0 +1,632 @@
+<html>
+<head>
+<title>TestNG:  Sanity_Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sanity_Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 10 12:45:31 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>2334 seconds (2334383 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC21_Validate_BillingAndTransactionPage_MakeAPaymentLink_NavigateTo_PaymentOptionPage_HOHUser()'><b>TC21_Validate_BillingAndTransactionPage_MakeAPaymentLink_NavigateTo_PaymentOptionPage_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e237, TestCaseId=TC21_Validate_BillingAndTransactionPage_MakeAPaymentLink_NavigateTo_PaymentOptionPage_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-13373462" onClick='toggleBox("Output-13373462", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13373462" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13373462">
+<<<*** END: MyAccount.TC21_Validate_BillingAndTransactionPage_MakeAPaymentLink_NavigateTo_PaymentOptionPage_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.MyAccount.TC21_Validate_BillingAndTransactionPage_MakeAPaymentLink_NavigateTo_PaymentOptionPage_HOHUser, Took 128 seconds<br/><br/>
+<a href='D:\CharterNet\test-output\html\screenshots\TC21_Validate_BillingAndTransactionPage_MakeAPaymentLink_NavigateTo_PaymentOptionPage_HOHUser-1-10Mar15_010351.png'><img src='D:\CharterNet\test-output\html\screenshots\TC21_Validate_BillingAndTransactionPage_MakeAPaymentLink_NavigateTo_PaymentOptionPage_HOHUser-1-10Mar15_010351.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 30 seconds waiting for element to be clickable: By.name: username
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.HomePage.login(HomePage.java:105)
+	at com.charter.test.MyAccount.TC21_Validate_BillingAndTransactionPage_MakeAPaymentLink_NavigateTo_PaymentOptionPage_HOHUser(MyAccount.java:451)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13373462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13373462'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 30 seconds waiting for element to be clickable: By.name: username
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.HomePage.login(HomePage.java:105)
+	at com.charter.test.MyAccount.TC21_Validate_BillingAndTransactionPage_MakeAPaymentLink_NavigateTo_PaymentOptionPage_HOHUser(MyAccount.java:451)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>128</td>
+<td>com.charter.test.MyAccount@1a0d6c9</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount1.TCC_02_Validate_UserPreferences_add_Promote_StandardUser_to_Admin_by_Admin()'><b>TCC_02_Validate_UserPreferences_add_Promote_StandardUser_to_Admin_by_Admin</b><br>Test class: com.charter.test.MyAccount1<br>Parameters: {invalidLastname=, security_answer=green, SelectDate=, LegacySiteURL=, hohuser=, Mobilephone=8888888888, mac_fID=, CharterID_fp=, lastname=Test, UserID=e2e5034_child_01, TestCaseId=TCC_02_Validate_UserPreferences_add_Promote_StandardUser_to_Admin_by_Admin, charterID=e2e5034_01, password=Testing01, security_question=Color or make of your first car?, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, FutureDate=, invalidZipcode=, address_fID=, email=charter.net2014@gmail.com, ExpDate=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-18012392" onClick='toggleBox("Output-18012392", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18012392" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18012392">
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Select User\User is selected-10Mar15_011038.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Promote\Account Controls-10Mar15_011038.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Promote\Admin-10Mar15_011044.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Promote\clicked Save Button-10Mar15_011045.png<br/><br/>
+<<<*** END: MyAccount1.TCC_02_Validate_UserPreferences_add_Promote_StandardUser_to_Admin_by_Admin ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.MyAccount1.TCC_02_Validate_UserPreferences_add_Promote_StandardUser_to_Admin_by_Admin, Took 138 seconds<br/><br/>
+<a href='D:\CharterNet\test-output\html\screenshots\TCC_02_Validate_UserPreferences_add_Promote_StandardUser_to_Admin_by_Admin-1-10Mar15_011206.png'><img src='D:\CharterNet\test-output\html\screenshots\TCC_02_Validate_UserPreferences_add_Promote_StandardUser_to_Admin_by_Admin-1-10Mar15_011206.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 30 seconds waiting for element to be clickable: By.name: username
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.HomePage.login(HomePage.java:105)
+	at com.charter.test.MyAccount1.TCC_02_Validate_UserPreferences_add_Promote_StandardUser_to_Admin_by_Admin(MyAccount1.java:448)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18012392", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18012392'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 30 seconds waiting for element to be clickable: By.name: username
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.HomePage.login(HomePage.java:105)
+	at com.charter.test.MyAccount1.TCC_02_Validate_UserPreferences_add_Promote_StandardUser_to_Admin_by_Admin(MyAccount1.java:448)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>138</td>
+<td>com.charter.test.MyAccount1@12ce7c6</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD01_Validate_MyServicesPage_FindAndProgramYourRemoteLink_NavigateTo_SupportArticle()'><b>TD01_Validate_MyServicesPage_FindAndProgramYourRemoteLink_NavigateTo_SupportArticle</b><br>Test class: com.charter.test.MyServices<br>Parameters: {SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, UserID=e2e5004, TestCaseId=TD01_Validate_MyServicesPage_FindAndProgramYourRemoteLink_NavigateTo_SupportArticle, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, FutureDate=, invalidZipcode=, address_fID=, ExpDate=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-29446852" onClick='toggleBox("Output-29446852", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29446852" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29446852">
+<<<*** END: MyServices.TD01_Validate_MyServicesPage_FindAndProgramYourRemoteLink_NavigateTo_SupportArticle ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.MyServices.TD01_Validate_MyServicesPage_FindAndProgramYourRemoteLink_NavigateTo_SupportArticle, Took 127 seconds<br/><br/>
+<a href='D:\CharterNet\test-output\html\screenshots\TD01_Validate_MyServicesPage_FindAndProgramYourRemoteLink_NavigateTo_SupportArticle-1-10Mar15_011428.png'><img src='D:\CharterNet\test-output\html\screenshots\TD01_Validate_MyServicesPage_FindAndProgramYourRemoteLink_NavigateTo_SupportArticle-1-10Mar15_011428.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 30 seconds waiting for element to be clickable: By.name: username
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.HomePage.login(HomePage.java:105)
+	at com.charter.test.MyServices.TD01_Validate_MyServicesPage_FindAndProgramYourRemoteLink_NavigateTo_SupportArticle(MyServices.java:31)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29446852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29446852'><pre>com.cognizant.framework.exception.BrowserBotException: Bot encountered a timeout while waiting for a condition,  Timed out after 30 seconds waiting for element to be clickable: By.name: username
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;PC220578&apos;, ip: &apos;10.102.6.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: unknown
+	at com.cognizant.framework.core.WebDriverBase.wait(WebDriverBase.java:76)
+	at com.cognizant.framework.core.WebDriverBase.type(WebDriverBase.java:197)
+	at com.charter.page.HomePage.login(HomePage.java:105)
+	at com.charter.test.MyServices.TD01_Validate_MyServicesPage_FindAndProgramYourRemoteLink_NavigateTo_SupportArticle(MyServices.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>127</td>
+<td>com.charter.test.MyServices@9ccd0a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.Login.TA48_Validate_ChaterValidLogin()'><b>TA48_Validate_ChaterValidLogin</b><br>Test class: com.charter.test.Login<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TA48_Validate_ChaterValidLogin, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, Statement=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2eadd170, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-8315701" onClick='toggleBox("Output-8315701", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8315701" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8315701">
+<<<*** END: Login.TA48_Validate_ChaterValidLogin ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Login.TA48_Validate_ChaterValidLogin, Took 40 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.charter.test.Login@c54366</td></tr>
+<tr>
+<td title='com.charter.test.Login.TA49_Validate_ChaterInvalidLogin()'><b>TA49_Validate_ChaterInvalidLogin</b><br>Test class: com.charter.test.Login<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TA49_Validate_ChaterInvalidLogin, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, Statement=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=fef, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=feff, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-105536" onClick='toggleBox("Output-105536", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-105536" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-105536">
+<<<*** END: Login.TA49_Validate_ChaterInvalidLogin ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Login.TA49_Validate_ChaterInvalidLogin, Took 24 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.charter.test.Login@c54366</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB03_Validate_CancelFuturePayment_ScheduledByDebitCard_HOHUser()'><b>TB03_Validate_CancelFuturePayment_ScheduledByDebitCard_HOHUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB03_Validate_CancelFuturePayment_ScheduledByDebitCard_HOHUser, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=18, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e237, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-5557531" onClick='toggleBox("Output-5557531", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5557531" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5557531">
+<<<*** END: Billpay.TB03_Validate_CancelFuturePayment_ScheduledByDebitCard_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB03_Validate_CancelFuturePayment_ScheduledByDebitCard_HOHUser, Took 197 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>197</td>
+<td>com.charter.test.Billpay@4a117f</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB05_Validate_OTPayment_ByDebitCard_AdminUser()'><b>TB05_Validate_OTPayment_ByDebitCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB05_Validate_OTPayment_ByDebitCard_AdminUser, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5016_child_02, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-213344" onClick='toggleBox("Output-213344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-213344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-213344">
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\OTP DC\Selected One Time Debit-10Mar15_125103.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\OTP DC\Card Details-10Mar15_125110.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\OTP DC\VerifyPaymentConfirmation-10Mar15_125111.png<br/><br/>
+Expected value: Thank you for your payment. It may take up to 24 hours for this payment to be reflected on your account. You will receive an email notification when your payment has been successfully submitted. Actual value: Thank you for your payment. It may take up to 24 hours for this payment to be reflected on your account. You will receive an email notification when your payment has been successfully submitted. - PASSED : Payment Confirmation Message<br/><br/>
+<<<*** END: Billpay.TB05_Validate_OTPayment_ByDebitCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB05_Validate_OTPayment_ByDebitCard_AdminUser, Took 63 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>com.charter.test.Billpay@4a117f</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB16_Validate_ModifyOTPayment_ByCreditCard_VerificationPage()'><b>TB16_Validate_ModifyOTPayment_ByCreditCard_VerificationPage</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB16_Validate_ModifyOTPayment_ByCreditCard_VerificationPage, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5011, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-24875395" onClick='toggleBox("Output-24875395", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24875395" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24875395">
+Expected value: Thank you for your payment. It may take up to 24 hours for this payment to be reflected on your account. You will receive an email notification when your payment has been successfully submitted. Actual value: Thank you for your payment. It may take up to 24 hours for this payment to be reflected on your account. You will receive an email notification when your payment has been successfully submitted. - PASSED : Payment Confirmation Message<br/><br/>
+<<<*** END: Billpay.TB16_Validate_ModifyOTPayment_ByCreditCard_VerificationPage ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB16_Validate_ModifyOTPayment_ByCreditCard_VerificationPage, Took 66 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>66</td>
+<td>com.charter.test.Billpay@4a117f</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard()'><b>TB29_Validate_Duplicate_OTP_Message_ByDebitCard</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB29_Validate_Duplicate_OTP_Message_ByDebitCard, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5016_child_02, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-1354337" onClick='toggleBox("Output-1354337", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1354337" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1354337">
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\OTP DC\Selected One Time Debit-10Mar15_125336.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\OTP DC\Card Details-10Mar15_125343.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\OTP DC\VerifyPaymentConfirmation-10Mar15_125344.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\OTP DC\Selected One Time Debit-10Mar15_125409.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\OTP DC\Card Details-10Mar15_125416.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\OTP DC\VerifyPaymentConfirmation-10Mar15_125416.png<br/><br/>
+<<<*** END: Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard, Took 111 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>111</td>
+<td>com.charter.test.Billpay@4a117f</td></tr>
+<tr>
+<td title='com.charter.test.BillPay1.TBB_12_Validate_HOH_user_able_to_Manage_BillDelivery_Method_C84921()'><b>TBB_12_Validate_HOH_user_able_to_Manage_BillDelivery_Method_C84921</b><br>Test class: com.charter.test.BillPay1<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TBB_12_Validate_HOH_user_able_to_Manage_BillDelivery_Method_C84921, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, Statement=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5016, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-10721649" onClick='toggleBox("Output-10721649", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10721649" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10721649">
+<<<*** END: BillPay1.TBB_12_Validate_HOH_user_able_to_Manage_BillDelivery_Method_C84921 ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.BillPay1.TBB_12_Validate_HOH_user_able_to_Manage_BillDelivery_Method_C84921, Took 56 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>56</td>
+<td>com.charter.test.BillPay1@1fc1696</td></tr>
+<tr>
+<td title='com.charter.test.BillPay1.TBB_19_validate_HOH_user_able_to_Edit_ContactInfo_BillingandTransaction_Page_T518104()'><b>TBB_19_validate_HOH_user_able_to_Edit_ContactInfo_BillingandTransaction_Page_T518104</b><br>Test class: com.charter.test.BillPay1<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TBB_19_validate_HOH_user_able_to_Edit_ContactInfo_BillingandTransaction_Page_T518104, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=, Address2=e2e5043, fLinked_CharterID=, Address1=4561 LEMAY FERRY RD, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, Statement=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5043, lastname=, searchkey=, couponNumber=, Zipcode=631291646, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=SAINT LOUIS, invalidZipcode=, State=MISSOURI, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-3945584" onClick='toggleBox("Output-3945584", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3945584" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3945584">
+<<<*** END: BillPay1.TBB_19_validate_HOH_user_able_to_Edit_ContactInfo_BillingandTransaction_Page_T518104 ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.BillPay1.TBB_19_validate_HOH_user_able_to_Edit_ContactInfo_BillingandTransaction_Page_T518104, Took 98 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>98</td>
+<td>com.charter.test.BillPay1@1fc1696</td></tr>
+<tr>
+<td title='com.charter.test.BillPay1.TBB_21_validate_Standard_user_able_to_Edit_ContactInfo_BillingandTransaction_Page_T518106()'><b>TBB_21_validate_Standard_user_able_to_Edit_ContactInfo_BillingandTransaction_Page_T518106</b><br>Test class: com.charter.test.BillPay1<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TBB_21_validate_Standard_user_able_to_Edit_ContactInfo_BillingandTransaction_Page_T518106, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, Statement=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e224, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-1681025" onClick='toggleBox("Output-1681025", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1681025" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1681025">
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\T518106\LoginPage-10Mar15_125746.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\T518106\Billing and Transaction Page-10Mar15_125752.png<br/><br/>
+<<<*** END: BillPay1.TBB_21_validate_Standard_user_able_to_Edit_ContactInfo_BillingandTransaction_Page_T518106 ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.BillPay1.TBB_21_validate_Standard_user_able_to_Edit_ContactInfo_BillingandTransaction_Page_T518106, Took 40 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.charter.test.BillPay1@1fc1696</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC04_Validate_ServiceAndEquipmentSection_And_UpgradeRules_TVInternetVoice_HOHUser()'><b>TC04_Validate_ServiceAndEquipmentSection_And_UpgradeRules_TVInternetVoice_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, UserID=e2e5031, TestCaseId=TC04_Validate_ServiceAndEquipmentSection_And_UpgradeRules_TVInternetVoice_HOHUser, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=E2E5038, FutureDate=, invalidZipcode=, address_fID=, ExpDate=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-15305149" onClick='toggleBox("Output-15305149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15305149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15305149">
+<<<*** END: MyAccount.TC04_Validate_ServiceAndEquipmentSection_And_UpgradeRules_TVInternetVoice_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC04_Validate_ServiceAndEquipmentSection_And_UpgradeRules_TVInternetVoice_HOHUser, Took 154 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>154</td>
+<td>com.charter.test.MyAccount@1a0d6c9</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC08_Validate_BillingandTransaction_SectionEachLinks_HOHUser()'><b>TC08_Validate_BillingandTransaction_SectionEachLinks_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, SelectDate=, hohuser=, mac_fID=, TestCaseId=TC08_Validate_BillingandTransaction_SectionEachLinks_HOHUser, charterID=, password=, Account_Type=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, security_answer=, Mobilephone=, CharterID_fp=, UserID=e2e5011, lastname=, Zipcode=, security_question=, Account_pom=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, UserID1=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-19661850" onClick='toggleBox("Output-19661850", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19661850" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19661850">
+<<<*** END: MyAccount.TC08_Validate_BillingandTransaction_SectionEachLinks_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC08_Validate_BillingandTransaction_SectionEachLinks_HOHUser, Took 39 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.charter.test.MyAccount@1a0d6c9</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC22_Validate_BillingAndTransactionPage_ViewCurrentBillLink_NavigateTo_CurrentBillPage_HOHUser()'><b>TC22_Validate_BillingAndTransactionPage_ViewCurrentBillLink_NavigateTo_CurrentBillPage_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e5016, TestCaseId=TC22_Validate_BillingAndTransactionPage_ViewCurrentBillLink_NavigateTo_CurrentBillPage_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-26790598" onClick='toggleBox("Output-26790598", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26790598" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26790598">
+<<<*** END: MyAccount.TC22_Validate_BillingAndTransactionPage_ViewCurrentBillLink_NavigateTo_CurrentBillPage_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC22_Validate_BillingAndTransactionPage_ViewCurrentBillLink_NavigateTo_CurrentBillPage_HOHUser, Took 38 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.charter.test.MyAccount@1a0d6c9</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC23_Validate_BillingAndTransactionPage_BillDeliveryOptionsLink_NavigateTo_BilldeliveryOptionsPage_HOHUser()'><b>TC23_Validate_BillingAndTransactionPage_BillDeliveryOptionsLink_NavigateTo_BilldeliveryOptionsPage_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e237, TestCaseId=TC23_Validate_BillingAndTransactionPage_BillDeliveryOptionsLink_NavigateTo_BilldeliveryOptionsPage_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-21454013" onClick='toggleBox("Output-21454013", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21454013" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21454013">
+<<<*** END: MyAccount.TC23_Validate_BillingAndTransactionPage_BillDeliveryOptionsLink_NavigateTo_BilldeliveryOptionsPage_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC23_Validate_BillingAndTransactionPage_BillDeliveryOptionsLink_NavigateTo_BilldeliveryOptionsPage_HOHUser, Took 46 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.charter.test.MyAccount@1a0d6c9</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount.TC24_Validate_BillingAndTransPage_ViewImportantBillMessageLink_NavigateTo_ViewImportantBillMessagePage_HOHUser()'><b>TC24_Validate_BillingAndTransPage_ViewImportantBillMessageLink_NavigateTo_ViewImportantBillMessagePage_HOHUser</b><br>Test class: com.charter.test.MyAccount<br>Parameters: {LegacySiteURL=, UserID1=, UserID=e2e5023, TestCaseId=TC24_Validate_BillingAndTransPage_ViewImportantBillMessageLink_NavigateTo_ViewImportantBillMessagePage_HOHUser, UserPassword=Testing01}<br/>
+<a href="#Output-21760720" onClick='toggleBox("Output-21760720", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21760720" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21760720">
+<<<*** END: MyAccount.TC24_Validate_BillingAndTransPage_ViewImportantBillMessageLink_NavigateTo_ViewImportantBillMessagePage_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount.TC24_Validate_BillingAndTransPage_ViewImportantBillMessageLink_NavigateTo_ViewImportantBillMessagePage_HOHUser, Took 48 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>com.charter.test.MyAccount@1a0d6c9</td></tr>
+<tr>
+<td title='com.charter.test.MyAccount1.TCC_01_Validate_UserPreferences_add_Promote_demote_deleteUser_HOH()'><b>TCC_01_Validate_UserPreferences_add_Promote_demote_deleteUser_HOH</b><br>Test class: com.charter.test.MyAccount1<br>Parameters: {invalidLastname=, security_answer=black, SelectDate=, LegacySiteURL=, hohuser=, Mobilephone=8888888888, mac_fID=, CharterID_fp=, lastname=Test, UserID=e2e5043, TestCaseId=TCC_01_Validate_UserPreferences_add_Promote_demote_deleteUser_HOH, charterID=e2e5043_01, Account_Type=Admin, Zipcode=, password=Testing01, security_question=Color or make of your first car?, selectUser=, ExpYear=, Address2=, Address1=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidMAC=, invalidPassword=, ParentalControl_TV=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, UserID1=, invalidSecurityAns=, invalidAddress=, City=, FutureDate=, invalidZipcode=, address_fID=, State=, email=charter.net2014@gmail.com, ExpDate=, ParentalControl_Unratedcontent=, invalidEmail=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-11944035" onClick='toggleBox("Output-11944035", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11944035" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11944035">
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Select User\User is selected-10Mar15_010753.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Promote\Account Controls-10Mar15_010754.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Promote\Admin-10Mar15_010800.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Promote\clicked Save Button-10Mar15_010800.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Select User\User is selected-10Mar15_010841.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Demote\Account Controls-10Mar15_010842.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Demote\Checked Standard-10Mar15_010847.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Demote\clicked on Save Button-10Mar15_010848.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Select User\User is selected-10Mar15_010930.png<br/><br/>
+screenshot saved in: D:\CharterNet\test-output\html\screenshots\Delete User\Clicked on Delete button-10Mar15_010931.png<br/><br/>
+<<<*** END: MyAccount1.TCC_01_Validate_UserPreferences_add_Promote_demote_deleteUser_HOH ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyAccount1.TCC_01_Validate_UserPreferences_add_Promote_demote_deleteUser_HOH, Took 186 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>186</td>
+<td>com.charter.test.MyAccount1@12ce7c6</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD02_Validate_MyServicesPage_DigitalReceiversLink_NavigateTo_SupportArticle()'><b>TD02_Validate_MyServicesPage_DigitalReceiversLink_NavigateTo_SupportArticle</b><br>Test class: com.charter.test.MyServices<br>Parameters: {SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, UserID=e2e5004, TestCaseId=TD02_Validate_MyServicesPage_DigitalReceiversLink_NavigateTo_SupportArticle, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, FutureDate=, invalidZipcode=, address_fID=, ExpDate=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-5689457" onClick='toggleBox("Output-5689457", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5689457" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5689457">
+<<<*** END: MyServices.TD02_Validate_MyServicesPage_DigitalReceiversLink_NavigateTo_SupportArticle ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD02_Validate_MyServicesPage_DigitalReceiversLink_NavigateTo_SupportArticle, Took 53 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>com.charter.test.MyServices@9ccd0a</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD05_Validate_MyServicesPage_UpdateDigitalReciever_LearnMoreLink_NavigateTo_UpdateDigitalRecieverPage()'><b>TD05_Validate_MyServicesPage_UpdateDigitalReciever_LearnMoreLink_NavigateTo_UpdateDigitalRecieverPage</b><br>Test class: com.charter.test.MyServices<br>Parameters: {SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, UserID=e2e5004, TestCaseId=TD05_Validate_MyServicesPage_UpdateDigitalReciever_LearnMoreLink_NavigateTo_UpdateDigitalRecieverPage, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, FutureDate=, invalidZipcode=, address_fID=, ExpDate=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-11869252" onClick='toggleBox("Output-11869252", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11869252" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11869252">
+<<<*** END: MyServices.TD05_Validate_MyServicesPage_UpdateDigitalReciever_LearnMoreLink_NavigateTo_UpdateDigitalRecieverPage ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD05_Validate_MyServicesPage_UpdateDigitalReciever_LearnMoreLink_NavigateTo_UpdateDigitalRecieverPage, Took 55 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>55</td>
+<td>com.charter.test.MyServices@9ccd0a</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD06_Validate_MyServicesPage_UpdateMACAddress_AndMessage()'><b>TD06_Validate_MyServicesPage_UpdateMACAddress_AndMessage</b><br>Test class: com.charter.test.MyServices<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TD06_Validate_MyServicesPage_UpdateMACAddress_AndMessage, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5004, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-18427189" onClick='toggleBox("Output-18427189", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18427189" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18427189">
+<<<*** END: MyServices.TD06_Validate_MyServicesPage_UpdateMACAddress_AndMessage ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD06_Validate_MyServicesPage_UpdateMACAddress_AndMessage, Took 39 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.charter.test.MyServices@9ccd0a</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD08_Validate_MyservicesPage_NameYourDigitalReceiverLearnMoreLink_NavigateTo_TVServicesPage()'><b>TD08_Validate_MyservicesPage_NameYourDigitalReceiverLearnMoreLink_NavigateTo_TVServicesPage</b><br>Test class: com.charter.test.MyServices<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TD08_Validate_MyservicesPage_NameYourDigitalReceiverLearnMoreLink_NavigateTo_TVServicesPage, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5004, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-24306765" onClick='toggleBox("Output-24306765", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24306765" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24306765">
+<<<*** END: MyServices.TD08_Validate_MyservicesPage_NameYourDigitalReceiverLearnMoreLink_NavigateTo_TVServicesPage ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD08_Validate_MyservicesPage_NameYourDigitalReceiverLearnMoreLink_NavigateTo_TVServicesPage, Took 43 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>com.charter.test.MyServices@9ccd0a</td></tr>
+<tr>
+<td title='com.charter.test.MyServices.TD09_Validate_MyServicesPage_ActivateNewDigitalReceiverUpdate_AndMessage()'><b>TD09_Validate_MyServicesPage_ActivateNewDigitalReceiverUpdate_AndMessage</b><br>Test class: com.charter.test.MyServices<br>Parameters: {SelectDate=, LegacySiteURL=, hohuser=, mac_fID=, CharterID_fp=, UserID=e2e5004, TestCaseId=TD09_Validate_MyServicesPage_ActivateNewDigitalReceiverUpdate_AndMessage, ExpYear=, fLinked_CharterID=, address_CID=, CardType=, UserPassword=Testing01, zipcode_CID=, invalidPassword=, CardNumber=, lastname_fp=, mac_CID=, Zipcode_fp=, UserID1=, FutureDate=, invalidZipcode=, address_fID=, ExpDate=, zipcode_fID=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-1977934" onClick='toggleBox("Output-1977934", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1977934" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1977934">
+<<<*** END: MyServices.TD09_Validate_MyServicesPage_ActivateNewDigitalReceiverUpdate_AndMessage ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.MyServices.TD09_Validate_MyServicesPage_ActivateNewDigitalReceiverUpdate_AndMessage, Took 47 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.charter.test.MyServices@9ccd0a</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH01_Validate_PaybillLink_NavigateTo_BillPage_HOHuser()'><b>TH01_Validate_PaybillLink_NavigateTo_BillPage_HOHuser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH01_Validate_PaybillLink_NavigateTo_BillPage_HOHuser, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5023, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-11087178" onClick='toggleBox("Output-11087178", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11087178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11087178">
+<<<*** END: Home.TH01_Validate_PaybillLink_NavigateTo_BillPage_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH01_Validate_PaybillLink_NavigateTo_BillPage_HOHuser, Took 34 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.charter.test.Home@101dfa5</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH02_Validate_ViewStatementLink_NavigateTo_StatementPage_HOHUser()'><b>TH02_Validate_ViewStatementLink_NavigateTo_StatementPage_HOHUser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH02_Validate_ViewStatementLink_NavigateTo_StatementPage_HOHUser, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5023, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-6861187" onClick='toggleBox("Output-6861187", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6861187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6861187">
+<<<*** END: Home.TH02_Validate_ViewStatementLink_NavigateTo_StatementPage_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH02_Validate_ViewStatementLink_NavigateTo_StatementPage_HOHUser, Took 27 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.charter.test.Home@101dfa5</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser()'><b>TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5023_child_02, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-15483974" onClick='toggleBox("Output-15483974", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15483974" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15483974">
+<<<*** END: Home.TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH03_Validate_TVGuideLink_NavigateTo_GuidePage_StandardUser, Took 31 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>com.charter.test.Home@101dfa5</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser()'><b>TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5023_child_02, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-3175667" onClick='toggleBox("Output-3175667", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3175667" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3175667">
+<<<*** END: Home.TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH04_Validate_OnDemandLink_NavigateTo_OnDemandPage_StandardUser, Took 37 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.charter.test.Home@101dfa5</td></tr>
+<tr>
+<td title='com.charter.test.Home.TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser()'><b>TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser</b><br>Test class: com.charter.test.Home<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser, charterID=, Devicenickname=, password=, Account_Type=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5002, lastname=, searchkey=, couponNumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-13477454" onClick='toggleBox("Output-13477454", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13477454" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13477454">
+<<<*** END: Home.TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Home.TH05_Validate_GetSupportLink_NavigateTo_GetSupportPage_HOHuser, Took 125 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>125</td>
+<td>com.charter.test.Home@101dfa5</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="ChaterReporter.TestNGReporter"/>
+  </listeners>
+  <test name="Set 1(failed)" parallel="none">
+    <classes>
+      <class name="ChaterReporter.CallForReporter_Test">
+        <methods>
+          <include name="testReporterTwo"/>
+        </methods>
+      </class> <!-- ChaterReporter.CallForReporter_Test -->
+      <class name="ChaterReporter.ScriptForListener">
+        <methods>
+          <include name="testReporterTwo"/>
+          <include name="testReporterSix"/>
+          <include name="testReporterFive"/>
+        </methods>
+      </class> <!-- ChaterReporter.ScriptForListener -->
+    </classes>
+  </test> <!-- Set 1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Charter_-_Suite">
+              <span class="suite-name border-passed">Charter - Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Charter_-_Suite">
+                    <span>D:\Regression\NewScripts.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Charter_-_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Charter_-_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Charter_-_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Charter_-_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Charter_-_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Charter_-_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Charter_-_Suite" class="hide-methods passed suite-Charter_-_Suite"> (hide)</a> <!-- hide-methods passed suite-Charter_-_Suite -->
+                      <a href="#" panel-name="suite-Charter_-_Suite" class="show-methods passed suite-Charter_-_Suite"> (show)</a> <!-- show-methods passed suite-Charter_-_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Charter_-_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Charter_-_Suite" title="com.charter.test.Login" hash-for-method="TL02_Validate_ChaterInvalidLogin({CardNumber=, mac_CID=, security_question=, Devicenickname=, zipcode_fID=, Account_Type=, invalidLas...)">TL02_Validate_ChaterInvalidLogin({CardNumber=, mac_CID=, security_question=, Devicenickname=, zipcode_fID=, Account_Type=, invalidLas...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Charter_-_Suite" title="com.charter.test.Login" hash-for-method="TL03_Validate_Non_ConvertedUser_UpdateUserPage({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode...)">TL03_Validate_Non_ConvertedUser_UpdateUserPage({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Charter_-_Suite" title="com.charter.test.Login" hash-for-method="TL05_Validate_Convert_StdUser_Check_HOHAdminLogin({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode...)">TL05_Validate_Convert_StdUser_Check_HOHAdminLogin({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Charter_-_Suite" title="com.charter.test.Login" hash-for-method="TL06_Validate_Convert_AdminUser_Check_HOHLogin({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)">TL06_Validate_Convert_AdminUser_Check_HOHLogin({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Charter_-_Suite" title="com.charter.test.Login" hash-for-method="TL07_Validate_Convert_twoUsers_SamePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)">TL07_Validate_Convert_twoUsers_SamePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Charter_-_Suite" title="com.charter.test.Login" hash-for-method="TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)">TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Charter_-_Suite" title="com.charter.test.Login" hash-for-method="TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)">TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Charter_-_Suite" title="com.charter.test.Login" hash-for-method="TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)">TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Charter_-_Suite" title="com.charter.test.Login" hash-for-method="TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)">TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Charter_-_Suite" title="com.charter.test.Login" hash-for-method="TL23_Validate_Login_HardDisconnectedAccount({UserID=e2eauto021, UserID1=, TestCaseId=TL23_Validate_Login_HardDisconnectedAccount, UserPassword=T...)">TL23_Validate_Login_HardDisconnectedAccount({UserID=e2eauto021, UserID1=, TestCaseId=TL23_Validate_Login_HardDisconnectedAccount, UserPassword=T...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Charter_-_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Charter_-_Suite" class="panel Charter_-_Suite">
+          <div class="suite-Charter_-_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.charter.test.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TL02_Validate_ChaterInvalidLogin({CardNumber=, mac_CID=, security_question=, Devicenickname=, zipcode_fID=, Account_Type=, invalidLas...)">
+                  </a> <!-- TL02_Validate_ChaterInvalidLogin({CardNumber=, mac_CID=, security_question=, Devicenickname=, zipcode_fID=, Account_Type=, invalidLas...) -->
+                  <span class="method-name">TL02_Validate_ChaterInvalidLogin</span>
+                  <span class="parameters">({CardNumber=, mac_CID=, security_question=, Devicenickname=, zipcode_fID=, Account_Type=, invalidLastname=, invalidPassword=Testing01, SecurityQuestion=, lastname_fp=, email2=, password=, security_answer=, Account_pom=, invalidMAC=, Zipcode=, Relogin_UserID=, Operatingsystem=, invalidEmail=, SecurityAnswer=, couponNumber=, NewRole=, MSLogin=, UserPassword=Testing01, City=, selectUser=, PC_Unratedcontent=, ACnumber=, Relogin_Password=, charterID=, lastname=, lastname_fID=, Zipcode_fp=, State=, firstname_CID=, zipcode_CID=, ParentalControl_TV=, mac_fID=, invalidSecurityAns=, address_CID=, ParentalControl_Unratedcontent=, Message=, adminuser=, ParentalControl_Movie=, TestCaseId=TL02_Validate_ChaterInvalidLogin, PC_TV=, Password1=, searchkey=, invalidZipcode=, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=tdr33001, CardType=, UserID1=fef0122, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, email=, AccountNumberVerify=, LegacySiteURL=, accountnumber=, FutureDate=, Statement=, Address2=, Mobilephone=, PC_Movie=, Account_DVRcontrol=, Address1=, hohuser=, ConfirmPassword=, routingnumber=, ContactEmail=, SelectDate=, ExpYear=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TL03_Validate_Non_ConvertedUser_UpdateUserPage({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode...)">
+                  </a> <!-- TL03_Validate_Non_ConvertedUser_UpdateUserPage({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode...) -->
+                  <span class="method-name">TL03_Validate_Non_ConvertedUser_UpdateUserPage</span>
+                  <span class="parameters">({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode_fID=, Account_Type=, invalidLastname=, invalidPassword=, SecurityQuestion=, lastname_fp=, filterbyPhone=, email2=, password=, security_answer=red, Account_pom=, invalidMAC=, Zipcode=, Relogin_UserID=, Operatingsystem=, SecurityCode=, invalidEmail=, SecurityAnswer=, couponNumber=, NewRole=, MSLogin=, UserPassword=Testing01, City=, selectUser=, PC_Unratedcontent=, ACnumber=, Relogin_Password=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, BusinessCharterID=, filterbyRate=, State=, firstname_CID=, zipcode_CID=, ParentalControl_TV=, mac_fID=, invalidSecurityAns=, address_CID=, ParentalControl_Unratedcontent=, Message=, adminuser=, ParentalControl_Movie=, TestCaseId=TL03_Validate_Non_ConvertedUser_UpdateUserPage, PC_TV=, Password1=, searchkey=, invalidZipcode=, lastname_CID=, fLinked_CharterID=, ExpDate=, filterbyType=, UserID=e2eauto002, CardType=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, email=e2eauto002@charter.net, AccountNumberVerify=, LegacySiteURL=, accountnumber=, FutureDate=, Statement=, Gmailpw=Relaunch2.0, Address2=, Mobilephone=8888888888, PC_Movie=, Account_DVRcontrol=, Address1=, hohuser=, ConfirmPassword=, routingnumber=, ContactEmail=, GmailID=charter.net2014@gmail.com, SelectDate=, ExpYear=, businessaccountNo=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TL05_Validate_Convert_StdUser_Check_HOHAdminLogin({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode...)">
+                  </a> <!-- TL05_Validate_Convert_StdUser_Check_HOHAdminLogin({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode...) -->
+                  <span class="method-name">TL05_Validate_Convert_StdUser_Check_HOHAdminLogin</span>
+                  <span class="parameters">({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode_fID=, Account_Type=, invalidLastname=, invalidPassword=, SecurityQuestion=, lastname_fp=, filterbyPhone=, email2=, password=, security_answer=red, Account_pom=, invalidMAC=, Zipcode=, Relogin_UserID=, Operatingsystem=, SecurityCode=, invalidEmail=, SecurityAnswer=, couponNumber=, NewRole=, MSLogin=, UserPassword=Testing01, City=, selectUser=, PC_Unratedcontent=, ACnumber=, Relogin_Password=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, BusinessCharterID=, filterbyRate=, State=, firstname_CID=, zipcode_CID=, ParentalControl_TV=, mac_fID=, invalidSecurityAns=, address_CID=, ParentalControl_Unratedcontent=, Message=, adminuser=admin_e2eauto009, ParentalControl_Movie=, TestCaseId=TL05_Validate_Convert_StdUser_Check_HOHAdminLogin, PC_TV=, Password1=, searchkey=, invalidZipcode=, lastname_CID=, fLinked_CharterID=, ExpDate=, filterbyType=, UserID=std_e2eauto009, CardType=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, email=std_e2eauto009@charter.net, AccountNumberVerify=, LegacySiteURL=, accountnumber=, FutureDate=, Statement=, Gmailpw=Relaunch2.0, Address2=, Mobilephone=8888888888, PC_Movie=, Account_DVRcontrol=, Address1=, hohuser=e2eauto009, ConfirmPassword=, routingnumber=, ContactEmail=, GmailID=charter.net2014@gmail.com, SelectDate=, ExpYear=, businessaccountNo=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TL06_Validate_Convert_AdminUser_Check_HOHLogin({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)">
+                  </a> <!-- TL06_Validate_Convert_AdminUser_Check_HOHLogin({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...) -->
+                  <span class="method-name">TL06_Validate_Convert_AdminUser_Check_HOHLogin</span>
+                  <span class="parameters">({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=admin_e2eauto009, invalidLastname=, invalidPassword=, TestCaseId=TL06_Validate_Convert_AdminUser_Check_HOHLogin, lastname_fp=, invalidZipcode=, email2=, password=, security_answer=red, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=admin_e2eauto009, CardType=, invalidMAC=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, invalidEmail=, email=admin_e2eauto009@charter.net, AccountNumberVerify=, LegacySiteURL=, FutureDate=, MSLogin=, UserPassword=Testing01, Mobilephone=8888888888, ACnumber=, hohuser=e2eauto009, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, firstname_CID=, zipcode_CID=, SelectDate=, mac_fID=, invalidSecurityAns=, ExpYear=, address_CID=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TL07_Validate_Convert_twoUsers_SamePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)">
+                  </a> <!-- TL07_Validate_Convert_twoUsers_SamePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...) -->
+                  <span class="method-name">TL07_Validate_Convert_twoUsers_SamePassword</span>
+                  <span class="parameters">({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=, invalidLastname=, invalidPassword=, TestCaseId=TL07_Validate_Convert_twoUsers_SamePassword, lastname_fp=, invalidZipcode=, email2=, password=, security_answer=red, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=EngTestSprint051, CardType=, invalidMAC=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, invalidEmail=, email=engtestSprint051@charter.net, AccountNumberVerify=, LegacySiteURL=, FutureDate=, MSLogin=EngTestRel051, UserPassword=Testing01, Mobilephone=8888888888, ACnumber=, hohuser=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, firstname_CID=, zipcode_CID=, SelectDate=, mac_fID=, invalidSecurityAns=, ExpYear=, address_CID=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)">
+                  </a> <!-- TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...) -->
+                  <span class="method-name">TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID</span>
+                  <span class="parameters">({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=, invalidLastname=, invalidPassword=, TestCaseId=TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID, lastname_fp=, invalidZipcode=, email2=, password=, security_answer=red, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=e2eadd405, CardType=, invalidMAC=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=Testing01, invalidEmail=, email=E2EADD405@charter.net, AccountNumberVerify=, LegacySiteURL=, FutureDate=, MSLogin=e2eadd405, UserPassword=, Mobilephone=8888888888, ACnumber=, hohuser=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, firstname_CID=, zipcode_CID=, SelectDate=, mac_fID=, invalidSecurityAns=, ExpYear=, address_CID=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)">
+                  </a> <!-- TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...) -->
+                  <span class="method-name">TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID</span>
+                  <span class="parameters">({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=, invalidLastname=, invalidPassword=, TestCaseId=TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID, lastname_fp=, invalidZipcode=, email2=, password=, security_answer=red, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=e2eadd404, CardType=, invalidMAC=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, invalidEmail=, email=E2EADD404@charter.net, AccountNumberVerify=, LegacySiteURL=, FutureDate=, MSLogin=, UserPassword=Testing01, Mobilephone=8888888888, ACnumber=, hohuser=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, firstname_CID=, zipcode_CID=, SelectDate=, mac_fID=, invalidSecurityAns=, ExpYear=, address_CID=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)">
+                  </a> <!-- TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...) -->
+                  <span class="method-name">TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword</span>
+                  <span class="parameters">({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=, invalidLastname=, invalidPassword=, TestCaseId=TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword, lastname_fp=, invalidZipcode=, email2=, password=, security_answer=red, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=e2e5001, CardType=, invalidMAC=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=Testing01, invalidEmail=, email=e2e5001@charter.net, AccountNumberVerify=, LegacySiteURL=, FutureDate=, MSLogin=e2e5001, UserPassword=, Mobilephone=8888888888, ACnumber=, hohuser=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, firstname_CID=, zipcode_CID=, SelectDate=, mac_fID=, invalidSecurityAns=, ExpYear=, address_CID=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)">
+                  </a> <!-- TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...) -->
+                  <span class="method-name">TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword</span>
+                  <span class="parameters">({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=, invalidLastname=, invalidPassword=, TestCaseId=TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword, lastname_fp=, invalidZipcode=, email2=, password=, security_answer=red, lastname_CID=, fLinked_CharterID=, ExpDate=, UserID=e2e5001, CardType=, invalidMAC=, UserID1=, address_fID=, CharterID_fp=, invalidAddress=, MSLoginPassword=, invalidEmail=, email=e2e5001@charter.net, AccountNumberVerify=, LegacySiteURL=, FutureDate=, MSLogin=, UserPassword=Testing01, Mobilephone=8888888888, ACnumber=, hohuser=, charterID=, lastname=Test, lastname_fID=, Zipcode_fp=, firstname_CID=, zipcode_CID=, SelectDate=, mac_fID=, invalidSecurityAns=, ExpYear=, address_CID=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TL23_Validate_Login_HardDisconnectedAccount({UserID=e2eauto021, UserID1=, TestCaseId=TL23_Validate_Login_HardDisconnectedAccount, UserPassword=T...)">
+                  </a> <!-- TL23_Validate_Login_HardDisconnectedAccount({UserID=e2eauto021, UserID1=, TestCaseId=TL23_Validate_Login_HardDisconnectedAccount, UserPassword=T...) -->
+                  <span class="method-name">TL23_Validate_Login_HardDisconnectedAccount</span>
+                  <span class="parameters">({UserID=e2eauto021, UserID1=, TestCaseId=TL23_Validate_Login_HardDisconnectedAccount, UserPassword=Testing01})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Charter_-_Suite-class-passed -->
+        </div> <!-- panel Charter_-_Suite -->
+        <div panel-name="test-xml-Charter_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Regression\NewScripts.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Charter - Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.cognizant.framework.listeners.WebTestListeners&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.cognizant.framework.listeners.AdvancedListener&quot;/&gt;
+    &lt;listener class-name=&quot;CharterReporter.TestNGReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Prod&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.charter.test.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;TL02_Validate_ChaterInvalidLogin&quot;/&gt;
+          &lt;include name=&quot;TL03_Validate_Non_ConvertedUser_UpdateUserPage&quot;/&gt;
+          &lt;include name=&quot;TL05_Validate_Convert_StdUser_Check_HOHAdminLogin&quot;/&gt;
+          &lt;include name=&quot;TL06_Validate_Convert_AdminUser_Check_HOHLogin&quot;/&gt;
+          &lt;include name=&quot;TL07_Validate_Convert_twoUsers_SamePassword&quot;/&gt;
+          &lt;include name=&quot;TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID&quot;/&gt;
+          &lt;include name=&quot;TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID&quot;/&gt;
+          &lt;include name=&quot;TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword&quot;/&gt;
+          &lt;include name=&quot;TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword&quot;/&gt;
+          &lt;include name=&quot;TL23_Validate_Login_HardDisconnectedAccount&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.charter.test.Login --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Prod --&gt;
+&lt;/suite&gt; &lt;!-- Charter - Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Charter_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Charter - Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Prod (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Charter_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Charter - Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Charter_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Charter - Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Charter_-_Suite');
+function tableData_Charter_-_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TL07_Validate_Convert_twoUsers_SamePassword')
+data.setCell(0, 2, 'com.charter.test.Login')
+data.setCell(0, 3, 134185);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TL06_Validate_Convert_AdminUser_Check_HOHLogin')
+data.setCell(1, 2, 'com.charter.test.Login')
+data.setCell(1, 3, 69839);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TL05_Validate_Convert_StdUser_Check_HOHAdminLogin')
+data.setCell(2, 2, 'com.charter.test.Login')
+data.setCell(2, 3, 67876);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TL03_Validate_Non_ConvertedUser_UpdateUserPage')
+data.setCell(3, 2, 'com.charter.test.Login')
+data.setCell(3, 3, 66549);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TL02_Validate_ChaterInvalidLogin')
+data.setCell(4, 2, 'com.charter.test.Login')
+data.setCell(4, 3, 57674);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID')
+data.setCell(5, 2, 'com.charter.test.Login')
+data.setCell(5, 3, 52204);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID')
+data.setCell(6, 2, 'com.charter.test.Login')
+data.setCell(6, 3, 51128);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword')
+data.setCell(7, 2, 'com.charter.test.Login')
+data.setCell(7, 3, 45027);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword')
+data.setCell(8, 2, 'com.charter.test.Login')
+data.setCell(8, 3, 41454);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TL23_Validate_Login_HardDisconnectedAccount')
+data.setCell(9, 2, 'com.charter.test.Login')
+data.setCell(9, 3, 22146);
+window.suiteTableData['Charter_-_Suite']= { tableData: data, tableDiv: 'times-div-Charter_-_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <div id="times-div-Charter_-_Suite">
+              </div> <!-- times-div-Charter_-_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Charter_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Charter - Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TL02_Validate_ChaterInvalidLogin({CardNumber=, mac_CID=, security_question=, Devicenickname=, zipcode_fID=, Account_Type=, invalidLas...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><<<*** END: Login.TL02_Validate_ChaterInvalidLogin ***>>> <br/></span>
+                <span class="reporter-method-output">=====================================================================================<br/></span>
+                <span class="reporter-method-output">Test Passed :com.charter.test.Login.TL02_Validate_ChaterInvalidLogin, Took 57 seconds<br/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><<<*** END: Login.TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID ***>>> <br/></span>
+                <span class="reporter-method-output">=====================================================================================<br/></span>
+                <span class="reporter-method-output">Test Passed :com.charter.test.Login.TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID, Took 52 seconds<br/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TL06_Validate_Convert_AdminUser_Check_HOHLogin({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><<<*** END: Login.TL06_Validate_Convert_AdminUser_Check_HOHLogin ***>>> <br/></span>
+                <span class="reporter-method-output">=====================================================================================<br/></span>
+                <span class="reporter-method-output">Test Passed :com.charter.test.Login.TL06_Validate_Convert_AdminUser_Check_HOHLogin, Took 69 seconds<br/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TL07_Validate_Convert_twoUsers_SamePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><<<*** END: Login.TL07_Validate_Convert_twoUsers_SamePassword ***>>> <br/></span>
+                <span class="reporter-method-output">=====================================================================================<br/></span>
+                <span class="reporter-method-output">Test Passed :com.charter.test.Login.TL07_Validate_Convert_twoUsers_SamePassword, Took 134 seconds<br/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TL03_Validate_Non_ConvertedUser_UpdateUserPage({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><<<*** END: Login.TL03_Validate_Non_ConvertedUser_UpdateUserPage ***>>> <br/></span>
+                <span class="reporter-method-output">=====================================================================================<br/></span>
+                <span class="reporter-method-output">Test Passed :com.charter.test.Login.TL03_Validate_Non_ConvertedUser_UpdateUserPage, Took 66 seconds<br/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TL05_Validate_Convert_StdUser_Check_HOHAdminLogin({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><<<*** END: Login.TL05_Validate_Convert_StdUser_Check_HOHAdminLogin ***>>> <br/></span>
+                <span class="reporter-method-output">=====================================================================================<br/></span>
+                <span class="reporter-method-output">Test Passed :com.charter.test.Login.TL05_Validate_Convert_StdUser_Check_HOHAdminLogin, Took 67 seconds<br/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><<<*** END: Login.TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID ***>>> <br/></span>
+                <span class="reporter-method-output">=====================================================================================<br/></span>
+                <span class="reporter-method-output">Test Passed :com.charter.test.Login.TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID, Took 51 seconds<br/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><<<*** END: Login.TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword ***>>> <br/></span>
+                <span class="reporter-method-output">=====================================================================================<br/></span>
+                <span class="reporter-method-output">Test Passed :com.charter.test.Login.TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword, Took 45 seconds<br/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TL23_Validate_Login_HardDisconnectedAccount({UserID=e2eauto021, UserID1=, TestCaseId=TL23_Validate_Login_HardDisconnectedAccount, UserPassword=T...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><<<*** END: Login.TL23_Validate_Login_HardDisconnectedAccount ***>>> <br/></span>
+                <span class="reporter-method-output">=====================================================================================<br/></span>
+                <span class="reporter-method-output">Test Passed :com.charter.test.Login.TL23_Validate_Login_HardDisconnectedAccount, Took 22 seconds<br/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><<<*** END: Login.TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword ***>>> <br/></span>
+                <span class="reporter-method-output">=====================================================================================<br/></span>
+                <span class="reporter-method-output">Test Passed :com.charter.test.Login.TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword, Took 41 seconds<br/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Charter_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">14 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.charter.test.Login</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TL22_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword_with_DotNetID_StandardUser</span>
+                <br/>
+                <span class="ignored-method-name">TL11_Validate_DotNetIDConvert_LessThan6Characters_StdUser_MoreThan6Characters</span>
+                <br/>
+                <span class="ignored-method-name">Validate_Overviewpage_edit</span>
+                <br/>
+                <span class="ignored-method-name">TL04_Validate_ChaterLogin_RememberMe</span>
+                <br/>
+                <span class="ignored-method-name">TL16_Validate_Acc2_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID</span>
+                <br/>
+                <span class="ignored-method-name">TL10_Validate_MSLoginConvert_LessThan6Characters_StdUser_MoreThan6Characters</span>
+                <br/>
+                <span class="ignored-method-name">TL13_Validate_DotNetID_MSLogin_MoreThan6Characters_DotNetLogin_LessThan6Characters</span>
+                <br/>
+                <span class="ignored-method-name">TL01_Validate_ChaterValidLogin</span>
+                <br/>
+                <span class="ignored-method-name">TL12_Validate_MSLoginID_MSLogin_MoreThan6Characters_DotNetID_LessThan6Characters</span>
+                <br/>
+                <span class="ignored-method-name">TL18_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_differentPassword</span>
+                <br/>
+                <span class="ignored-method-name">TL09_Validate_MSLoginConvert_LessThan6Characters</span>
+                <br/>
+                <span class="ignored-method-name">TL08_Validate_ForceConvertUser_afterFirstAttempt</span>
+                <br/>
+                <span class="ignored-method-name">TL19_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_differentPassword</span>
+                <br/>
+                <span class="ignored-method-name">TL14_Validate_Account1_MSLogin_Conflicts_with_Account2_stdUser_DotNetID_HOHConverted</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Charter_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.charter.test.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">suiteConfig(null)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(null)</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TL02_Validate_ChaterInvalidLogin({CardNumber=, mac_CID=, security_question=, Devicenickname=, zipcode_fID=, Account_Type=, invalidLas...)</span>
+                <span class="method-start">5003 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">62753 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">postTestCase([TestResult name=TL02_Validate_ChaterInvalidLogin status=SUCCESS method=Login.TL02_Validate_ChaterIn...)</span>
+                <span class="method-start">68314 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(null)</span>
+                <span class="method-start">69564 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TL03_Validate_Non_ConvertedUser_UpdateUserPage({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode...)</span>
+                <span class="method-start">71464 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">138046 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">postTestCase([TestResult name=TL03_Validate_Non_ConvertedUser_UpdateUserPage status=SUCCESS method=Login.TL03_Val...)</span>
+                <span class="method-start">142162 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(null)</span>
+                <span class="method-start">143404 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TL05_Validate_Convert_StdUser_Check_HOHAdminLogin({CardNumber=, mac_CID=, security_question=Color or make of your first car?, Devicenickname=, zipcode...)</span>
+                <span class="method-start">145310 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">213204 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">postTestCase([TestResult name=TL05_Validate_Convert_StdUser_Check_HOHAdminLogin status=SUCCESS method=Login.TL05_...)</span>
+                <span class="method-start">217897 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(null)</span>
+                <span class="method-start">219135 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TL06_Validate_Convert_AdminUser_Check_HOHLogin({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</span>
+                <span class="method-start">221178 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">291027 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">postTestCase([TestResult name=TL06_Validate_Convert_AdminUser_Check_HOHLogin status=SUCCESS method=Login.TL06_Val...)</span>
+                <span class="method-start">295391 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(null)</span>
+                <span class="method-start">296597 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TL07_Validate_Convert_twoUsers_SamePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</span>
+                <span class="method-start">298906 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">433112 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">postTestCase([TestResult name=TL07_Validate_Convert_twoUsers_SamePassword status=SUCCESS method=Login.TL07_Valida...)</span>
+                <span class="method-start">437110 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(null)</span>
+                <span class="method-start">438351 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</span>
+                <span class="method-start">441018 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">493230 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">postTestCase([TestResult name=TL15_Validate_Acc1_MSLoginConvert_when_Account1_MSLogin_Conflicts_with_Account2_Dot...)</span>
+                <span class="method-start">497531 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(null)</span>
+                <span class="method-start">498783 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_DotNetID({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</span>
+                <span class="method-start">501476 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">552632 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">postTestCase([TestResult name=TL17_Validate_Acc1_DotnetIDConvert_when_Account1_MSLogin_Conflicts_with_Account2_Do...)</span>
+                <span class="method-start">557035 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(null)</span>
+                <span class="method-start">558266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</span>
+                <span class="method-start">560641 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">602108 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">postTestCase([TestResult name=TL20_Validate_MSLoginConvert_when_same_MSLogin_DotNetID_samePassword status=SUCCESS...)</span>
+                <span class="method-start">606398 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(null)</span>
+                <span class="method-start">607678 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword({CardNumber=, mac_CID=, security_question=Color or make of your first car?, zipcode_fID=, adminuser=...)</span>
+                <span class="method-start">609647 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">654693 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">postTestCase([TestResult name=TL21_Validate_DotNetIDConvert_when_same_MSLogin_DotNetID_samePassword status=SUCCES...)</span>
+                <span class="method-start">659102 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(null)</span>
+                <span class="method-start">660369 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TL23_Validate_Login_HardDisconnectedAccount({UserID=e2eauto021, UserID1=, TestCaseId=TL23_Validate_Login_HardDisconnectedAccount, UserPassword=T...)</span>
+                <span class="method-start">662599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">684754 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">postTestCase([TestResult name=TL23_Validate_Login_HardDisconnectedAccount status=SUCCESS method=Login.TL23_Valida...)</span>
+                <span class="method-start">689457 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">690696 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

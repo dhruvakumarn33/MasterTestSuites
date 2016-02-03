@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Chater.Net Test Report</title>
+<style type="text/css">
+table {background-color: #CEF6CE; margin-bottom:10px; border: 1px solid black; border-collapse:collapse; font-family: 'Arial'; font-size: 14px}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:65%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body bgcolor=#E0F8E0><h2 align='center'>Charter.Net Selenium Test Report</h2></br>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Module</th><th>Total</th><th>Pass</th><th>Fail</th><th>Skipped</th><th>Total Time(Mins)</th></tr><tr><td style="text-align:left;padding-right:2em">Prod</td><td class="numi">20</td><td class="numi">9</td><td class="numi_attn">11</td><td class="numi">0</td><td class="numi">149.0</td></tr>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script><script type='text/javascript'>
+google.load('visualization', '1', {packages:['corechart']});google.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([['Result', 'Count'],['Pass',9],['Fail',11],['Skip',0]]);
+var options = {title: 'Test Results Graph', is3D: true, backgroundColor: '#CEF6CE', chartArea: {width:'80%',height:'80%'}, colors: ['green', 'red', 'yellow']};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);}</script>
+<tr><td colspan='6' id='piechart' style='width: 200px; height: 200px'></td></tr>
+<tr><td>Browser</td><td colspan='5'>Google Chrome</td></tr>
+<tr><td>Date</td><td colspan='5'>20-Nov-2015</td></tr>
+<tr><td>Timezone</td><td colspan='5'>India Standard Time</td></tr>
+<tr><td colspan='6' align='right'><a href='FAQ.txt'>FAQ</a> and <a href='readme.txt'>Readme.txt</a></td></tr></table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Sl No.</th><th>Module</th><th>Scenario</th><th>Test Result</th><th>Validation Remarks</th><th>Date/Time</th><th>Time (Sec)</th></tr>
+<tr id="t1"><th colspan="7">Prod: Failed</th></tr>
+<tr><td>1</td><td>Billpay</td><td>TB39_Validate_OTPSchedule_ByDebitCard_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for visibility of element located by By.xpath: .//*[@id='get-mail-button']/i
+</td><td align='center'>12:37:11</td><td align='center'>439</td></tr><tr><td>2</td><td>Billpay</td><td>TB40_Validate_OTPSchedule_ByCreditCard_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for visibility of element located by By.xpath: .//*[@id='get-mail-button']/i
+</td><td align='center'>12:44:39</td><td align='center'>367</td></tr><tr><td>3</td><td>Billpay</td><td>TB41_Validate_OTPSchedule_ByChecking_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for visibility of element located by By.xpath: .//*[@id='get-mail-button']/i
+</td><td align='center'>12:50:55</td><td align='center'>372</td></tr><tr><td>4</td><td>Billpay</td><td>TB42_Validate_AutoPaySetup_ByDebitCard_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for visibility of element located by By.xpath: .//*[@id='get-mail-button']/i
+</td><td align='center'>12:57:17</td><td align='center'>364</td></tr><tr><td>5</td><td>Billpay</td><td>TB43_Validate_AutoPaySetup_ByCreditCard_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for visibility of element located by By.xpath: .//*[@id='get-mail-button']/i
+</td><td align='center'>13:03:30</td><td align='center'>361</td></tr><tr><td>6</td><td>Billpay</td><td>TB44_Validate_AutoPaySetup_ByChecking_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for visibility of element located by By.xpath: .//*[@id='get-mail-button']/i
+</td><td align='center'>13:09:40</td><td align='center'>376</td></tr><tr><td>7</td><td>Billpay</td><td>TB45_Validate_OTP_ByChecking_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td>unknown error: Element is not clickable at point (510, 248). Other element would receive the click: <div id="system-alert" aria-live="assertive" aria-describedby="Message sent." class="alert hide alert-info" style="display: block;">...</div>
+  (Session info: chrome=46.0.2490.71)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+</td><td align='center'>13:16:06</td><td align='center'>4768</td></tr><tr><td>8</td><td>Billpay</td><td>TB53_Validate_AutoPaySetup_BySaving_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td>no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='autoPayEFT']/following-sibling::div/span"}
+  (Session info: chrome=46.0.2490.71)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 240.06 seconds
+</td><td align='center'>14:45:46</td><td align='center'>471</td></tr><tr><td>9</td><td>Billpay</td><td>TB54_Validate_OTPayment_ByDebitCard_PastDueAmount</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for visibility of element located by By.xpath: (//*[@ng-repeat='payment in payments.recent'])[1]/td[1]
+</td><td align='center'>14:53:45</td><td align='center'>120</td></tr><tr><td>10</td><td>Billpay</td><td>TB56_Validate_OTPayment_ByChecking_PastDueAmount</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for visibility of element located by By.xpath: (//*[@ng-repeat='payment in payments.recent'])[1]/td[1]
+</td><td align='center'>14:58:28</td><td align='center'>110</td></tr><tr><td>11</td><td>Billpay</td><td>TB57_Validate_OTPayment_BySaving_PastDueAmount</td>
+<td bgcolor='red', align='center'>Fail</td><td>Bot encountered a timeout while waiting for a condition,  Timed out after 10 seconds waiting for visibility of element located by By.xpath: (//*[@ng-repeat='payment in payments.recent'])[1]/td[1]
+</td><td align='center'>15:00:27</td><td align='center'>118</td></tr><tr><th colspan="7">Prod: Passed</th></tr>
+<tr><td>1</td><td>Billpay</td><td>TB34_Validate_LastPayment_Details_HOH</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>12:33:34</td><td align='center'>50</td></tr><tr><td>2</td><td>Billpay</td><td>TB35_Validate_LastPayment_Details_admin</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>12:34:33</td><td align='center'>35</td></tr><tr><td>3</td><td>Billpay</td><td>TB36_Validate_NoLastPayment_Message_HOH</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>12:35:16</td><td align='center'>44</td></tr><tr><td>4</td><td>Billpay</td><td>TB38_Validate_Available_LastStatements_admin</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>12:36:09</td><td align='center'>54</td></tr><tr><td>5</td><td>Billpay</td><td>TB46_Validate_OTPayment_ByDebitCard_ConfirmationMail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:35:50</td><td align='center'>157</td></tr><tr><td>6</td><td>Billpay</td><td>TB47_Validate_OTPayment_ByCreditCard_ConfirmationMail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:38:36</td><td align='center'>145</td></tr><tr><td>7</td><td>Billpay</td><td>TB51_Validate_StatementSummary_NotificationMail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:41:10</td><td align='center'>82</td></tr><tr><td>8</td><td>Billpay</td><td>TB52_Validate_OTP_BySaving_ConfirmationMail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:42:39</td><td align='center'>178</td></tr><tr><td>9</td><td>Billpay</td><td>TB55_Validate_OTPayment_ByCreditCard_PastDueAmount</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:55:53</td><td align='center'>146</td></tr></table>
+</body></html>

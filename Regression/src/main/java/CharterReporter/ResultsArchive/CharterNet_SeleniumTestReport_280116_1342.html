@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Chater.Net Test Report</title>
+<style type="text/css">
+table {background-color: #CEF6CE; margin-bottom:10px; border: 1px solid black; border-collapse:collapse; font-family: 'Arial'; font-size: 14px}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:65%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body bgcolor=#E0F8E0><h2 align='center'>Charter.Net Selenium Test Report</h2></br>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Module</th><th>Total</th><th>Pass</th><th>Fail</th><th>Skipped</th><th>Total Time(Mins)</th></tr><tr><td style="text-align:left;padding-right:2em">Prod</td><td class="numi">42</td><td class="numi">18</td><td class="numi_attn">24</td><td class="numi">0</td><td class="numi">154.1</td></tr>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script><script type='text/javascript'>
+google.load('visualization', '1', {packages:['corechart']});google.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([['Result', 'Count'],['Pass',18],['Fail',24],['Skip',0]]);
+var options = {title: 'Test Results Graph', is3D: true, backgroundColor: '#CEF6CE', chartArea: {width:'80%',height:'80%'}, colors: ['green', 'red', 'yellow']};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);}</script>
+<tr><td colspan='6' id='piechart' style='width: 200px; height: 200px'></td></tr>
+<tr><td>Browser</td><td colspan='5'>Google Chrome</td></tr>
+<tr><td>Date</td><td colspan='5'>28-Jan-2016</td></tr>
+<tr><td>Timezone</td><td colspan='5'>India Standard Time</td></tr>
+<tr><td colspan='6' align='right'><a href='FAQ.txt'>FAQ</a> and <a href='readme.txt'>Readme.txt</a></td></tr></table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Sl No.</th><th>Module</th><th>Scenario</th><th>Test Result</th><th>Validation Remarks</th><th>Date/Time</th><th>Time (Sec)</th></tr>
+<tr id="t1"><th colspan="7">Prod: Failed</th></tr>
+<tr><td>1</td><td>Billpay</td><td>TB36_Validate_NoLastPayment_Message_HOH</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>13:45:14</td><td align='center'>83</td></tr><tr><td>2</td><td>Billpay</td><td>TB39_Validate_OTPSchedule_ByDebitCard_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>13:48:16</td><td align='center'>188</td></tr><tr><td>3</td><td>Billpay</td><td>TB40_Validate_OTPSchedule_ByCreditCard_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>13:51:32</td><td align='center'>174</td></tr><tr><td>4</td><td>Billpay</td><td>TB41_Validate_OTPSchedule_ByChecking_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>13:54:34</td><td align='center'>90</td></tr><tr><td>5</td><td>Billpay</td><td>TB42_Validate_AutoPaySetup_ByDebitCard_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>13:56:13</td><td align='center'>142</td></tr><tr><td>6</td><td>Billpay</td><td>TB43_Validate_AutoPaySetup_ByCreditCard_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>13:58:44</td><td align='center'>143</td></tr><tr><td>7</td><td>Billpay</td><td>TB44_Validate_AutoPaySetup_ByChecking_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:01:17</td><td align='center'>187</td></tr><tr><td>8</td><td>Billpay</td><td>TB45_Validate_OTP_ByChecking_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:04:34</td><td align='center'>115</td></tr><tr><td>9</td><td>Billpay</td><td>TB46_Validate_OTPayment_ByDebitCard_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:06:38</td><td align='center'>179</td></tr><tr><td>10</td><td>Billpay</td><td>TB47_Validate_OTPayment_ByCreditCard_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:09:49</td><td align='center'>175</td></tr><tr><td>11</td><td>Billpay</td><td>TB52_Validate_OTP_BySaving_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:14:24</td><td align='center'>390</td></tr><tr><td>12</td><td>Billpay</td><td>TB53_Validate_AutoPaySetup_BySaving_ConfirmationMail</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:21:03</td><td align='center'>108</td></tr><tr><td>13</td><td>Billpay</td><td>TB54_Validate_OTPayment_ByDebitCard_PastDueAmount</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:23:01</td><td align='center'>191</td></tr><tr><td>14</td><td>Billpay</td><td>TB55_Validate_OTPayment_ByCreditCard_PastDueAmount</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:26:22</td><td align='center'>151</td></tr><tr><td>15</td><td>Billpay</td><td>TB56_Validate_OTPayment_ByChecking_PastDueAmount</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:29:03</td><td align='center'>134</td></tr><tr><td>16</td><td>Billpay</td><td>TB57_Validate_OTPayment_BySaving_PastDueAmount</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:31:27</td><td align='center'>411</td></tr><tr><td>17</td><td>MyAccount</td><td>validate_TVInternetVoice_DetailsLink_T517987</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:42:58</td><td align='center'>27</td></tr><tr><td>18</td><td>MyAccount</td><td>MA_UsersandPreferences_Parentalcontrols_HOH_T518044</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:43:37</td><td align='center'>53</td></tr><tr><td>19</td><td>MyAccount</td><td>TCC_01_Validate_UserPreferences_add_Promote_demote_deleteUser_HOH</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:44:42</td><td align='center'>473</td></tr><tr><td>20</td><td>MyAccount</td><td>TC66_Validate_UserPreferencesPage_EmailControlSection_HOHUser</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>14:52:53</td><td align='center'>274</td></tr><tr><td>21</td><td>ForgotPassword</td><td>TA59_Validate_ForgotPassword_DontRemember_SecurityAnswer_Email</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>15:04:32</td><td align='center'>757</td></tr><tr><td>22</td><td>ForgotPassword</td><td>TA66_Validate_ForgotPassword_Change_SecurityQuestionAnswer</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>15:17:24</td><td align='center'>387</td></tr><tr><td>23</td><td>Login</td><td>TL05_Validate_Convert_StdUser_Check_HOHAdminLogin</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>15:53:27</td><td align='center'>306</td></tr><tr><td>24</td><td>Home</td><td>TH27_Validate_WatchAnywhere_OnDemand_ManageAssets</td>
+<td bgcolor='red', align='center'>Fail</td><td></td><td align='center'>15:58:42</td><td align='center'>526</td></tr><tr><th colspan="7">Prod: Passed</th></tr>
+<tr><td>1</td><td>Billpay</td><td>TB34_Validate_LastPayment_Details_HOH</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:43:15</td><td align='center'>64</td></tr><tr><td>2</td><td>Billpay</td><td>TB35_Validate_LastPayment_Details_admin</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:44:29</td><td align='center'>34</td></tr><tr><td>3</td><td>Billpay</td><td>TB38_Validate_Available_LastStatements_admin</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>13:46:47</td><td align='center'>81</td></tr><tr><td>4</td><td>Billpay</td><td>TB51_Validate_StatementSummary_NotificationMail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:12:54</td><td align='center'>81</td></tr><tr><td>5</td><td>BillPay1</td><td>TBB_12_Validate_HOH_user_able_to_Manage_BillDelivery_Method_C84921</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:38:35</td><td align='center'>259</td></tr><tr><td>6</td><td>MyAccount</td><td>TC74_Validate_BillingandTransactonPage_PaymentHistory_Section_Records</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:57:40</td><td align='center'>116</td></tr><tr><td>7</td><td>MyAccount</td><td>TC76_CL20_Validate_SuccessMsg_on_Equipment_Refresh</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>14:59:48</td><td align='center'>81</td></tr><tr><td>8</td><td>MyAccount</td><td>TC85_Validate_ViewBillStatements_adminUser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:01:20</td><td align='center'>118</td></tr><tr><td>9</td><td>ForgotPassword</td><td>TA35_Validate_RetrievingPassword_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:03:27</td><td align='center'>56</td></tr><tr><td>10</td><td>ForgotPassword</td><td>TA67_Validate_RetrievingPassword_HOHuser_ConfirmationMail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:24:14</td><td align='center'>212</td></tr><tr><td>11</td><td>ForgotPassword</td><td>TA68_Validate_ConflictingUsername_RetrievingPassword_HOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:27:55</td><td align='center'>75</td></tr><tr><td>12</td><td>ForgotPassword</td><td>TA69_Validate_ConflictingUsername_RetrievingPassword_UnconvertedHOHuser</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:29:25</td><td align='center'>244</td></tr><tr><td>13</td><td>ForgotUsername</td><td>TA57_Validate_ForgotUsername_ConflictingEmail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:33:40</td><td align='center'>215</td></tr><tr><td>14</td><td>ForgotUsername</td><td>TA58_Validate_ForgotUsername_ConflictingPhone</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:37:35</td><td align='center'>81</td></tr><tr><td>15</td><td>ForgotUsername</td><td>TA65_Validate_ForgotUsername_UsingEmail_confirmationMail</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:39:09</td><td align='center'>345</td></tr><tr><td>16</td><td>Login</td><td>TL02_Validate_ChaterInvalidLogin</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:45:13</td><td align='center'>99</td></tr><tr><td>17</td><td>Login</td><td>TL03_Validate_Non_ConvertedUser_UpdateUserPage</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>15:47:02</td><td align='center'>362</td></tr><tr><td>18</td><td>CreateCharter_ID</td><td>TA01_Validate_HOHUser_CreateID_MACID</td>
+<td bgcolor='green', align='center'>Pass</td><td></td><td align='center'>16:07:52</td><td align='center'>537</td></tr></table>
+</body></html>

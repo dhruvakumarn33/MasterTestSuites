@@ -1,0 +1,1296 @@
+<html>
+<head>
+<title>TestNG:  EngProd_Test_june4th2015</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>EngProd_Test_june4th2015</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 10 12:06:53 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>1948 seconds (1948402 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser()'><b>TB06_Validate_OTPayment_ByCreditCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB06_Validate_OTPayment_ByCreditCard_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5016_child_02, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-3889512" onClick='toggleBox("Output-3889512", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3889512" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3889512">
+<<<*** END: Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser, Took 63 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB06_Validate_OTPayment_ByCreditCard_AdminUser-1-10Jun15_121007.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB06_Validate_OTPayment_ByCreditCard_AdminUser-1-10Jun15_121007.png' height='50' width='50'/><br></a><br/>
+Retrying test : com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser, 1 time(s)<br/><br/>
+Retrying test : 'com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser', 1 time(s)<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 267 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: b72d17ad2257dfdc4085d250cf4dff90
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir12704_16915}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:268)
+	at com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser(Billpay.java:215)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3889512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3889512'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 267 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: b72d17ad2257dfdc4085d250cf4dff90
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir12704_16915}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:268)
+	at com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser(Billpay.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>63</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser()'><b>TB06_Validate_OTPayment_ByCreditCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB06_Validate_OTPayment_ByCreditCard_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5016_child_02, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-6680586" onClick='toggleBox("Output-6680586", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6680586" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6680586">
+<<<*** END: Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser, Took 50 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB06_Validate_OTPayment_ByCreditCard_AdminUser-2-10Jun15_121106.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB06_Validate_OTPayment_ByCreditCard_AdminUser-2-10Jun15_121106.png' height='50' width='50'/><br></a><br/>
+Test failed after max allowed retries  : com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser<br/>
+<br><a href='D:\EngProd_Charter\test-output\html\screenshots\TB06_Validate_OTPayment_ByCreditCard_AdminUser-2-10Jun15_121106.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB06_Validate_OTPayment_ByCreditCard_AdminUser-2-10Jun15_121106.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 318 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: bba818a35f18fb45222ef27db7ca32eb
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir3996_30150}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:268)
+	at com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser(Billpay.java:215)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6680586", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6680586'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 318 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: bba818a35f18fb45222ef27db7ca32eb
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir3996_30150}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:268)
+	at com.charter.test.Billpay.TB06_Validate_OTPayment_ByCreditCard_AdminUser(Billpay.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>50</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser()'><b>TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=28, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e203_child_01, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-12330756" onClick='toggleBox("Output-12330756", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12330756" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12330756">
+<<<*** END: Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser, Took 57 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser-1-10Jun15_121211.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser-1-10Jun15_121211.png' height='50' width='50'/><br></a><br/>
+Retrying test : com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser, 1 time(s)<br/><br/>
+Retrying test : 'com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser', 1 time(s)<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 327 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: a77700981a9d14dcc6bfa8e833af0947
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir13272_8424}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:268)
+	at com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser(Billpay.java:248)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12330756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12330756'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 327 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: a77700981a9d14dcc6bfa8e833af0947
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir13272_8424}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:268)
+	at com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser(Billpay.java:248)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>57</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser()'><b>TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=28, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e203_child_01, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-4363876" onClick='toggleBox("Output-4363876", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4363876" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4363876">
+<<<*** END: Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser, Took 31 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser-2-10Jun15_121250.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser-2-10Jun15_121250.png' height='50' width='50'/><br></a><br/>
+Test failed after max allowed retries  : com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser<br/>
+<br><a href='D:\EngProd_Charter\test-output\html\screenshots\TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser-2-10Jun15_121250.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser-2-10Jun15_121250.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.55 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: f9b7ae61f7fd628d78ff6f00b77e83bf
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir12236_17907}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.MyAccountPage.loadBillingAndTransactionSection(MyAccountPage.java:44)
+	at com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser(Billpay.java:240)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4363876", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4363876'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.55 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: f9b7ae61f7fd628d78ff6f00b77e83bf
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir12236_17907}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.MyAccountPage.loadBillingAndTransactionSection(MyAccountPage.java:44)
+	at com.charter.test.Billpay.TB07_Validate_ScheduleOTP_ByDebitCard_AdminUser(Billpay.java:240)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>31</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser()'><b>TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=29, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5009_child_01, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-31974587" onClick='toggleBox("Output-31974587", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31974587" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31974587">
+<<<*** END: Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser, Took 26 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser-1-10Jun15_121417.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser-1-10Jun15_121417.png' height='50' width='50'/><br></a><br/>
+Retrying test : com.charter.test.Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser, 1 time(s)<br/><br/>
+Retrying test : 'com.charter.test.Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser', 1 time(s)<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.47 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: c69df00ce3e537dcf65b59dcaa817902
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir13548_32061}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.MyAccountPage.loadBillingAndTransactionSection(MyAccountPage.java:44)
+	at com.charter.test.Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser(Billpay.java:306)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31974587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31974587'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.47 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: c69df00ce3e537dcf65b59dcaa817902
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir13548_32061}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.MyAccountPage.loadBillingAndTransactionSection(MyAccountPage.java:44)
+	at com.charter.test.Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser(Billpay.java:306)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>26</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser()'><b>TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=29, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5009_child_01, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-24919550" onClick='toggleBox("Output-24919550", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24919550" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24919550">
+<<<*** END: Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser, Took 287 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser-2-10Jun15_121912.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser-2-10Jun15_121912.png' height='50' width='50'/><br></a><br/>
+Test failed after max allowed retries  : com.charter.test.Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser<br/>
+<br><a href='D:\EngProd_Charter\test-output\html\screenshots\TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser-2-10Jun15_121912.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser-2-10Jun15_121912.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 240.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+*** Element info: {Using=xpath, value=//button[text()=&apos;Cancel Payment&apos;]}
+Session ID: 827aa556dea3f6ce13ce3cf875450207
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir14040_26527}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.BTPage1.CancelUpcomingPayments(BTPage1.java:142)
+	at com.charter.test.Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser(Billpay.java:314)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24919550", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24919550'><pre>org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 240.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+*** Element info: {Using=xpath, value=//button[text()=&apos;Cancel Payment&apos;]}
+Session ID: 827aa556dea3f6ce13ce3cf875450207
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir14040_26527}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.BTPage1.CancelUpcomingPayments(BTPage1.java:142)
+	at com.charter.test.Billpay.TB09_Validate_CancelFuturePayment_ScheduledByDebitCard_AdminUser(Billpay.java:314)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>287</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser()'><b>TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=30, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, Statement=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5009_child_01, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-3706629" onClick='toggleBox("Output-3706629", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3706629" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3706629">
+<<<*** END: Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser, Took 324 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser-1-10Jun15_122444.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser-1-10Jun15_122444.png' height='50' width='50'/><br></a><br/>
+Retrying test : com.charter.test.Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser, 1 time(s)<br/><br/>
+Retrying test : 'com.charter.test.Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser', 1 time(s)<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 240.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+*** Element info: {Using=xpath, value=//button[text()=&apos;Cancel Payment&apos;]}
+Session ID: 267b15646a2b86a51804b44c067afd21
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir5284_5017}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.BTPage1.CancelUpcomingPayments(BTPage1.java:142)
+	at com.charter.test.Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser(Billpay.java:347)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3706629", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3706629'><pre>org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 240.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+*** Element info: {Using=xpath, value=//button[text()=&apos;Cancel Payment&apos;]}
+Session ID: 267b15646a2b86a51804b44c067afd21
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir5284_5017}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.BTPage1.CancelUpcomingPayments(BTPage1.java:142)
+	at com.charter.test.Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser(Billpay.java:347)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>324</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser()'><b>TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=30, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, Statement=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5009_child_01, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-775598" onClick='toggleBox("Output-775598", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-775598" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-775598">
+<<<*** END: Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser, Took 52 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser-2-10Jun15_122545.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser-2-10Jun15_122545.png' height='50' width='50'/><br></a><br/>
+Test failed after max allowed retries  : com.charter.test.Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser<br/>
+<br><a href='D:\EngProd_Charter\test-output\html\screenshots\TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser-2-10Jun15_122545.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser-2-10Jun15_122545.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 210 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: 2ba64543c23fc422861a4027f973b398
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir6624_22063}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.BTPage1.CancelUpcomingPayments(BTPage1.java:141)
+	at com.charter.test.Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser(Billpay.java:347)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace775598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace775598'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 210 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: 2ba64543c23fc422861a4027f973b398
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir6624_22063}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.BTPage1.CancelUpcomingPayments(BTPage1.java:141)
+	at com.charter.test.Billpay.TB10_Validate_CancelFuturePayment_ScheduledByCreditCard_AdminUser(Billpay.java:347)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>52</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage()'><b>TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=27, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e5016, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-15417277" onClick='toggleBox("Output-15417277", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15417277" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15417277">
+<<<*** END: Billpay.TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage, Took 182 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage-1-10Jun15_122854.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage-1-10Jun15_122854.png' height='50' width='50'/><br></a><br/>
+Retrying test : com.charter.test.Billpay.TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage, 1 time(s)<br/><br/>
+Retrying test : 'com.charter.test.Billpay.TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage', 1 time(s)<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //button[contains(text(),&apos;Finish&apos;)] because of the following error:
+TypeError: Failed to execute &apos;createNSResolver&apos; on &apos;Document&apos;: parameter 1 is not of type &apos;Node&apos;.
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 138.88 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Finish&apos;)]}
+Session ID: ba7269a52ddd97c57befea0cb9ac4255
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir12152_2777}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.BillingAndTransactionsPage.Finishbtn(BillingAndTransactionsPage.java:140)
+	at com.charter.test.Billpay.TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage(Billpay.java:482)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15417277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15417277'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //button[contains(text(),&apos;Finish&apos;)] because of the following error:
+TypeError: Failed to execute &apos;createNSResolver&apos; on &apos;Document&apos;: parameter 1 is not of type &apos;Node&apos;.
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 138.88 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Finish&apos;)]}
+Session ID: ba7269a52ddd97c57befea0cb9ac4255
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir12152_2777}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:134)
+	at com.charter.page.BillingAndTransactionsPage.Finishbtn(BillingAndTransactionsPage.java:140)
+	at com.charter.test.Billpay.TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage(Billpay.java:482)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>182</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard()'><b>TB29_Validate_Duplicate_OTP_Message_ByDebitCard</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB29_Validate_Duplicate_OTP_Message_ByDebitCard, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e203_child_01, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-6030946" onClick='toggleBox("Output-6030946", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6030946" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6030946">
+<<<*** END: Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard, Took 75 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB29_Validate_Duplicate_OTP_Message_ByDebitCard-1-10Jun15_123556.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB29_Validate_Duplicate_OTP_Message_ByDebitCard-1-10Jun15_123556.png' height='50' width='50'/><br></a><br/>
+Retrying test : com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard, 1 time(s)<br/><br/>
+Retrying test : 'com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard', 1 time(s)<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (938, 9). Other element would receive the click: &lt;div tabindex=&quot;-1&quot; role=&quot;dialog&quot; class=&quot;modal fade ng-isolate-scope ccmodal in&quot; ng-class=&quot;{in: animate}&quot; ng-style=&quot;{&apos;z-index&apos;: 1050 + index*10, display: &apos;block&apos;}&quot; modal-window=&quot;&quot; window-class=&quot;ccmodal&quot; index=&quot;0&quot; animate=&quot;animate&quot; style=&quot;z-index: 1050; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: e29273c90eaa4abe6a8853506056be36
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir12968_23950}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:136)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:268)
+	at com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard(Billpay.java:776)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6030946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6030946'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (938, 9). Other element would receive the click: &lt;div tabindex=&quot;-1&quot; role=&quot;dialog&quot; class=&quot;modal fade ng-isolate-scope ccmodal in&quot; ng-class=&quot;{in: animate}&quot; ng-style=&quot;{&apos;z-index&apos;: 1050 + index*10, display: &apos;block&apos;}&quot; modal-window=&quot;&quot; window-class=&quot;ccmodal&quot; index=&quot;0&quot; animate=&quot;animate&quot; style=&quot;z-index: 1050; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: e29273c90eaa4abe6a8853506056be36
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir12968_23950}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:136)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:268)
+	at com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard(Billpay.java:776)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>75</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard()'><b>TB29_Validate_Duplicate_OTP_Message_ByDebitCard</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB29_Validate_Duplicate_OTP_Message_ByDebitCard, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e203_child_01, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-13186889" onClick='toggleBox("Output-13186889", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13186889" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13186889">
+<<<*** END: Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard, Took 62 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB29_Validate_Duplicate_OTP_Message_ByDebitCard-2-10Jun15_123706.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB29_Validate_Duplicate_OTP_Message_ByDebitCard-2-10Jun15_123706.png' height='50' width='50'/><br></a><br/>
+Test failed after max allowed retries  : com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard<br/>
+<br><a href='D:\EngProd_Charter\test-output\html\screenshots\TB29_Validate_Duplicate_OTP_Message_ByDebitCard-2-10Jun15_123706.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB29_Validate_Duplicate_OTP_Message_ByDebitCard-2-10Jun15_123706.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13.79 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: ec83514405634e881a2c2d6fe38ae272
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir12712_3672}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.MyAccountPage.loadBillingAndTransactionSection(MyAccountPage.java:44)
+	at com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard(Billpay.java:763)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13186889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13186889'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13.79 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: ec83514405634e881a2c2d6fe38ae272
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir12712_3672}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.MyAccountPage.loadBillingAndTransactionSection(MyAccountPage.java:44)
+	at com.charter.test.Billpay.TB29_Validate_Duplicate_OTP_Message_ByDebitCard(Billpay.java:763)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>62</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard()'><b>TB30_Validate_Duplicate_OTP_Message_ByCreditCard</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB30_Validate_Duplicate_OTP_Message_ByCreditCard, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=tdr33001, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-14546411" onClick='toggleBox("Output-14546411", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14546411" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14546411">
+<<<*** END: Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard, Took 81 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB30_Validate_Duplicate_OTP_Message_ByCreditCard-1-10Jun15_123835.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB30_Validate_Duplicate_OTP_Message_ByCreditCard-1-10Jun15_123835.png' height='50' width='50'/><br></a><br/>
+Retrying test : com.charter.test.Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard, 1 time(s)<br/><br/>
+Retrying test : 'com.charter.test.Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard', 1 time(s)<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (867, 9). Other element would receive the click: &lt;div tabindex=&quot;-1&quot; role=&quot;dialog&quot; class=&quot;modal fade ng-isolate-scope ccmodal in&quot; ng-class=&quot;{in: animate}&quot; ng-style=&quot;{&apos;z-index&apos;: 1050 + index*10, display: &apos;block&apos;}&quot; modal-window=&quot;&quot; window-class=&quot;ccmodal&quot; index=&quot;0&quot; animate=&quot;animate&quot; style=&quot;z-index: 1050; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 25 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: a428f50215f859f255c8a16f4eb9e4d2
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir12944_26467}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:136)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:268)
+	at com.charter.test.Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard(Billpay.java:810)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14546411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14546411'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (867, 9). Other element would receive the click: &lt;div tabindex=&quot;-1&quot; role=&quot;dialog&quot; class=&quot;modal fade ng-isolate-scope ccmodal in&quot; ng-class=&quot;{in: animate}&quot; ng-style=&quot;{&apos;z-index&apos;: 1050 + index*10, display: &apos;block&apos;}&quot; modal-window=&quot;&quot; window-class=&quot;ccmodal&quot; index=&quot;0&quot; animate=&quot;animate&quot; style=&quot;z-index: 1050; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 25 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: a428f50215f859f255c8a16f4eb9e4d2
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir12944_26467}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:136)
+	at com.charter.page.HomePage.logoutApplication(HomePage.java:268)
+	at com.charter.test.Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard(Billpay.java:810)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>81</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard()'><b>TB30_Validate_Duplicate_OTP_Message_ByCreditCard</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB30_Validate_Duplicate_OTP_Message_ByCreditCard, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=tdr33001, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-17548745" onClick='toggleBox("Output-17548745", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17548745" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17548745">
+<<<*** END: Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Failed :com.charter.test.Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard, Took 33 seconds<br/><br/>
+<a href='D:\EngProd_Charter\test-output\html\screenshots\TB30_Validate_Duplicate_OTP_Message_ByCreditCard-2-10Jun15_123916.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB30_Validate_Duplicate_OTP_Message_ByCreditCard-2-10Jun15_123916.png' height='50' width='50'/><br></a><br/>
+Test failed after max allowed retries  : com.charter.test.Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard<br/>
+<br><a href='D:\EngProd_Charter\test-output\html\screenshots\TB30_Validate_Duplicate_OTP_Message_ByCreditCard-2-10Jun15_123916.png'><img src='D:\EngProd_Charter\test-output\html\screenshots\TB30_Validate_Duplicate_OTP_Message_ByCreditCard-2-10Jun15_123916.png' height='50' width='50'/><br></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: e86d8423f482a370042e0317cbd0f4ee
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir13200_27639}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.MyAccountPage.loadBillingAndTransactionSection(MyAccountPage.java:44)
+	at com.charter.test.Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard(Billpay.java:799)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17548745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17548745'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=43.0.2357.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;PC273975&apos;, ip: &apos;10.249.27.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
+Session ID: e86d8423f482a370042e0317cbd0f4ee
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\401508\AppData\Local\Temp\scoped_dir13200_27639}, rotatable=false, locationContextEnabled=true, version=43.0.2357.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at com.cognizant.framework.core.WebDriverBase.clickOnElement(WebDriverBase.java:135)
+	at com.charter.page.MyAccountPage.loadBillingAndTransactionSection(MyAccountPage.java:44)
+	at com.charter.test.Billpay.TB30_Validate_Duplicate_OTP_Message_ByCreditCard(Billpay.java:799)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>33</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.charter.test.Billpay.TB01_Validate_OTPSchedule_ByDebitCard_HOHUser()'><b>TB01_Validate_OTPSchedule_ByDebitCard_HOHUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB01_Validate_OTPSchedule_ByDebitCard_HOHUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=26, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=E2E202, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-30533349" onClick='toggleBox("Output-30533349", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30533349" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30533349">
+<<<*** END: Billpay.TB01_Validate_OTPSchedule_ByDebitCard_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB01_Validate_OTPSchedule_ByDebitCard_HOHUser, Took 55 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>55</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB02_Validate_OTPSchedule_ByCreditCard_HOHUser()'><b>TB02_Validate_OTPSchedule_ByCreditCard_HOHUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB02_Validate_OTPSchedule_ByCreditCard_HOHUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=27, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=E2E203, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-3112277" onClick='toggleBox("Output-3112277", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3112277" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3112277">
+<<<*** END: Billpay.TB02_Validate_OTPSchedule_ByCreditCard_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB02_Validate_OTPSchedule_ByCreditCard_HOHUser, Took 57 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser()'><b>TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=29, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e203_child_01, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-5403936" onClick='toggleBox("Output-5403936", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5403936" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5403936">
+<<<*** END: Billpay.TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB08_Validate_ScheduleOTP_ByCreditCard_AdminUser, Took 46 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage()'><b>TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=27, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=E2E202, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-18178980" onClick='toggleBox("Output-18178980", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18178980" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18178980">
+<<<*** END: Billpay.TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage, Took 44 seconds<br/><br/>
+Test 'TB15_Validate_ModifyOTPayment_ByDebitCard_VerificationPage' passed after 1 retrie(s)<br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB16_Validate_ModifyOTPayment_ByCreditCard_VerificationPage()'><b>TB16_Validate_ModifyOTPayment_ByCreditCard_VerificationPage</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB16_Validate_ModifyOTPayment_ByCreditCard_VerificationPage, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=2022, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=E2E202, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=Mastercard, invalidPassword=, invalidMAC=, CardNumber=5428371055780041, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=06, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-28126203" onClick='toggleBox("Output-28126203", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28126203" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28126203">
+<<<*** END: Billpay.TB16_Validate_ModifyOTPayment_ByCreditCard_VerificationPage ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB16_Validate_ModifyOTPayment_ByCreditCard_VerificationPage, Took 42 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB19_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_HOHUser()'><b>TB19_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_HOHUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB19_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_HOHUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=E2E202, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-4838332" onClick='toggleBox("Output-4838332", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4838332" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4838332">
+<<<*** END: Billpay.TB19_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_HOHUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB19_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_HOHUser, Took 40 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB20_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_AdminUser()'><b>TB20_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB20_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e203_child_01, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-24896201" onClick='toggleBox("Output-24896201", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24896201" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24896201">
+<<<*** END: Billpay.TB20_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB20_Validate_ViewCurrentBillLink_NavigateTo_PFDStatement_AdminUser, Took 49 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB24_Validate_ViewImportantBillMessagesLink_NavigateTo_BillMessagesPage_AdminUser()'><b>TB24_Validate_ViewImportantBillMessagesLink_NavigateTo_BillMessagesPage_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB24_Validate_ViewImportantBillMessagesLink_NavigateTo_BillMessagesPage_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e203_child_01, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-17305916" onClick='toggleBox("Output-17305916", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17305916" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17305916">
+<<<*** END: Billpay.TB24_Validate_ViewImportantBillMessagesLink_NavigateTo_BillMessagesPage_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB24_Validate_ViewImportantBillMessagesLink_NavigateTo_BillMessagesPage_AdminUser, Took 65 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>65</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+<tr>
+<td title='com.charter.test.Billpay.TB26_Validate_UpcomingPaymentsLink_NavigateTo_UpcomingPaymentsPage_AdminUser()'><b>TB26_Validate_UpcomingPaymentsLink_NavigateTo_UpcomingPaymentsPage_AdminUser</b><br>Test class: com.charter.test.Billpay<br>Parameters: {LegacySiteURL=, SelectDate=, Password1=, hohuser=, mac_fID=, TestCaseId=TB26_Validate_UpcomingPaymentsLink_NavigateTo_UpcomingPaymentsPage_AdminUser, charterID=, Devicenickname=, Account_Type=, password=, Relogin_UserID=, selectUser=, ExpYear=, Address2=, fLinked_CharterID=, Address1=, address_CID=, zipcode_CID=, ParentalControl_TV=, invalidSecurityAns=, FutureDate=, AccountNumberVerify=, address_fID=, email=, SecurityAnswer=, SecurityQuestion=, ParentalControl_Unratedcontent=, NewRole=, invalidLastname=, Operatingsystem=, security_answer=, Relogin_Password=, Mobilephone=, CharterID_fp=, PC_Unratedcontent=, PC_Movie=, UserID=e2e203_child_01, lastname=, firstname_CID=, searchkey=, couponNumber=, ACnumber=, Zipcode=, security_question=, Account_pom=, ConfirmPassword=, accountnumber=, Account_DVRcontrol=, PC_TV=, UserPassword=Testing01, CardType=, invalidPassword=, invalidMAC=, CardNumber=, lastname_fp=, mac_CID=, ParentalControl_Movie=, Zipcode_fp=, Message=, UserID1=, ContactEmail=, routingnumber=, invalidAddress=, City=, invalidZipcode=, State=, ExpDate=, zipcode_fID=, invalidEmail=, lastname_fID=, lastname_CID=}<br/>
+<a href="#Output-6638311" onClick='toggleBox("Output-6638311", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6638311" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6638311">
+<<<*** END: Billpay.TB26_Validate_UpcomingPaymentsLink_NavigateTo_UpcomingPaymentsPage_AdminUser ***>>> <br/><br/>
+=====================================================================================<br/><br/>
+Test Passed :com.charter.test.Billpay.TB26_Validate_UpcomingPaymentsLink_NavigateTo_UpcomingPaymentsPage_AdminUser, Took 46 seconds<br/><br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.charter.test.Billpay@10b81da</td></tr>
+</table><p>
+</body>
+</html>
